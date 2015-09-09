@@ -1,2 +1,2 @@
 # hackathon-dpse
-DPS East Hackathon Project for he rule booklet and guides.
+DPS East Hackathon Project for the rule booklet and guides.
