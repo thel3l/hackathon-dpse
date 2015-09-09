@@ -51,5 +51,10 @@ if usr_input == 1:
     cleardeadbodies()
     print("For the Hackathon, you will be expected to bring the following items:\n")
     print("1. Laptops\n2. Smartphones\n3. Chargers\n4. Internet Dongle\n5. Ideas\n6. A backpack\n7. Headphones\n8. Extension board\n9. Notebook & Pen\n10. Flash Drives")
-elif usr_input == 2:
-    sys.exit()
+if usr_input == 2:
+    cleardeadbodies()
+    print t.green("[*] The timings for the programme will be as follows:\n")
+    print("0700 to 0800 hours  - Schools arrive.\n0800 hours   -   Registration closes\n0800 to 0825 hours   -   Prinicipal's Keynote\n0830 to 1230 hours  -   Coding.\n1230 hours   -   Lunch will be available.\n1230 to 1800 hours  -   Coding.\n1800 hours onwards -   Judging begins.")
+elif usr_input == 3:
+    cleardeadbodies()
+    print("")
