@@ -41,11 +41,12 @@ cprint(figlet_format(' <0d3 f3st', font='starwars'),
 def instructions_end_user():
     print t.green("[*] Enter '1' for items to be brought by you.")
     print t.green("[*] Enter '2' to view the timetable for the event.")
+    print t.green("[*] Enter '3' to view the rules and guidelines for the event.")
 
 instructions_end_user()
 
 usr_input = input("Option: ")
-while (usr_input != 1) and (usr_input != 2):
+while (usr_input != 1) and (usr_input != 2) and (usr_input != 3):
     usr_input = input("Option: ")
 if usr_input == 1:
     cleardeadbodies()
@@ -55,6 +56,9 @@ if usr_input == 2:
     cleardeadbodies()
     print t.green("[*] The timings for the programme will be as follows:\n")
     print("0700 to 0800 hours  - Schools arrive.\n0800 hours   -   Registration closes\n0800 to 0825 hours   -   Prinicipal's Keynote\n0830 to 1230 hours  -   Coding.\n1230 hours   -   Lunch will be available.\n1230 to 1800 hours  -   Coding.\n1800 hours onwards -   Judging begins.")
-elif usr_input == 3:
+if usr_input == 3:
+
+elif:
     cleardeadbodies()
-    print("")
+    print t.red("Follow the instructions!")
+    
