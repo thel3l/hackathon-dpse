@@ -22,7 +22,7 @@ def cleardeadbodies():
         os.system("cls")
 
 cleardeadbodies()
-'''
+
 print("You are about to be shown the Guidelines for the DPS Hackathon..")
 time.sleep (3)
 cleardeadbodies()
@@ -37,7 +37,7 @@ time.sleep(4)
 cleardeadbodies()
 cprint(figlet_format(' <0d3 f3st', font='starwars'),
        'green', 'on_grey', attrs=['bold'])
-'''
+
 def instructions_end_user():
     print t.green("[*] Enter '1' for items to be brought by you.")
     print t.green("[*] Enter '2' to view the timetable for the event.")
