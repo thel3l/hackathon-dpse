@@ -58,7 +58,7 @@ def heart():
     elif usr_input == 2:
         cleardeadbodies()
         print t.green("[*] The timings for the programme will be as follows:\n")
-        print("0700 to 0800 hours  - Schools arrive.\n0800 hours   -   Registration closes\n0800 to 0825 hours   -   Prinicipal's Keynote\n0830 to 1230 hours  -   Coding.\n1230 hours   -   Lunch will be available.\n1230 to 1800 hours  -   Coding.\n1800 hours onwards -   Judging begins.\n")
+        print("0700 to 0800 hours  - Schools arrive.\n0800 hours   -        Registration closes\n0800 to 0825 hours   -Prinicipal's Keynote\n0830 to 1230 hours  - Coding.\n1230 hours   -        Lunch will be available.\n1230 to 1800 hours  - Coding.\n1800 hours onwards -  Judging begins.\n")
         instructions_end_user()
         invalid_input = False
     elif usr_input == 3:
