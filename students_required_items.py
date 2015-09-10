@@ -44,7 +44,7 @@ def instructions_end_user():
     print t.green("[*] Enter '3' to view the rules and guidelines for the event.")
 
 instructions_end_user()
-invalid_input = False
+invalid_input = True
 def heart():
     usr_input = input("Option: ")
     while (usr_input != 1) and (usr_input != 2) and (usr_input != 3):
