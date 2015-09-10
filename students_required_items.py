@@ -72,5 +72,5 @@ def heart():
         print t.red("Sorry, that was an invalid option")
         instructions_end_user()
 while invalid_input:
-        print t.red("Sorry, that was an invalid option")
+        # print t.red("Sorry, that was an invalid option")
         heart()
