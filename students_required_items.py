@@ -23,10 +23,10 @@ def cleardeadbodies():
 
 cleardeadbodies()
 
-print("You are about to be shown the Guidelines for the DPS Hackathon..")
+print("Welcome. This is the rule booklet for the DPS East c0def3st")
 time.sleep (3)
 cleardeadbodies()
-print("Prepare well young 'un, for this will not be easy.")
+print("Prepare well young 'un.")
 time.sleep(3)
 cleardeadbodies()
 time.sleep(4)
@@ -35,7 +35,7 @@ cprint(figlet_format('         DPS              EAST     ', font='starwars'),
 print("PRESENTS:")
 time.sleep(4)
 cleardeadbodies()
-cprint(figlet_format(' <0d3 f3st', font='starwars'),
+cprint(figlet_format(' c0de f3st', font='starwars'),
        'green', 'on_grey', attrs=['bold'])
 
 def instructions_end_user():
@@ -44,7 +44,7 @@ def instructions_end_user():
     print t.green("[*] Enter '3' to view the rules and guidelines for the event.")
 
 instructions_end_user()
-invalid_input = True
+invalid_input = False
 def heart():
     usr_input = input("Option: ")
     while (usr_input != 1) and (usr_input != 2) and (usr_input != 3):
@@ -72,5 +72,5 @@ def heart():
         print t.red("Sorry, that was an invalid option")
         instructions_end_user()
 while invalid_input:
-        # print t.red("Sorry, that was an invalid option")
+        print t.red("Sorry, that was an invalid option")
         heart()
