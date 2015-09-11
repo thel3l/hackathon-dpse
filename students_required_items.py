@@ -51,7 +51,7 @@ def heart():
         usr_input = input("Option: ")
     if usr_input == 1:
         cleardeadbodies()
-        print("For the Hackathon, you will be expected to bring the following items:\n")
+        print("[*] For the Hackathon, you will be expected to bring the following items:\n")
         print("1. Laptops\n2. Smartphones\n3. Chargers\n4. Internet Dongle\n5. Ideas\n6. A backpack\n7. Headphones\n8. Extension board\n9. Notebook & Pen\n10. Flash Drives\n")
         invalid_input = False
         instructions_end_user()
