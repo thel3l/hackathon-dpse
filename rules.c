@@ -1,9 +1,9 @@
 //by thel3l.
 #include <stdio.h>
-#define MAX_LEN 1024 
+#define MAX_LEN 1024
 
 void print_image(FILE *fptr);
-
+//ascii art for "DPS East"
 int main(void)
 {
     char *filename = "asciilel.txt";      //Open a text file called asciilel.txt
