@@ -1,5 +1,6 @@
 //by thel3l.
 #include <stdio.h>
+/*#include <conio.h> */   //NOT portable. Need to find a way to clearscreen.
 #define MAX_LEN 1024
 
 void print_image(FILE *fptr);
@@ -29,8 +30,10 @@ void print_image(FILE *fptr)
     while(fgets(read_geniass,sizeof(read_geniass),fptr) != NULL)
         printf("%s",read_geniass);
       //bLEK.
+
 int option;
-printf("Please enter an option: \n [*] Enter '1' for items to be brought by you.\n [*] Enter '2' to view the timetable for the event.\n [*] Enter '3' to view the rules and guidelines for the event.");
+// clrscr();
+  printf("Please enter an option: \n [*] Enter '1' for items to be brought by you.\n [*] Enter '2' to view the timetable for the event.\n [*] Enter '3' to view the rules and guidelines for the event.");
       scanf("%d", &option);
 if ( option == 1) {
   printf("For the Hackathon, you will be expected to bring the following items:\n");
