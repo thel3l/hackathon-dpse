@@ -51,11 +51,11 @@ if ( option == 1) {
   printf("For the Hackathon, you will be expected to bring the following items:\n");
   printf("1. Laptops\n2. Smartphones\n3. Chargers\n4. Internet Dongle\n5. Ideas\n6. A backpack\n7. Headphones\n8. Extension board\n9. Notebook & Pen\n10. Flash Drives\n");
 }
-if ( option == 2) {
+else if ( option == 2) {
   printf("[*] The timings for the programme will be as follows:\n");
   printf("0700 to 0800 hours    Schools arrive.\n0800 hours            Registration closes\n0800 to 0825 hours    Prinicipal's Keynote\n0830 to 1230 hours   Coding.\n1230 hours            Lunch will be available.\n1230 to 1800 hours    Coding.\n1800 hours onwards    Judging begins.\n");
 }
-if ( option == 3) {
+else if ( option == 3) {
   printf("[*] The rules for the programme are:\n");
   printf("\n1. You can have a maximum of 5 members in a team.");
   printf("\n2. To ensure a level field for all contestants, all code, design, art, music and assets MUST be created during the duration of the Hackathon. \n   We want to ensure that all participants start off on the same footing and we also want \n   to preserve the true nature of a hackathon. The only exception to this rule would include material that is freely available to the public like\n");
