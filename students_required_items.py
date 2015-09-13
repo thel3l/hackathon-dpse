@@ -45,7 +45,7 @@ def instructions_end_user():
 
 instructions_end_user()
 invalid_input = True
-def heart():
+def main_control():
     usr_input = input("Option: ")
     while (usr_input != 1) and (usr_input != 2) and (usr_input != 3):
         usr_input = input("Option: ")
@@ -73,4 +73,4 @@ def heart():
         instructions_end_user()
 while invalid_input:
         # print t.red("Sorry, that was an invalid option")
-        heart()
+        main_control()

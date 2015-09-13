@@ -1,6 +1,15 @@
 //by thel3l.
+// #include <conio.h>    //NOT portable. Need to find a way to clearscreen.
 #include <stdio.h>
-/*#include <conio.h> */   //NOT portable. Need to find a way to clearscreen.
+#define KNRM  "\x1B[0m"
+#define KRED  "\x1B[31m"
+#define KGRN  "\x1B[32m"
+#define KYEL  "\x1B[33m"
+#define KBLU  "\x1B[34m"
+#define KMAG  "\x1B[35m"
+#define KCYN  "\x1B[36m"
+#define KWHT  "\x1B[37m"
+#define RESET "\033[0m"
 #define MAX_LEN 1024
 
 void print_image(FILE *fptr);
@@ -28,13 +37,14 @@ void print_image(FILE *fptr)
     char read_geniass[1024];
 
     while(fgets(read_geniass,sizeof(read_geniass),fptr) != NULL)
-        printf("%s",read_geniass);
+  printf("%s",read_geniass);
       //bLEK.
 
-int option;
 // clrscr();
-  printf("Please enter an option: \n [*] Enter '1' for items to be brought by you.\n [*] Enter '2' to view the timetable for the event.\n [*] Enter '3' to view the rules and guidelines for the event.");
+  printf("Please enter an option: \n");
+  printf(KGRN " [*] Enter '1' for items to be brought by you.\n [*] Enter '2' to view the timetable for the event.\n [*] Enter '3' to view the rules and guidelines for the event." RESET);
   printf("\n");
+    int option;
   printf("Option: ");
       scanf("%d", &option);
 if ( option == 1) {
@@ -53,5 +63,4 @@ if ( option == 3) {
   printf("\n3. Winning submissions may be subject to code review.");
   printf("\n   Be kind to others. Do not insult or put down other attendees. Behave professionally. Remember that harassment and racist, sexist, or exclusionary \n   jokes are not appropriate for this event.");
   printf("\n   Hack, meet new people, get creative, and have a good time. Getting something meaningful done within such a short amount of time can be stressful, \n   but we'd like to encourage everyone to take a break every now and then to relax and enjoy the event.\n \r");    }
-
 }
