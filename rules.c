@@ -34,6 +34,8 @@ void print_image(FILE *fptr)
 int option;
 // clrscr();
   printf("Please enter an option: \n [*] Enter '1' for items to be brought by you.\n [*] Enter '2' to view the timetable for the event.\n [*] Enter '3' to view the rules and guidelines for the event.");
+  printf("\n");
+  printf("Option: ");
       scanf("%d", &option);
 if ( option == 1) {
   printf("For the Hackathon, you will be expected to bring the following items:\n");
