@@ -36,7 +36,7 @@ print("PRESENTS:")
 time.sleep(4)
 cleardeadbodies()
 cprint(figlet_format(' c0de f3st', font='starwars'),
-       'green', 'on_grey', attrs=['bold'])
+       'cyan', 'on_grey', attrs=['bold'])
 
 def instructions_end_user():
     print t.green("[*] Enter '1' for items to be brought by you.")
