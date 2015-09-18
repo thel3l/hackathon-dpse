@@ -13,9 +13,6 @@ typedef unsigned int __darwin_natural_t;
 typedef int __darwin_ct_rune_t;
 
 
-
-
-
 typedef union {
  char __mbstate8[128];
  long long _mbstateL;
@@ -25,9 +22,6 @@ typedef __mbstate_t __darwin_mbstate_t;
 
 
 typedef long int __darwin_ptrdiff_t;
-
-
-
 
 
 
@@ -305,8 +299,6 @@ off_t ftello(FILE *);
 
 
 
-
-
 int snprintf(char * restrict, size_t, const char * restrict, ...) __attribute__((__format__ (__printf__, 3, 4)));
 int vfscanf(FILE * restrict, const char * restrict, va_list) __attribute__((__format__ (__scanf__, 2, 0)));
 int vscanf(const char * restrict, va_list) __attribute__((__format__ (__scanf__, 1, 0)));
@@ -333,9 +325,6 @@ int vasprintf(char ** restrict, const char * restrict, va_list) __attribute__((_
 FILE *zopen(const char *, const char *, int);
 
 
-
-
-
 FILE *funopen(const void *,
                  int (*)(void *, char *, int),
                  int (*)(void *, const char *, int),
@@ -347,19 +336,8 @@ extern int __snprintf_chk (char * restrict, size_t, int, size_t,
       const char * restrict, ...);
 
 
-
-
-
-
-
 extern int __vsprintf_chk (char * restrict, int, size_t,
       const char * restrict, va_list);
-
-
-
-
-
-
 
 extern int __vsnprintf_chk (char * restrict, size_t, int, size_t,
        const char * restrict, va_list);
