@@ -1,6 +1,4 @@
-
 typedef signed char __int8_t;
-# lel
 
 typedef unsigned char __uint8_t;
 typedef short __int16_t;
