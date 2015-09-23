@@ -14,7 +14,7 @@
 void print_image(FILE *fptr); //ascii art for "DPS East"
 int main(void)
 {
-    char *filename = "asciilel.txt";      //Open a text file called asciilel.txt
+    char *filename = "asciiArt.txt";      //Open a text file called asciiArt.txt
     FILE *fptr = NULL;
 
     if((fptr = fopen(filename,"r")) == NULL)
