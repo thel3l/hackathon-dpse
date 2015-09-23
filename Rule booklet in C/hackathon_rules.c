@@ -45,7 +45,7 @@ void print_image(FILE *fptr)
   printf("Option: ");
       scanf("%d", &option);
 if ( option == 1) {
-  printf("For the Hackathon, you will be expected to bring the following items:\n");
+  printf("[*] For the Hackathon, you will be expected to bring the following items:\n");
   printf("1. Laptops\n2. Smartphones\n3. Chargers\n4. Internet Dongle\n5. Ideas\n6. A backpack\n7. Headphones\n8. Extension board\n9. Notebook & Pen\n10. Flash Drives\n");
 }
 else if ( option == 2) {
