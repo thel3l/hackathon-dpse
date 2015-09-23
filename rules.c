@@ -1,19 +1,17 @@
-//by thel3l.
-// #include <conio.h>    //NOT portable. Need to find a way to clearscreen.
-#include <stdio.h>
+//Coded by thel3l.
 // #define KNRM  "\x1B[0m"
 // #define KRED  "\x1B[31m"
-#define KGRN  "\x1B[32m"
 // #define KYEL  "\x1B[33m"
 // #define KBLU  "\x1B[34m"
 // #define KMAG  "\x1B[35m"
-#define KCYN  "\x1B[36m"
 // #define KWHT  "\x1B[37m"
+#define KCYN  "\x1B[36m"
+#define KGRN  "\x1B[32m"
+#include <stdio.h>
 #define RESET "\033[0m"
 #define MAX_LEN 1024
 
-void print_image(FILE *fptr);
-//ascii art for "DPS East"
+void print_image(FILE *fptr); //ascii art for "DPS East"
 int main(void)
 {
     char *filename = "asciilel.txt";      //Open a text file called asciilel.txt
@@ -22,23 +20,22 @@ int main(void)
     if((fptr = fopen(filename,"r")) == NULL)
     {
         fprintf(stderr,"error opening %s\n",filename);  //If there is no file by the name, then whine.
-        return 1337;      //geddit?
-    }
+        return 1337;      //1337. Elite.
+      }
 
     print_image(fptr);
 
     fclose(fptr);
 
     return 0;
-}
+  }
 
 void print_image(FILE *fptr)
 {
     char read_geniass[1024];
 
     while(fgets(read_geniass,sizeof(read_geniass),fptr) != NULL)
-  printf("%s",read_geniass);
-      //bLEK.
+  printf("%s",read_geniass); //Printing the ASCII art.
 
 // clrscr();
   printf("Please enter an option: \n");
