@@ -10,14 +10,15 @@ print "[*] Enter '1' for items to be brought by you.\n";
 print "[*] Enter '2' to view the timetable for the event.\n";
 print "[*] Enter '3' to view the rules and guidelines for the event.\n";
 print "Option:";
-my $option = <>;
+my $option = <STDIN>;
 # chomp $option;
   if ($option = 1) {
     print "$option1"
   }
-  if ($option = 2) {
+  elsif ($option = 2) {
     print "$option2";
   }
-  if ($option = 3) {
+  elsif ($option = 3) {
     print "$option3";
   }
+exit 0 if $option != 1 | $option != 2 | $option != 3;
