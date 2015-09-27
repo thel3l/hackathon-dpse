@@ -30,4 +30,4 @@ chomp $option;
     print "\033[0;0H"; #jump to 0,0
     print "$option3";
   }
-exit 0 if $option != 1 | $option != 2 | $option != 3;
+# exit 0 if $option != 1 | $option != 2 | $option != 3;
