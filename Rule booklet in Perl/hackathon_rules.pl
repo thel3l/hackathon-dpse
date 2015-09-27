@@ -10,9 +10,9 @@ $option3 = "[*] The rules for the programme are:\n\n1. You can have a maximum of
 print "\033[2J";           #clear the screen
 print "\033[0;0H";         #jump to 0,0
 
-my $filename = 'asciiArt.txt';
+my $asciiArt = 'asciiArt.txt';
 # my $acciiArt = 'asciiArt.txt';
-open(my $fh, '<:encoding(UTF-8)', $filename)
+open(my $fh, '<:encoding(UTF-8)', $asciiArt)
   or die "asciiArt not available.";
 
   while (my $row = <$fh>) {
