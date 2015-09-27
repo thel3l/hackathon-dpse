@@ -10,17 +10,19 @@ $option3 = "[*] The rules for the programme are:\n\n1. You can have a maximum of
 print "\033[2J";           #clear the screen
 print "\033[0;0H";         #jump to 0,0
 
+##########  PRINTING THE ASCII ART ##########
 my $asciiArt = 'asciiArt.txt';
-# my $acciiArt = 'asciiArt.txt';
-open(my $fh, $asciiArt)
-  or die "asciiArt not available.";
+open(my $fh, $asciiArt)    #open a fil named asciiArt.txt
+  or die "asciiArt not available.";  #throw up an error if asciiArt.txt is unavailable.
 
-  while (my $row = <$fh>) {
+  while (my $row = <$fh>) {   #read and print all the rows in the file.
     chomp $row;
     print "$row\n";
   }
 
 print color('green');      #print subsequent text in green until a reset.
+print "";
+print "";
 print "[*] Enter '1' for items to be brought by you.\n";
 print "[*] Enter '2' to view the timetable for the event.\n";
 print "[*] Enter '3' to view the rules and guidelines for the event.\n";
