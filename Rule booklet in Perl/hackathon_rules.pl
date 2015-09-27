@@ -12,7 +12,7 @@ print "\033[0;0H";         #jump to 0,0
 
 my $asciiArt = 'asciiArt.txt';
 # my $acciiArt = 'asciiArt.txt';
-open(my $fh, '<:encoding(UTF-8)', $asciiArt)
+open(my $fh, $asciiArt)
   or die "asciiArt not available.";
 
   while (my $row = <$fh>) {
