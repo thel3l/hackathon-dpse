@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400");
+
+body {
+    background-color: #282828;
+    font-family: "Century Gothic", Helvetica, sans-serif;
+    color: #FFFFFF;
+		font-weight: 100;
+		line-height: 1.65em;
+    margin: 0;
+}
+
+Logo {
+
+}
+
+.sect1 {
+  padding: 12em;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*width: 100%;*/
+  /*height: 100%;*/
+  background-image: url(http://www.hindscc.edu/Assets/images/careertech-hinds-computer-programmer-code.jpg);
+}
+
+.Subline {
+  		font-size: 30px;
+      width: auto;
+      margin: auto;
+}
