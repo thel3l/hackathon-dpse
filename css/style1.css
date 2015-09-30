@@ -22,7 +22,7 @@ Logo {
   background-position: center;
   /*width: 100%;*/
   /*height: 100%;*/
-  background-image: url(http://www.hindscc.edu/Assets/images/careertech-hinds-computer-programmer-code.jpg);
+  background-image: ("/images/bground.jpg");
 }
 
 .Subline {
