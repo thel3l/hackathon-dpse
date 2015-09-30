@@ -1,4 +1,4 @@
-# hackathon-dpse
+# DPS East Hackathon project and guidelines
 This is the DPS East Hackathon/codefest Rule booklet. To view the rule booklet, please follow the instructions for the respective languages:
 
 **1. Python:**
