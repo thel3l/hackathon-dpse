@@ -24,4 +24,6 @@ This is the DPS East Hackathon/codefest Rule booklet. To view the rule booklet, 
   
   **3. Perl:**
   Navigate to the Perl directory, and run:
-  ```perl hackathon_rules.pl```
+  ```bash
+  perl hackathon_rules.pl
+  ```
