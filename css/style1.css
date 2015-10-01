@@ -11,31 +11,22 @@ body {
     margin: 0;
 }
 
-/*Logo {
-applies to the logo
-}*/
-
-.sect1 {
-
-  padding: 21em;
-  text-align: center;
-  background-image: url("../images/4.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:  cover;
-
-  /*width: 100%;*/
-  /*height: 200%;*/
+Logo {
 
 }
 
+.sect1 {
+  padding: 12em;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*width: 100%;*/
+  /*height: 100%;*/
+  background-image: ("/images/bground.jpg");
+}
+
 .Subline {
-  /*The line below the logo in section 1*/
   		font-size: 30px;
       width: auto;
       margin: auto;
 }
-
-/*.sections {
-  applies to all sections
-}*/
