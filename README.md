@@ -29,6 +29,9 @@ This is the DPS East Hackathon/codefest Rule booklet. To view the rule booklet, 
   ```
 
 For any other doubts/queries that you may have, please contact us at:
+
 	+91 xxxxx xxxxx
+
 	+91 xxxxx xxxxx
+
 	080 xxxx xxxx
