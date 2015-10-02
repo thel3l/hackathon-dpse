@@ -15,18 +15,37 @@ body {
 applies to the logo
 }*/
 
+section {
+    display: block;
+    background-image: url("../images/4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:  cover;
+    height:100%;
+    width:100%;
+    padding: 60px;
+    padding-left: 120px;
+    box-sizing:border-box;
+}
+
 .sect1 {
 
   padding: 21em;
   text-align: center;
-  background-image: url("../images/4.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:  cover;
 
   /*width: 100%;*/
   /*height: 200%;*/
 
+}
+
+.sect2 {
+
+  padding: 21em;
+  text-align: center;
+  background-image: url("../images/3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:  cover;
 }
 
 .Subline {
@@ -36,6 +55,6 @@ applies to the logo
       margin: auto;
 }
 
-/*.sections {
-  applies to all sections
-}*/
+.headings {
+  font-size: 50px;
+}
