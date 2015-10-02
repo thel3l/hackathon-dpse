@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 
 body {
-    background-color: #282828;
+    background-color: #181823;
     font-family: "Century Gothic", Helvetica, sans-serif;
     color: #FFFFFF;
 		font-weight: 100;
@@ -17,7 +17,6 @@ applies to the logo
 
 section {
     display: block;
-    background-image: url("../images/4.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:  cover;
@@ -30,6 +29,7 @@ section {
 
 .sect1 {
 
+  background-image: url("../images/4.jpg");
   padding: 21em;
   text-align: center;
 
@@ -40,12 +40,9 @@ section {
 
 .sect2 {
 
-  padding: 21em;
-  text-align: center;
+  padding: 5em;
   background-image: url("../images/3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:  cover;
+
 }
 
 .Subline {
@@ -55,6 +52,12 @@ section {
       margin: auto;
 }
 
-.headings {
-  font-size: 50px;
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+p {
+  padding: 10px;
+
 }
