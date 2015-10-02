@@ -3,9 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 
 body {
-    background-color: #181823;
+    background-color: #282C34;
     font-family: "Century Gothic", Helvetica, sans-serif;
-    color: #FFFFFF;
+    color: #ABB2BF;
 		font-weight: 100;
 		line-height: 1.65em;
     margin: 0;
@@ -40,8 +40,8 @@ section {
 
 .sect2 {
 
-  padding: 5em;
-  background-image: url("../images/3.jpg");
+  padding: 3em;
+
 
 }
 
@@ -53,8 +53,22 @@ section {
 }
 
 h1 {
+  position: relative;
+  right: 0em;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 20%;
   text-align: center;
+
+  color: #CCCCCC;
   font-size: 30px;
+
+  border: 10px solid #CCCCCC;
+  border-radius: 0px 200px 0px 200px;
+  -moz-border-radius: 0px 200px 0px 200px;
+  -webkit-border-radius: 0px 200px 0px 200px;
+
 }
 
 p {
