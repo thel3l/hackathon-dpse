@@ -58,6 +58,12 @@ body {
 
 .separator {
   /*We gotta design a separator*/
+  background-image: url("../images/graphics/separator.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.4;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .nav {
