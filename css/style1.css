@@ -18,6 +18,12 @@ body {
 
 //Navigation bar
 
+header {
+  position: fixed !important;
+  top: 0;
+  text-align: center;
+}
+
 .nav ul {
   list-style: none;
   background-color: #444;
@@ -56,6 +62,7 @@ body {
 }
 
 
+
 /*Logo {
 applies to the logo
 }*/
@@ -92,9 +99,9 @@ section {
 
 .Subline {
   /*The line below the logo in section 1*/
-  		font-size: 30px;
-      width: auto;
-      margin: auto;
+  font-size: 30px;
+  width: auto;
+  margin: auto;
 }
 
 h1 {
