@@ -1,4 +1,5 @@
 $(function() {
+    
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -11,4 +12,7 @@ $(function() {
             }
         }
     });
+    
+    $('.nav').css({ 'position': 'fixed', 'top': 0, 'left': 0, 'text-align': 'center'});
+    $('.nav.ul').css({ 'background-color': '#444'})
 });
