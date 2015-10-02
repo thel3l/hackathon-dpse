@@ -26,10 +26,10 @@ header {
 
 .nav ul {
   list-style: none;
-  background-color: #444;
   text-align: center;
   padding: 0;
   margin: 0;
+  background-color: #282C34;
 }
 
 .nav li {
