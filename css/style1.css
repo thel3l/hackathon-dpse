@@ -60,6 +60,10 @@ body {
   /*We gotta design a separator*/
 }
 
+.nav {
+  width: 100%;
+}
+
 /*Logo {
 applies to the logo
 }*/
@@ -90,6 +94,8 @@ section {
 #sect2 {
 
   padding: 3em;
+  padding-left: 10%;
+  padding-right: 10%;
 
 
 }
