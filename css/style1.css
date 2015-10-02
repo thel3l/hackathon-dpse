@@ -19,6 +19,7 @@ body {
 //Navigation bar
 
 .nav ul {
+
   list-style: none;
   text-align: center;
   padding: 0;
@@ -42,7 +43,7 @@ body {
   text-decoration: none;
   color: #ABB2BF;
   display: block;
-  transition: .3s background-color;
+  transition: .2s background-color;
 }
 
 .nav a:hover {
@@ -73,7 +74,7 @@ section {
     box-sizing:border-box;
 }
 
-.sect1 {
+#sect1 {
 
   background-image: url("../images/4.jpg");
   padding: 21em;
@@ -84,7 +85,7 @@ section {
 
 }
 
-.sect2 {
+#sect2 {
 
   padding: 3em;
 
