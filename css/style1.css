@@ -30,17 +30,17 @@ body {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   display: inline-block;
-  width: 120px;
+  width: 133px;
   border-bottom: none;
   height: 50px;
   line-height: 50px;
   font-size: 1.4em;
-  padding-right: 15px;
+  /*padding-right: 15px;*/
 }
 
 .nav a {
   text-decoration: none;
-  color: #fff;
+  color: #ABB2BF;
   display: block;
   transition: .3s background-color;
 }
@@ -122,15 +122,15 @@ p {
 }
 
 #copyright{
-  position: absolute;
+  position: relative;
   left: 0;
   right:0;
   margin-right: auto;
   margin-left: auto;
-  top: 0px;
+  bottom: 0px;
   z-index: 1;
-
+  text-align: center;
   /*height: 4em;*/
   background-color: #000000;
-  opacity: 0.5;
+  opacity: 0.666;
 }
