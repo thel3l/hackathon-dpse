@@ -14,5 +14,5 @@ $(function() {
     });
     
     $('.nav').css({ 'position': 'fixed', 'top': 0, 'left': 0, 'text-align': 'center'});
-    $('.nav.ul').css({ 'background-color': '#444'})
+    
 });

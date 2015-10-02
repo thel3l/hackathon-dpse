@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #282C34;
+    background-color: #0C0C0C;
     font-family: "Century Gothic", Helvetica, sans-serif;
     color: #ABB2BF;
 		font-weight: 100;
@@ -107,11 +107,12 @@ h1 {
   margin-left: auto;
   width: 20%;
   text-align: center;
+  padding: 10px;
 
   color: #CCCCCC;
   font-size: 30px;
 
-  border: 10px solid #CCCCCC;
+  border: 10px solid #202020;
   border-radius: 0px 200px 0px 200px;
   -moz-border-radius: 0px 200px 0px 200px;
   -webkit-border-radius: 0px 200px 0px 200px;
