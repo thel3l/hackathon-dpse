@@ -8,9 +8,9 @@
 }
 
 body {
-    background-color: #282828;
+    background-color: #282C34;
     font-family: "Century Gothic", Helvetica, sans-serif;
-    color: #FFFFFF;
+    color: #ABB2BF;
 		font-weight: 100;
 		line-height: 1.65em;
     margin: 0;
@@ -62,7 +62,6 @@ applies to the logo
 
 section {
     display: block;
-    background-image: url("../images/4.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:  cover;
@@ -75,6 +74,7 @@ section {
 
 .sect1 {
 
+  background-image: url("../images/4.jpg");
   padding: 21em;
   text-align: center;
 
@@ -85,12 +85,9 @@ section {
 
 .sect2 {
 
-  padding: 21em;
-  text-align: center;
-  background-image: url("../images/3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:  cover;
+  padding: 3em;
+
+
 }
 
 .Subline {
@@ -100,7 +97,26 @@ section {
       margin: auto;
 }
 
-.headings {
-  font-size: 50px;
+h1 {
+  position: relative;
+  right: 0em;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 20%;
+  text-align: center;
+
+  color: #CCCCCC;
+  font-size: 30px;
+
+  border: 10px solid #CCCCCC;
+  border-radius: 0px 200px 0px 200px;
+  -moz-border-radius: 0px 200px 0px 200px;
+  -webkit-border-radius: 0px 200px 0px 200px;
+
 }
 
+p {
+  padding: 10px;
+
+}
