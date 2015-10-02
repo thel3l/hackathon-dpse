@@ -75,3 +75,17 @@ p {
   padding: 10px;
 
 }
+
+#menu{
+  position: absolute;
+  left: 0;
+  right:0;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0px;
+  z-index: 1;
+
+  /*height: 4em;*/
+  background-color: #000000;
+  opacity: 0.5;
+}
