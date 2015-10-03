@@ -1,7 +1,6 @@
 Welcome, fellow hacker. We at DPS East are thrilled to unveil DPSE CODEFEST 2015. We implore you to join us on 30th October to create something new and innovative.
 Great minds talk ideas. Greater ones still execute them. The goal of CODEFEST '15 is to create a discourse of ideas. We want to host a hackathon where ideas and innovations flow free.
-
-
+We don't judge based on platform or language. The best of ideas are simple. A beautiful GUI is not going to change a reinvention.
 
 There are 10 kinds of people in the world. Those who understand binary, and those who don't. And those who didn't contemplate the base 3 joke.
 There's a band called 1023MB. They haven't had any gigs yet.
