@@ -98,29 +98,12 @@ section {
     /*height: 200%;*/
 }
 
-#sect2 {
+#sect2,#sect3,#sect4,#sect5 {
     padding: 3em;
     padding-left: 10%;
     padding-right: 10%
 }
 
-#sect3 {
-    padding: 3em;
-    padding-left: 10%;
-    padding-right: 10%
-}
-
-#sect4 {
-    padding: 3em;
-    padding-left: 10%;
-    padding-right: 10%
-}
-
-#sect5 {
-    padding: 3em;
-    padding-left: 10%;
-    padding-right: 10%
-}
 
 .map {
     display: block;
