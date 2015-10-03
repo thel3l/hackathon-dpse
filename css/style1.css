@@ -38,7 +38,7 @@ body {
     height: 50px;
     line-height: 50px;
     font-size: 1.4em
-/*padding-right: 15px;*/
+    /*padding-right: 15px; */
 }
 
 .nav a {
@@ -94,8 +94,8 @@ section {
     background-image: url(../images/4.jpg);
     padding: 21em;
     text-align: center
-/*width: 100%;*/
-/*height: 200%;*/
+    /*width: 100%;*/
+    /*height: 200%;*/
 }
 
 #sect2 {
@@ -108,16 +108,16 @@ section {
     display: block;
     padding-top: 25px;
     opacity: .666
-/*text-align: right;
-  position: relative;
-  left: 7em;
-  right: 0;
-  margin-right: auto;
-  margin-left: auto;*/
+    text-align : right;
+    position: relative;
+    left: 10em;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .Subline {
-/*The line below the logo in section 1*/
+    /*The line below the logo in section 1*/
     font-size: 30px;
     width: auto;
     margin: auto
@@ -169,7 +169,7 @@ strong {
     bottom: 0;
     z-index: 1;
     text-align: center;
-/*height: 4em;*/
+    /*height: 4em;*/
     background-color: #000;
     opacity: .666;
     font-size: 75%
