@@ -113,7 +113,7 @@ section {
 .map {
   display: block;
   padding-top: 25px;
-  opacity: 0.5;
+  opacity: 0.666;
 
   /*text-align: right;
   position: relative;
@@ -176,8 +176,9 @@ strong {
   opacity: 0.666;
   font-size: 75%;
 }
+
 .copyright a{
-color:#f50a2c;
-font-weight:700;
-text-decoration:none;
+  color:#f50a2c;
+  font-weight:700;
+  text-decoration:none;
 }
