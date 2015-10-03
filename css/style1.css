@@ -185,3 +185,30 @@ strong {
 ul#rules {
   padding-left: 3%;
 }
+
+.styled{
+  margin-bottom: 50px;
+}
+
+.styled div {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 50px;
+  font-weight: 100;
+  line-height: 1;
+  text-align: right;
+}
+
+.styled div:first-child {
+  margin-left: 0;
+}
+
+.styled div span {
+  display: block;
+  border-top: 1px solid #cecece;
+  padding-top: 3px;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+}
