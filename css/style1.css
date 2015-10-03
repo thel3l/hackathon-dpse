@@ -158,11 +158,7 @@ strong {
   color: #FFFFFF;
   font-weight: normal;
 }
-footer{
-	background-color: #f1f1f1;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
+
 .copyright{
   position: fixed;
   left: 0;
@@ -178,7 +174,6 @@ footer{
 }
 .copyright a{
 color:#f50a2c;
-/*text-transform:uppercase;*/
 font-weight:700;
 text-decoration:none;
 }
