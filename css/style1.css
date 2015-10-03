@@ -59,7 +59,7 @@ body {
 }
 
 .separator {
-/*We gotta design a separator*/
+    /*We gotta design a separator*/
     background-image: url(../images/graphics/sep.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -78,6 +78,7 @@ body {
 /*Logo {
 applies to the logo
 }*/
+
 section {
     display: block;
     background-repeat: no-repeat;
@@ -103,7 +104,6 @@ section {
     padding-left: 10%;
     padding-right: 10%
 }
-
 
 .map {
     display: block;
