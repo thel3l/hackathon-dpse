@@ -110,6 +110,12 @@ section {
     padding-right: 10%
 }
 
+#sect4 {
+    padding: 3em;
+    padding-left: 10%;
+    padding-right: 10%
+}
+
 .map {
     display: block;
     padding-top: 25px;
