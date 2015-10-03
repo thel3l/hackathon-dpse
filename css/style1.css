@@ -196,10 +196,11 @@ strong {
     margin-left: auto;
     bottom: 0;
     z-index: 3;
+    padding: 50px;
 
     background-color: #EEE;
-    height: 25em;
-    opacity: 0.8;
+    height: 20em;
+    opacity: 0.85;
 }
 
 input[type="text"] {
@@ -211,12 +212,14 @@ input[type="text"] {
   border-radius: none;
   padding: 10px;
   border: solid 5px #c9c9c9;
-  transition: border 0.3s;
+  transition: border 0.3s, background-color 0.3s;
   outline: none;
 }
 
 input[type="text"]:focus {
     border: solid 5px #969696;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 
