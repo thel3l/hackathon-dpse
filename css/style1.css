@@ -68,6 +68,8 @@ body {
 
 .nav {
   width: 100%;
+  background-color: #000000;
+  opacity: 0.888;
 }
 
 /*Logo {
@@ -106,6 +108,19 @@ section {
 
 }
 
+.map {
+  display: block;
+  padding-top: 25px;
+  opacity: 0.5;
+
+  /*text-align: right;
+  position: relative;
+  left: 7em;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;*/
+}
+
 .Subline {
   /*The line below the logo in section 1*/
   font-size: 30px;
@@ -119,7 +134,7 @@ h1 {
   left: 0;
   margin-right: auto;
   margin-left: auto;
-  width: 25%;
+  width: auto;
   text-align: center;
   padding: 10px;
 
@@ -145,7 +160,7 @@ strong {
 }
 
 #copyright{
-  position: relative;
+  position: fixed;
   left: 0;
   right:0;
   margin-right: auto;
