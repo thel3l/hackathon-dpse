@@ -152,6 +152,11 @@ strong {
     font-weight: 400
 }
 
+.strongclass {
+    color: #FFF;
+    font-weight: 400
+}
+
 #agendaimg {
     display: block;
     max-width: 90%;
@@ -188,6 +193,7 @@ ul#rules {
 
 .styled{
   margin-bottom: 50px;
+  margin-top: 25px;
 }
 
 .styled div {
@@ -196,7 +202,7 @@ ul#rules {
   font-size: 50px;
   font-weight: 100;
   line-height: 1;
-  text-align: right;
+  text-align: left;
 }
 
 .styled div:first-child {
@@ -205,7 +211,7 @@ ul#rules {
 
 .styled div span {
   display: block;
-  border-top: 1px solid #cecece;
+  border-top: 1px solid #CECECE;
   padding-top: 3px;
   font-size: 12px;
   font-weight: normal;
