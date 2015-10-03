@@ -70,6 +70,7 @@ body {
   width: 100%;
   background-color: #000000;
   opacity: 0.888;
+  z-index: 100;
 }
 
 /*Logo {
@@ -130,6 +131,7 @@ section {
 
 h1 {
   position: relative;
+  z-index: 10;
   right: 0em;
   left: 0;
   margin-right: auto;
