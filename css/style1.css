@@ -158,8 +158,12 @@ strong {
   color: #FFFFFF;
   font-weight: normal;
 }
-
-#copyright{
+footer{
+	background-color: #f1f1f1;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.copyright{
   position: fixed;
   left: 0;
   right:0;
@@ -171,4 +175,10 @@ strong {
   /*height: 4em;*/
   background-color: #000000;
   opacity: 0.666;
+}
+.copyright a{
+color:#f73b56;
+/*text-transform:uppercase;*/
+font-weight:700;
+text-decoration:none;
 }
