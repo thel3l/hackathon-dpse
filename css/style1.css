@@ -126,7 +126,7 @@ section {
 
 h1 {
     position: relative;
-    z-index: 10;
+    z-index: 3;
     right: 0;
     left: 0;
     margin-right: auto;
@@ -186,6 +186,22 @@ strong {
     font-weight: 700;
     text-decoration: none
 }
+
+
+.signup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 0;
+    z-index: 3;
+
+    background-color: #EEE;
+    height: 25em;
+    opacity: 0.8;
+}
+
 
 ul#rules {
   padding-left: 3%;
