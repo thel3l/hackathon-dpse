@@ -99,7 +99,7 @@ section {
     /*height: 200%;*/
 }
 
-#sect2,#sect3,#sect4,#sect5 {
+#sect2,#sect3,#sect4,#sect5, #sect6 {
     padding: 3em;
     padding-left: 10%;
     padding-right: 10%
