@@ -198,13 +198,14 @@ strong {
     z-index: 3;
     padding: 50px;
 
+    color: #0C0C0C;
     background-color: #EEE;
     height: 20em;
     opacity: 0.85;
 }
 
 input[type="text"] {
-  display: block;
+  display: inline;
   margin: 0;
   font-size: 20px;
   appearance: none;
