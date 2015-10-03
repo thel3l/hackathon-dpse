@@ -139,6 +139,11 @@ p {
   padding-top: 20px;
 }
 
+strong {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
 #copyright{
   position: relative;
   left: 0;

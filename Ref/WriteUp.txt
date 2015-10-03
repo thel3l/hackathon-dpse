@@ -1,2 +1,9 @@
 Welcome, fellow hacker. We at DPS cannot be more thrilled to unveil DPSE CODEFEST 2015. We implore you to join us on 30th October to create something new and innovative.
-Great minds talk ideas. The goal of CODEFEST '15 is to create a discourse of ideas. We want to host a hackathon where ideas and innovations flow. 
+Great minds talk ideas. The goal of CODEFEST '15 is to create a discourse of ideas. We want to host a hackathon where ideas and innovations flow free.
+
+
+
+
+
+
+There are 10 kinds of people in the world. Those who understand binary, and those who don't. And those who didn't contemplate the base 3 joke.
