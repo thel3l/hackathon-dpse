@@ -119,11 +119,11 @@ section {
 .map {
     display: block;
     padding-top: 25px;
-    opacity: .666
-    text-align : right;
+    opacity: .666;
+    text-align : center;
     position: relative;
-    left: 10em;
-    right: 0;
+    left: auto;
+    right: auto;
     margin-right: auto;
     margin-left: auto;
 }
