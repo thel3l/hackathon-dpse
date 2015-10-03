@@ -19,7 +19,6 @@ case $mainChoice in
 3) clear; f_option3;;
 *) clear; f_mainMenu;;
 esac
-}
 
 ############### OPTION 1  ###############
 f_option1(){
