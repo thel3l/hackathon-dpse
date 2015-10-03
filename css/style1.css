@@ -116,13 +116,19 @@ section {
     padding-right: 10%
 }
 
+#sect5 {
+    padding: 3em;
+    padding-left: 10%;
+    padding-right: 10%
+}
+
 .map {
     display: block;
     padding-top: 25px;
     opacity: .666
     text-align : right;
     position: relative;
-    left: 10em;
+    left: 8em;
     right: 0;
     margin-right: auto;
     margin-left: auto;
