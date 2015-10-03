@@ -1,121 +1,114 @@
-@charset "UTF-8";
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800");
+@charset  "UTF-8";
+
+@import  "font-awesome.min.css";
+
+@import  "https://fonts.googleapis.com/css?family=Lato:300,400";
+
+@import  "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800";
 
 * {
-  margin: 0px;
-  padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 body {
     background-color: #0C0C0C;
-    font-family: "Century Gothic", Helvetica, sans-serif;
+    font-family: "Century Gothic",Helvetica,sans-serif;
     color: #ABB2BF;
-		font-weight: 100;
-		line-height: 1.65em;
-    margin: 0;
+    font-weight: 100;
+    line-height: 1.65em;
+    margin: 0
 }
 
 //Navigation bar
-
 .nav ul {
-
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  background-color: #282C34;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #282C34
 }
 
 .nav li {
-  font-family: 'Oswald', sans-serif;
-  text-align: center;
-  display: inline-block;
-  width: 133px;
-  border-bottom: none;
-  height: 50px;
-  line-height: 50px;
-  font-size: 1.4em;
-  /*padding-right: 15px;*/
+    font-family: 'Oswald',sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: 133px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em
+/*padding-right: 15px;*/
 }
 
 .nav a {
-  text-decoration: none;
-  color: #ABB2BF;
-  display: block;
-  transition: .2s background-color;
+    text-decoration: none;
+    color: #ABB2BF;
+    display: block;
+    transition: .2s background-color
 }
 
 .nav a:hover {
-  background-color: #005f5f;
+    background-color: #005f5f
 }
 
 .nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
+    background-color: #fff;
+    color: #444;
+    cursor: default
 }
 
 .separator {
-  /*We gotta design a separator*/
-  background-image: url("../images/graphics/sep.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.4;
-  padding-top: 2em;
-  padding-bottom: 2em;
+/*We gotta design a separator*/
+    background-image: url(../images/graphics/sep.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .4;
+    padding-top: 2em;
+    padding-bottom: 2em
 }
 
 .nav {
-  width: 100%;
-  background-color: #000000;
-  opacity: 0.888;
-  z-index: 100;
+    width: 100%;
+    background-color: #000;
+    opacity: .888;
+    z-index: 100
 }
 
 /*Logo {
 applies to the logo
 }*/
-
 section {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:  cover;
-    height:100%;
-    width:100%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
     padding: 60px;
     padding-left: 120px;
-    box-sizing:border-box;
+    box-sizing: border-box
 }
 
 #sect1 {
-
-  background-image: url("../images/4.jpg");
-  padding: 21em;
-  text-align: center;
-
-  /*width: 100%;*/
-  /*height: 200%;*/
-
+    background-image: url(../images/4.jpg);
+    padding: 21em;
+    text-align: center
+/*width: 100%;*/
+/*height: 200%;*/
 }
 
 #sect2 {
-
-  padding: 3em;
-  padding-left: 10%;
-  padding-right: 10%;
-
-
+    padding: 3em;
+    padding-left: 10%;
+    padding-right: 10%
 }
 
 .map {
-  display: block;
-  padding-top: 25px;
-  opacity: 0.666;
-
-  /*text-align: right;
+    display: block;
+    padding-top: 25px;
+    opacity: .666
+/*text-align: right;
   position: relative;
   left: 7em;
   right: 0;
@@ -124,70 +117,66 @@ section {
 }
 
 .Subline {
-  /*The line below the logo in section 1*/
-  font-size: 30px;
-  width: auto;
-  margin: auto;
+/*The line below the logo in section 1*/
+    font-size: 30px;
+    width: auto;
+    margin: auto
 }
 
 h1 {
-  position: relative;
-  z-index: 10;
-  right: 0em;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: auto;
-  text-align: center;
-  padding: 10px;
-
-
-  color: #CCCCCC;
-  font-size: 30px;
-
-  border: 10px solid #202020;
-  border-radius: 0px 200px 0px 200px;
-  -moz-border-radius: 0px 200px 0px 200px;
-  -webkit-border-radius: 0px 200px 0px 200px;
-
+    position: relative;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    color: #CCC;
+    font-size: 30px;
+    border: 10px solid #202020;
+    border-radius: 0 200px 0 200px;
+    -moz-border-radius: 0 200px;
+    -webkit-border-radius: 0 200px 0 200px
 }
 
 p {
-  padding: 10px;
-  padding-top: 20px;
+    padding: 10px;
+    padding-top: 20px
 }
 
 strong {
-  color: #FFFFFF;
-  font-weight: normal;
+    color: #FFF;
+    font-weight: 400
 }
 
 #agendaimg {
-  display: block;
-  max-width: 90%;
-  max-height: 90%;
-  padding: 10px;
-  padding-top: 4%;
-  opacity: 0.6;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    padding: 10px;
+    padding-top: 4%;
+    opacity: .6
 }
 
-.copyright{
-  position: fixed;
-  left: 0;
-  right:0;
-  margin-right: auto;
-  margin-left: auto;
-  bottom: 0px;
-  z-index: 1;
-  text-align: center;
-  /*height: 4em;*/
-  background-color: #000000;
-  opacity: 0.666;
-  font-size: 75%;
+.copyright {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+/*height: 4em;*/
+    background-color: #000;
+    opacity: .666;
+    font-size: 75%
 }
 
-.copyright a{
-  color:#f50a2c;
-  font-weight:700;
-  text-decoration:none;
+.copyright a {
+    color: #f50a2c;
+    font-weight: 700;
+    text-decoration: none
 }
