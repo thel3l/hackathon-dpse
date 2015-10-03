@@ -180,3 +180,7 @@ strong {
     font-weight: 700;
     text-decoration: none
 }
+
+ul#rules {
+  padding-left: 3%;
+}
