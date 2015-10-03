@@ -1,8 +1,5 @@
-Welcome, fellow hacker. We at DPS cannot be more thrilled to unveil DPSE CODEFEST 2015. We implore you to join us on 30th October to create something new and innovative.
-Great minds talk ideas. The goal of CODEFEST '15 is to create a discourse of ideas. We want to host a hackathon where ideas and innovations flow free.
-
-
-
+Welcome, fellow hacker. We at DPS East are thrilled to unveil DPSE CODEFEST 2015. We implore you to join us on 30th October to create something new and innovative.
+Great minds talk ideas. Greater ones still execute them. The goal of CODEFEST '15 is to create a discourse of ideas. We want to host a hackathon where ideas and innovations flow free.
 
 
 
