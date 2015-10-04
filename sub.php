@@ -2,7 +2,7 @@
 
 $name = $_POST["name"];
 echo $name;
-//$name = "nammmmee";                         // DEBUG VARIABLE
+//$name = "nammmmee";                         // DEBUG VARIABLE   //Vibhu. Maturity.
 $email = $_POST["email"];
 //$email = "emmmmaaiiill";                    // DEBUG VARIABLE
 $ip = $_SERVER['REMOTE_ADDR'];
