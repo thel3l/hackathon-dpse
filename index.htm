@@ -120,8 +120,16 @@
                 <h2>Sign up to be notified</h2>
 
                 <div class="inputfield">
-                    <label>Email Address:</label>
-                    <input id="email" name="email" type="text" style="width:666px">
+                    <form action="" method="post">
+
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" value="" />
+                        
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" value="" />
+
+                        <input type="submit" class="submit_button" value="Sign up" />
+                    </form>
                 </div>
 
                 <div class="inputfield">
@@ -156,6 +164,7 @@
 
             ga('create', 'UA-68437315-1', 'auto');
             ga('send', 'pageview');
+
         </script>
 
     </body>
