@@ -248,9 +248,14 @@ input[type="text"]:focus {
 }
 
 button {
-    display: inline;
-    margin: 0;
-    font-size: 20px;
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16em;
+    height: 100%;
+    float: right;
     appearance: none;
     box-shadow: none;
     border-radius: none;
