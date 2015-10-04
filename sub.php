@@ -18,8 +18,16 @@ if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
 }
 
 //Validate email
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    die("Invalid email format");
+// if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+//     die("Invalid email format");
+// }
+
+if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)){
+    //Error - Invalid Email
+    $msg = 'The email you have entered is invalid, please try again.';
+}else{
+    // Success - Valid Email
+    $msg = 'Your account has been made, <br /> please verify it by clicking the activation link that has been send to your email.';
 }
 
 $servername = getenv('IP');
