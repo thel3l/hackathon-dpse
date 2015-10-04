@@ -192,7 +192,8 @@ h1 {
 
 p {
     padding: 10px;
-    padding-top: 20px
+    padding-top: 20px;
+    text-align: justify;
 }
 
 strong {
