@@ -243,6 +243,22 @@ input[type="text"]:focus {
     color: #FFFFFF;
 }
 
+button {
+    display: inline;
+    margin: 0;
+    font-size: 20px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    padding: 10px;
+    border: solid 5px #c9c9c9;
+    transition: border 0.3s, background-color 0.5s;
+}
+button:hover {
+    background-color: #005f5f;
+    color: #ABB2BF;
+    border: solid 5px #969696;
+}
 
 ul#rules {
   padding-left: 3%;
