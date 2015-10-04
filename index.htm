@@ -166,24 +166,22 @@
 
                 <div class="inputfield">
                     <form action="" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" value="" />
 
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" value="" />
+                        <div class="inputfield">
+                            <label for="name">Name:</label>
+                            <input type="text" style="width:666px" name="name" value="" />
+                        </div>
+
+                        <div class="inputfield">
+                            <label for="email">Email:</label>
+                            <input type="text" style="width:666px" name="email" value="" />
+                        </div>
 
                         <input type="submit" class="submit_button" value="Sign up" />
-                    </form>
-<!--
-                    <label>Email Address:</label> <input id="email" name=
-                    "email" style="width:666px" type="text">
 
-                    <label>Email Address:</label> <input id="email" name="email" style="width:666px" type="text"> -->
+                    </form>
                 </div>
 
-                <!-- <div class="inputfield">
-                    <label>Name:</label> <input id="name" name="name" style="width:666px" type="text">
-                </div> -->
 
                 <button class="dockedbutton" type="submit">I'm in!</button>
                 <span class='msg'><?php echo $msg; ?></span>
