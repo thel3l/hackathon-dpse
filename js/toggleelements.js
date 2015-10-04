@@ -1,3 +1,3 @@
 $("#signuptoggler").click(function(){
-    $(".signup").toggle();
+    $(".signup").hide()
 });
