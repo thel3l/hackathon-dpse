@@ -210,7 +210,7 @@ strong {
     margin-left: auto;
     bottom: 0;
     z-index: 3;
-    padding: 50px;
+    padding: 25px 50px 50px 50px;
 
     color: #0C0C0C;
     background-color: #EEE;
@@ -221,6 +221,11 @@ strong {
 
     overflow: auto;
 
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px
 }
 
 input[type="text"] {
@@ -236,7 +241,6 @@ input[type="text"] {
     outline: none;
 
 }
-
 input[type="text"]:focus {
     border: solid 5px #969696;
     background-color: #000000;
