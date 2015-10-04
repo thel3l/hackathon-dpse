@@ -60,9 +60,7 @@ body {
 
 .separator {
     /*We gotta design a separator*/
-    /*background-image: url(../images/graphics/sep.png);*/
-    background-image: url(../images/graphics/bg1.jpg);
-
+    background-image: url(../images/graphics/sep.png);
     background-repeat: no-repeat;
     background-size: contain;
     opacity: .4;
