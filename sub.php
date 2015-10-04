@@ -2,7 +2,7 @@
 
 $name = $_POST["name"];
 echo $name;
-//$name = "nammmmee";                         // DEBUG VARIABLE   //Vibhu. Maturity.
+//$name = "nammmmee";                         // DEBUG VARIABLE
 $email = $_POST["email"];
 //$email = "emmmmaaiiill";                    // DEBUG VARIABLE
 $ip = $_SERVER['REMOTE_ADDR'];
@@ -18,16 +18,8 @@ if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
 }
 
 //Validate email
-// if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-//     die("Invalid email format");
-// }
-
-if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)){
-    //Error - Invalid Email
-    $msg = 'The email you have entered is invalid, please try again.';
-}else{
-    // Success - Valid Email
-    $msg = 'Your account has been made, <br /> please verify it by clicking the activation link that has been sent to your email.';
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    die("Invalid email format");
 }
 
 $servername = getenv('IP');
@@ -41,16 +33,6 @@ $query = "INSERT INTO `subs` (`Name`, `Email`, `Date`, `IP`) VALUES ('".$name."'
 
 //echo "query: ".$query."<br>";             // DEBUG VARIABLE
 
-
-$name = mysql_escape_string($_POST['name']);
-$email = mysql_escape_string($_POST['email']);
-
-
-if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)){
-  // Return Error - Invalid Email
-}else{
-  // Return Success - Valid Email
-}
 if(!$result = $db->query($query)){
     die('There was an error running the query [' . $db->error . ']');
 }
