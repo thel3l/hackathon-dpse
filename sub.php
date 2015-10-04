@@ -27,7 +27,7 @@ if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$
     $msg = 'The email you have entered is invalid, please try again.';
 }else{
     // Success - Valid Email
-    $msg = 'Your account has been made, <br /> please verify it by clicking the activation link that has been send to your email.';
+    $msg = 'Your account has been made, <br /> please verify it by clicking the activation link that has been sent to your email.';
 }
 
 $servername = getenv('IP');
