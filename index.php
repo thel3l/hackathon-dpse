@@ -22,14 +22,14 @@ mysqli_query($connection,"INSERT INTO users(email,password,activation) VALUES('$
 include 'smtp/Send_Mail.php';
 $to=$email;
 $subject="Email verification";
-$body='Hi, <br/> <br/> We need to make sure you exist, and are not a lel-bot. Please verify your email and get started using your Website account. <br/> <br/> <a href="'.$base_url.'activation/'.$activation.'">'.$base_url.'activation/'.$activation.'</a>';
+$body='Hi, <br/> <br/> We need to make sure you exist, and are not a lel-bot. Please verify your email and complete your registration. <br/> <br/> <a href="'.$base_url.'activation/'.$activation.'">'.$base_url.'activation/'.$activation.'</a>';
 
 Send_Mail($to,$subject,$body);
 $msg= "Registration successful, please activate email.";
 }
 else
 {
-$msg= 'The email is already taken, please try new.';
+$msg= 'This email has already been used, please use a different one.';
 }
 
 }
