@@ -256,7 +256,7 @@ button {
     border-radius: none;
     padding: 10px;
     border: solid 5px #c9c9c9;
-    transition: border 0.3s, background-color 0.5s;
+    transition: border 0.3s, background-color 0.3s;
 }
 button:hover {
     background-color: #005f5f;
