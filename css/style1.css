@@ -282,6 +282,11 @@ input[type="text"]:focus {
 }
 
 .dockedbutton {
+
+
+}
+
+.submitter {
     display: block;
     font-size: 24px;
     position: absolute;
@@ -295,9 +300,14 @@ input[type="text"]:focus {
     border-radius: none;
     padding: 10px;
     border: none;
+}
+
+.submitter:hover {
 
 }
-button:hover {
+
+
+button:hover, .submitter:hover {
     background-color: #005f5f;
     color: #ABB2BF;
     border: solid 5px #969696;
