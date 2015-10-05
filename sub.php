@@ -1,11 +1,22 @@
 <?php
 
+function generateActivationCode($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
 $name = $_POST["name"];
 echo $name;
 //$name = "nammmmee";                         // DEBUG VARIABLE
 $email = $_POST["email"];
 //$email = "emmmmaaiiill";                    // DEBUG VARIABLE
 $ip    = $_SERVER['REMOTE_ADDR'];
+$activation = generateActivationCode();
 //echo "$name, $email, $ip";                // DEBUG VARIABLE
 
 if ($name == "" || $email == "" || $name == NULL || $email == NULL) {
@@ -29,8 +40,8 @@ $database   = "dpse";
 $dbport     = 3306;
 
 $db    = new mysqli($servername, $username, $password, $database, $dbport);
-$query = "INSERT INTO `subs` (`Name`, `Email`, `Date`, `IP`) VALUES ('" . $name . "','" . $email . "',NOW(),'" . $ip . "')";
-
+$query = "INSERT INTO `subs` (`Name`, `Email`, `Date`, `IP`, `Activation`) VALUES ('" . $name . "','" . $email . "',NOW(),'" . $ip . "','" . $activation . "')";
+//die($query);
 //echo "query: ".$query."<br>";             // DEBUG VARIABLE
 
 if (!$result = $db->query($query)) {
