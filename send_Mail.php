@@ -1,4 +1,5 @@
 <?php
+//SendGrid API Key: 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
 function Send_Mail($to,$subject,$body)
 {
 require 'class.phpmailer.php';
