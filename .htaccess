@@ -1,4 +1,0 @@
-RewriteEngine On
-
-RewriteRule ^activate/([a-zA-Z0-9_-]+)$ activation.php?code=$1
-RewriteRule ^activate/([a-zA-Z0-9_-]+)/$ activation.php?code=$1
