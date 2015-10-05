@@ -352,6 +352,10 @@ ul[class="agendalist"]>li {
     margin: 1em;
 }
 
+ul[class="agendalist"]>li>div[class="description"] {
+    display: none;
+}
+
 ul#rules {
   padding-left: 3%;
 }
