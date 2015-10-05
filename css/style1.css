@@ -350,15 +350,18 @@ ul[class="agendalist"]>li {
     padding: 1.25em;
     padding-left: 4em;
     margin: 1em;
-    transition: all 0.5s;
 }
 
 ul[class="agendalist"]>li:hover > div[class="description"]{
-    display: block;
+    max-height:inherit;
+    visibility: visible;
 }
 
 ul[class="agendalist"]>li>div[class="description"] {
-    display: none;
+    max-height: 0;
+    visibility: hidden;
+
+    transition: max-height 0.5s;
 }
 
 ul[class="agendalist"]>li>div[class="heading"] {
