@@ -345,8 +345,10 @@ label {
 
 ul[class="agendalist"]>li {
     background-color: #EEE;
+    color: #000;
     list-style: none;
-    padding: 1em;
+    padding: 2em;
+    padding-left: 4em;
     margin: 1em;
 }
 
