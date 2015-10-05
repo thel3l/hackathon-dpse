@@ -343,6 +343,13 @@ label {
     padding: 5px;
 }
 
+ul[class="agendalist"]>li {
+    background-color: #EEE;
+    list-style: none;
+    padding: 1em;
+    margin: 1em;
+}
+
 ul#rules {
   padding-left: 3%;
 }
