@@ -322,6 +322,13 @@ button{
     transition: border 0.3s, background-color 0.3s;
 }
 
+#xButton {
+    position: static;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    margin: 0;
+}
 
 label {
     width: 200px;
