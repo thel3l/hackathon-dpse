@@ -353,8 +353,8 @@ ul[class="agendalist"]>li {
     transition: all 0.5s;
 }
 
-ul[class="agendalist"]>li:hover {
-    height: 0px;
+ul[class="agendalist"]>li:hover > div[class="description"]{
+    display: block;
 }
 
 ul[class="agendalist"]>li>div[class="description"] {
