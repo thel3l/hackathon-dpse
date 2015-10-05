@@ -7,3 +7,9 @@ Rules
 What students should get
 Contact details
 Map
+
+#How do we make it mobile portable?
+
+px to em
+change menu to shrink up into a button
+do something about the bottom line
