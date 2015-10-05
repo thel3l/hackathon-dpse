@@ -324,6 +324,9 @@ button{
 
 #xButton {
     position: static;
+    height: 2em;
+    width: 2em;
+    text-align: center;
     top: 0;
     left: 0;
     padding: 1em;
