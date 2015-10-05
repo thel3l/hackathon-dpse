@@ -347,9 +347,14 @@ ul[class="agendalist"]>li {
     background-color: #EEE;
     color: #000;
     list-style: none;
-    padding: 2em;
+    padding: 1.25em;
     padding-left: 4em;
     margin: 1em;
+    transition: all 0.5s;
+}
+
+ul[class="agendalist"]>li:hover {
+    height: 0px;
 }
 
 ul[class="agendalist"]>li>div[class="description"] {
