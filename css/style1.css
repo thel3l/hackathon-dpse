@@ -356,6 +356,14 @@ ul[class="agendalist"]>li>div[class="description"] {
     display: none;
 }
 
+ul[class="agendalist"]>li>div[class="heading"] {
+    display: inline-block;
+}
+
+ul[class="agendalist"]>li>div[class="timing"] {
+    display: inline-block;
+}
+
 ul#rules {
   padding-left: 3%;
 }
