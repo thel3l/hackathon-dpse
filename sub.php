@@ -41,14 +41,11 @@ $dbport     = 3306;
 
 $db    = new mysqli($servername, $username, $password, $database, $dbport);
 $query = "INSERT INTO `subs` (`Name`, `Email`, `Date`, `IP`, `Activation`) VALUES ('" . $name . "','" . $email . "',NOW(),'" . $ip . "','" . $activation . "')";
-//die($query);
-//echo "query: ".$query."<br>";             // DEBUG VARIABLE
 
 if (!$result = $db->query($query)) {
     die('There was an error running the query [' . $db->error . ']');
 }
 
 var_dump($result); // DEBUG VARIABLE
-
 
 ?>
