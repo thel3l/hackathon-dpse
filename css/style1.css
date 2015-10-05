@@ -355,14 +355,15 @@ ul[class="agendalist"]>li {
 
 ul[class="agendalist"]>li:hover > div[class="description"]{
     /*On hover*/
-    max-height: 2000px;
+    max-height: 10em;
+    /*transition: max-height 3s;*/
 }
 
 ul[class="agendalist"]>li>div[class="description"] {
     /*Default*/
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.5s ease-in;
+    transition: max-height 1s;
 }
 
 ul[class="agendalist"]>li>div[class="heading"] {
