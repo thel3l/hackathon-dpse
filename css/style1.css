@@ -346,6 +346,7 @@ label {
 ul[class="agendalist"]>li {
     background-color: #EEE;
     color: #000;
+    font-size: 1em;
     list-style: none;
     padding: 1.25em;
     padding-left: 4em;
@@ -353,15 +354,15 @@ ul[class="agendalist"]>li {
 }
 
 ul[class="agendalist"]>li:hover > div[class="description"]{
-    max-height:inherit;
-    visibility: visible;
+    /*On hover*/
+    max-height: 2000px;
 }
 
 ul[class="agendalist"]>li>div[class="description"] {
+    /*Default*/
+    overflow: hidden;
     max-height: 0;
-    visibility: hidden;
-
-    transition: max-height 0.5s;
+    transition: max-height 0.5s ease-in;
 }
 
 ul[class="agendalist"]>li>div[class="heading"] {
