@@ -8,13 +8,13 @@
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 /* This will begin an animation on page load. */
 header {
     background: #000;
     color: #fff;
-    height: 30px;
+    height: 2em;
     position: relative;
 
     -moz-animation-name: dropHeader;
@@ -67,11 +67,11 @@ body {
     font-family: 'Oswald',sans-serif;
     text-align: center;
     display: inline-block;
-    width: 147px;
+    width: 7em;
     border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em
+    height: 2.3em;
+    line-height: 2.3em;
+    font-size: 1.4em;
     /*padding-right: 15px; */
 }
 
@@ -99,14 +99,14 @@ body {
     background-size: contain;
     opacity: .4;
     padding-top: 2em;
-    padding-bottom: 2em
+    padding-bottom: 2em;
 }
 
 .nav {
     width: 100%;
     background-color: #000;
     opacity: .888;
-    z-index: 100
+    z-index: 100;
 }
 
 /*.Logo {
@@ -155,7 +155,7 @@ section {
 
 .map {
     display: block;
-    padding-top: 25px;
+    padding-top: 2em;
     opacity: .666;
     text-align : center;
     position: relative;
@@ -167,7 +167,7 @@ section {
 
 .Subline {
     /*The line below the logo in section 1*/
-    font-size: 30px;
+    font-size: 2em;
     width: auto;
     margin: auto
 }
@@ -183,11 +183,11 @@ h1 {
     text-align: center;
     padding: 10px;
     color: #CCC;
-    font-size: 30px;
+    font-size: 2em;
     border: 10px solid #202020;
     border-radius: 0 200px 0 200px;
     -moz-border-radius: 0 200px;
-    -webkit-border-radius: 0 200px 0 200px
+    -webkit-border-radius: 0 200px 0 200px;
 }
 
 p {
@@ -198,7 +198,7 @@ p {
 
 strong {
     color: #FFF;
-    font-weight: 400
+    font-weight: 400;
 }
 
 .strongclass {
@@ -281,11 +281,6 @@ input[type="text"]:focus {
     color: #FFFFFF;
 }
 
-.dockedbutton {
-
-
-}
-
 .submitter {
     display: block;
     font-size: 24px;
@@ -301,7 +296,6 @@ input[type="text"]:focus {
     padding: 10px;
     border: none;
 }
-
 
 button:hover, .submitter:hover {
     background-color: #005f5f;
