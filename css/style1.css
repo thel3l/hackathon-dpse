@@ -236,6 +236,15 @@ strong {
     text-decoration: none
 }
 
+#signuptoggler {
+    width:100%;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    text-align: center;
+}
 
 .signup {
     position: fixed;
