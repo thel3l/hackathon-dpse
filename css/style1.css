@@ -46,7 +46,7 @@ header {
 
 
 body {
-    background-color: #0C0C0C;
+    background-color: #1B1C1E;
     font-family: "Century Gothic",Helvetica,sans-serif;
     color: #ABB2BF;
     font-weight: 100;
@@ -256,7 +256,7 @@ strong {
     z-index: 10;
     padding: 25px 50px 50px 50px;
 
-    color: #0C0C0C;
+    color: #1B1C1E;
     background-color: #EEE;
     /*height: 20em;*/
     opacity: 0.85;
