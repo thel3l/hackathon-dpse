@@ -1,4 +1,4 @@
-/* Main stuff */
+/* Main animation */
 .text {
   fill: none;
   stroke-width: 10;
@@ -34,6 +34,8 @@
 @keyframes stroke {
   100% {
     stroke-dashoffset: -400; } }
+
+    
 /* Other stuff */
 html,
 body {
