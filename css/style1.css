@@ -9,7 +9,7 @@
 /* Main animation */
 .text {
   fill: none;
-  stroke-width: 6;
+  stroke-width: 9;
   stroke-linejoin: round;
   stroke-dasharray: 70 330;
   stroke-dashoffset: 0;
