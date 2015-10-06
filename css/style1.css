@@ -178,7 +178,7 @@ section {
     display: block;
     height: 100%;
     width: 100%;
-    padding: 60px;
+    padding: 2em;
     box-sizing: border-box;
 }
 
@@ -187,12 +187,11 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 21em;
+    padding: 15em;
     text-align: center;
 }
 
 #sect2,#sect3,#sect4,#sect5, #sect6 {
-    padding: 3em;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -225,6 +224,7 @@ h1 {
     margin-left: auto;
     width: auto;
     text-align: center;
+    margin-top: 0;
     padding: 0.5em;
     color: #CCC;
     font-size: 2em;
@@ -235,8 +235,8 @@ h1 {
 }
 
 p {
-    padding: 10px;
-    padding-top: 20px;
+    padding: 0.5em;
+    padding-top: 1em;
     text-align: justify;
 }
 
