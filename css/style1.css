@@ -225,13 +225,13 @@ h1 {
     margin-left: auto;
     width: auto;
     text-align: center;
-    padding: 10px;
+    padding: 0.5em;
     color: #CCC;
     font-size: 2em;
-    border: 10px solid #202020;
-    border-radius: 0 200px 0 200px;
-    -moz-border-radius: 0 200px;
-    -webkit-border-radius: 0 200px 0 200px;
+    border: 0.4em solid #202020;
+    border-radius: 0 12.5em 0 12.5em;
+    -moz-border-radius: 0 12.5em;
+    -webkit-border-radius: 0 12.5em 0 12.5em;
 }
 
 p {
