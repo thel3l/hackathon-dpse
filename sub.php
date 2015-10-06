@@ -11,13 +11,13 @@ function generateActivationCode($length = 10) {
 }
 
 $name = $_POST["name"];
-echo $name;
+//echo $name;
 //$name = "nammmmee";                         // DEBUG VARIABLE
 $email = $_POST["email"];
-//$email = "emmmmaaiiill";                    // DEBUG VARIABLE
+//$email = "rithvikvibhu@gmail.com";                    // DEBUG VARIABLE
 $ip    = $_SERVER['REMOTE_ADDR'];
 $activation = generateActivationCode();
-//echo "$name, $email, $ip";                // DEBUG VARIABLE
+//echo "$name, $email, $activation";                // DEBUG VARIABLE
 
 if ($name == "" || $email == "" || $name == NULL || $email == NULL) {
     die("Fill up your name and your email");
@@ -47,5 +47,11 @@ if (!$result = $db->query($query)) {
 }
 
 var_dump($result); // DEBUG VARIABLE
+
+
+//Email
+$link = "https://quadricfusion-rithvikvibhu.c9.io/sendgrid/sendemail.php?getname=" . $name . "&getemail=" . $email . "&getcode=" . $activation;
+$result = file_get_contents($link);
+
 
 ?>

@@ -135,23 +135,9 @@ body {
     z-index: 100;
 }
 
-/*.Logo {
-    align-items: center;
-    display: block;
-    background-image: url("../images/Logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 499px;
-    height: 250px;
-    right:0;
-    left: 0;
-    position: ;
-    max-width: 90%;
-    max-height: 90%;
-    padding-top: 4%;
-    image-resolution: from-image;
-}*/
+.Logo {
+
+}
 
 section {
     display: block;
