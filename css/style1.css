@@ -120,7 +120,6 @@ body {
     height: 100%;
 }
 
-
 //Navigation bar
 .nav ul {
     list-style: none;
@@ -129,7 +128,6 @@ body {
     margin: 0;
     background-color: #282C34
 }
-
 .nav li {
     font-family: 'Oswald',sans-serif;
     text-align: center;
@@ -141,24 +139,20 @@ body {
     font-size: 1.4em;
     /*padding-right: 15px; */
 }
-
 .nav a {
     text-decoration: none;
     color: #ABB2BF;
     display: block;
     transition: .2s background-color
 }
-
 .nav a:hover {
     background-color: #005f5f
 }
-
 .nav a.active {
     background-color: #fff;
     color: #444;
     cursor: default
 }
-
 .nav {
     width: 100%;
     background-color: #000;
@@ -252,10 +246,11 @@ strong {
     font-weight: 400;
 }
 
+/*is this class unused?
 .strongclass {
     color: #FFF;
     font-weight: 400;
-}
+}*/
 
 #agendaimg {
     display: block;
@@ -329,7 +324,6 @@ input[type="text"] {
     transition: border 0.3s, background-color 0.3s;
     outline: none;
 }
-
 input[type="text"]:focus {
     border: solid 5px #969696;
     background-color: #000000;
@@ -357,7 +351,6 @@ button:hover, .submitter:hover {
     color: #ABB2BF;
     border: solid 5px #969696;
 }
-
 button{
     appearance: none;
     box-shadow: none;
@@ -402,28 +395,23 @@ ul[class="droplist"]>li {
     padding-left: 4em;
     margin: 1em;
 }
-
 ul[class="droplist"]>li:hover > div[class="description"]{
     /*On hover*/
     max-height: 10em;
     /*transition: max-height 3s;*/
 }
-
 ul[class="droplist"]>li>div[class="description"] {
     /*Default*/
     overflow: hidden;
     max-height: 0;
     transition: max-height 1s;
 }
-
 ul[class="droplist"]>li>div[class="heading"] {
     display: inline-block;
 }
-
 ul[class="droplist"]>li>div[class="headingright"] {
     display: inline-block;
 }
-
 ul#rules {
     padding-left: 3%;
 }
