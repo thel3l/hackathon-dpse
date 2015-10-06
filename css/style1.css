@@ -65,7 +65,7 @@ body {
     color: #ABB2BF;
     font-weight: 100;
     line-height: 1.65em;
-    margin: 0
+    margin: 0;
     height: 100%;
 }
 
@@ -108,6 +108,13 @@ body {
     cursor: default
 }
 
+.nav {
+    width: 100%;
+    background-color: #000;
+    opacity: .888;
+    z-index: 100;
+}
+
 .separator {
     /*We gotta design a separator*/
     background-image: url(../images/graphics/secb.png);
@@ -118,15 +125,8 @@ body {
     padding-bottom: 2em;
 }
 
-.nav {
-    width: 100%;
-    background-color: #000;
-    opacity: .888;
-    z-index: 100;
-}
-
 .Logo {
-
+    //Empty?
 }
 
 section {
@@ -138,21 +138,19 @@ section {
     width: 100%;
     padding: 60px;
     padding-left: 120px;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 #sect1 {
     background-image: url(../images/4.jpg);
     padding: 21em;
-    text-align: center
-    /*width: 100%;*/
-    /*height: 200%;*/
+    text-align: center;
 }
 
 #sect2,#sect3,#sect4,#sect5, #sect6 {
     padding: 3em;
     padding-left: 10%;
-    padding-right: 10%
+    padding-right: 10%;
 }
 
 .map {
@@ -171,7 +169,7 @@ section {
     /*The line below the logo in section 1*/
     font-size: 2em;
     width: auto;
-    margin: auto
+    margin: auto;
 }
 
 h1 {
@@ -205,7 +203,7 @@ strong {
 
 .strongclass {
     color: #FFF;
-    font-weight: 400
+    font-weight: 400;
 }
 
 #agendaimg {
@@ -214,7 +212,7 @@ strong {
     max-height: 90%;
     padding: 10px;
     padding-top: 4%;
-    opacity: .6
+    opacity: .6;
 }
 
 .copyright {
@@ -226,16 +224,15 @@ strong {
     bottom: 0;
     z-index: 10;
     text-align: center;
-    /*height: 4em;*/
     background-color: #000;
     opacity: .666;
-    font-size: 75%
+    font-size: 75%;
 }
 
 .copyright a {
     color: #f50a2c;
     font-weight: 700;
-    text-decoration: none
+    text-decoration: none;
 }
 
 #signuptoggler {
@@ -257,20 +254,16 @@ strong {
     bottom: 0;
     z-index: 10;
     padding: 25px 50px 50px 50px;
-
     color: #1B1C1E;
     background-color: #EEE;
-    /*height: 20em;*/
     opacity: 0.85;
-
     resize: both;
-
     overflow: auto;
 }
 
 h2 {
     text-align: center;
-    padding-bottom: 20px
+    padding-bottom: 20px;
 }
 
 input[type="text"] {
@@ -284,8 +277,8 @@ input[type="text"] {
     border: solid 5px #c9c9c9;
     transition: border 0.3s, background-color 0.3s;
     outline: none;
-
 }
+
 input[type="text"]:focus {
     border: solid 5px #969696;
     background-color: #000000;
