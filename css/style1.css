@@ -327,6 +327,10 @@ button{
     padding: 1em;
     margin: 0;
 }
+#xButton:hover {
+    background-color: #FF4444;
+}
+
 
 label {
     width: 200px;
