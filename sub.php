@@ -46,12 +46,15 @@ if (!$result = $db->query($query)) {
     die('There was an error running the query [' . $db->error . ']');
 }
 
-var_dump($result); // DEBUG VARIABLE
+if($result == true) {
+    echo "Success. Check your mail to activate.";
+} else {
+    echo "Sorry, an error occured";
+}; // DEBUG VARIABLE
 
 
 //Email
-$link = "https://quadricfusion-rithvikvibhu.c9.io/sendgrid/sendemail.php?getname=" . $name . "&getemail=" . $email . "&getcode=" . $activation;
-$result = file_get_contents($link);
-
+//$link = "https://quadricfusion-rithvikvibhu.c9.io/sendgrid/sendemail.php?getname=" . $name . "&getemail=" . $email . "&getcode=" . $activation;
+//$result = file_get_contents($link);
 
 ?>
