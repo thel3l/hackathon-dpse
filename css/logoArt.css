@@ -1,7 +1,7 @@
 /* Main animation */
 .text {
   fill: none;
-  stroke-width: 10;
+  stroke-width: 6;
   stroke-linejoin: round;
   stroke-dasharray: 70 330;
   stroke-dashoffset: 0;
@@ -35,7 +35,7 @@
   100% {
     stroke-dashoffset: -400; } }
 
-    
+
 /* Other stuff */
 html,
 body {
