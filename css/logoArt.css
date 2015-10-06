@@ -1,5 +1,5 @@
 /* Main animation */
-.text {
+/*.text {
   fill: none;
   stroke-width: 6;
   stroke-linejoin: round;
@@ -35,9 +35,9 @@
   100% {
     stroke-dashoffset: -400; } }
 
-
+*/
 /* Other stuff */
-html,
+/*html,
 body {
   height: 100%; }
 
@@ -52,6 +52,6 @@ svg {
   width: 50%;
   margin: 0 auto 50px;
   display: block;
-  text-transform: uppercase; }
+  text-transform: uppercase; }*/
 
 /*# sourceMappingURL=logoArt.css.map */
