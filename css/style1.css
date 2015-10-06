@@ -8,49 +8,49 @@
 
 /* Main animation */
 .text {
-  fill: none;
-  stroke-width: 6;
-  stroke-linejoin: round;
-  stroke-dasharray: 70 330;
-  stroke-dashoffset: 0;
-  -webkit-animation: stroke 6s infinite linear;
-  animation: stroke 6s infinite linear; }
-  .text:nth-child(5n + 1) {
-    stroke: #F2385A;
-    -webkit-animation-delay: -1.2s;
-    animation-delay: -1.2s; }
-  .text:nth-child(5n + 2) {
-    stroke: #F5A503;
-    -webkit-animation-delay: -2.4s;
-    animation-delay: -2.4s; }
-  .text:nth-child(5n + 3) {
-    stroke: #E9F1DF;
-    -webkit-animation-delay: -3.6s;
-    animation-delay: -3.6s; }
-  .text:nth-child(5n + 4) {
-    stroke: #56D9CD;
-    -webkit-animation-delay: -4.8s;
-    animation-delay: -4.8s; }
-  .text:nth-child(5n + 5) {
-    stroke: #3aa1bf;
-    -webkit-animation-delay: -6s;
-    animation-delay: -6s; }
+    fill: none;
+    stroke-width: 6;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke 6s infinite linear;
+    animation: stroke 6s infinite linear; }
+    .text:nth-child(5n + 1) {
+        stroke: #F2385A;
+        -webkit-animation-delay: -1.2s;
+        animation-delay: -1.2s; }
+    .text:nth-child(5n + 2) {
+        stroke: #F5A503;
+        -webkit-animation-delay: -2.4s;
+        animation-delay: -2.4s; }
+    .text:nth-child(5n + 3) {
+        stroke: #E9F1DF;
+        -webkit-animation-delay: -3.6s;
+        animation-delay: -3.6s; }
+    .text:nth-child(5n + 4) {
+        stroke: #56D9CD;
+        -webkit-animation-delay: -4.8s;
+        animation-delay: -4.8s; }
+    .text:nth-child(5n + 5) {
+        stroke: #3aa1bf;
+        -webkit-animation-delay: -6s;
+        animation-delay: -6s; }
 
 @-webkit-keyframes stroke {
-  100% {
-    stroke-dashoffset: -400; } }
+    100% {
+        stroke-dashoffset: -400; } }
 @keyframes stroke {
-  100% {
-    stroke-dashoffset: -400; } }
+    100% {
+        stroke-dashoffset: -400; } }
 
 .content {
-  font: 800 14.5em/1  'Open Sans', Impact; }
+    font: 800 14.5em/1  'Open Sans', Impact; }
 
 svg {
-  width: 50%;
-  margin: 0 auto 50px;
-  display: block;
-  text-transform: uppercase; }
+    width: 50%;
+    margin: 0 auto 50px;
+    display: block;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=logoArt.css.map */
 
@@ -374,33 +374,33 @@ ul[class="droplist"]>li>div[class="headingright"] {
 }
 
 ul#rules {
-  padding-left: 3%;
+    padding-left: 3%;
 }
 
 .styled{
-  margin-bottom: 50px;
-  margin-top: 25px;
+    margin-bottom: 50px;
+    margin-top: 25px;
 }
 
 .styled div {
-  display: inline-block;
-  margin-left: 10px;
-  font-size: 50px;
-  font-weight: 100;
-  line-height: 1;
-  text-align: left;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 1;
+    text-align: left;
 }
 
 .styled div:first-child {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 .styled div span {
-  display: block;
-  border-top: 1px solid #CECECE;
-  padding-top: 3px;
-  font-size: 12px;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-align: left;
+    display: block;
+    border-top: 1px solid #CECECE;
+    padding-top: 3px;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: left;
 }
