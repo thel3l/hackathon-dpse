@@ -54,7 +54,12 @@ input.cmn-toggle-round:checked + label:before {
 input.cmn-toggle-round:checked + label:after {
   margin-left: 60px;
 }
-
+.switch {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 3.1em;
+}
 
 
 /* Main animation */
