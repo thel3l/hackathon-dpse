@@ -176,18 +176,17 @@ body {
 
 section {
     display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 100%;
     width: 100%;
     padding: 60px;
-    padding-left: 120px;
     box-sizing: border-box;
 }
 
 #sect1 {
     background-image: url(../images/4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 21em;
     text-align: center;
 }
