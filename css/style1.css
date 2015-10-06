@@ -343,7 +343,7 @@ label {
     padding: 5px;
 }
 
-ul[class="agendalist"]>li {
+ul[class="droplist"]>li {
     background-color: #EEE;
     color: #000;
     font-size: 1em;
@@ -353,24 +353,24 @@ ul[class="agendalist"]>li {
     margin: 1em;
 }
 
-ul[class="agendalist"]>li:hover > div[class="description"]{
+ul[class="droplist"]>li:hover > div[class="description"]{
     /*On hover*/
     max-height: 10em;
     /*transition: max-height 3s;*/
 }
 
-ul[class="agendalist"]>li>div[class="description"] {
+ul[class="droplist"]>li>div[class="description"] {
     /*Default*/
     overflow: hidden;
     max-height: 0;
     transition: max-height 1s;
 }
 
-ul[class="agendalist"]>li>div[class="heading"] {
+ul[class="droplist"]>li>div[class="heading"] {
     display: inline-block;
 }
 
-ul[class="agendalist"]>li>div[class="timing"] {
+ul[class="droplist"]>li>div[class="timing"] {
     display: inline-block;
 }
 
