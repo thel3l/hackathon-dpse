@@ -44,7 +44,7 @@
     stroke-dashoffset: -400; } }
 
 .content {
-  font: 800 14.5em/1  'Open Sans', Impact; }*/
+  font: 800 14.5em/1  'Open Sans', Impact; }
 
 svg {
   width: 50%;
@@ -66,7 +66,9 @@ body {
     font-weight: 100;
     line-height: 1.65em;
     margin: 0
+    height: 100%;
 }
+
 
 //Navigation bar
 .nav ul {
