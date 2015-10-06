@@ -1,7 +1,7 @@
 /* Main stuff */
 .text {
   fill: none;
-  stroke-width: 15;
+  stroke-width: 10;
   stroke-linejoin: round;
   stroke-dasharray: 70 330;
   stroke-dashoffset: 0;
