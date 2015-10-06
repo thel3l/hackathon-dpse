@@ -35,23 +35,29 @@
   100% {
     stroke-dashoffset: -400; } }
 
+<<<<<<< HEAD
 */
 /* Other stuff */
 /*html,
+=======
+
+/* Other stuff
+html,
+>>>>>>> 01372066c877718177c9a991140d3e236bb7c45f
 body {
   height: 100%; }
 
 body {
   background: #111;
-  color: #fff; }
+  color: #fff; }*/
 
-.content {
+/*.content {
   font: 800 14.5em/1  'Open Sans', Impact; }
 
 svg {
   width: 50%;
   margin: 0 auto 50px;
   display: block;
-  text-transform: uppercase; }*/
+  text-transform: uppercase; }*/*/
 
 /*# sourceMappingURL=logoArt.css.map */
