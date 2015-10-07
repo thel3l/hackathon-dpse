@@ -3,7 +3,7 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
- .materialize-red.lighten-5 {
+ /*.materialize-red.lighten-5 {
      background-color: #fdeaeb!important
  }
 
@@ -2162,7 +2162,7 @@
  .transparent-text {
      color: transparent!important
  }
-
+*/
  /*! normalize.css
      v3.0.2 | MIT License | git.io/normalize
      */
@@ -10755,7 +10755,7 @@
      text-transform: uppercase;
      color: #666
  }
- 
+
  .picker--time
  .picker__button--clear:hover,.picker--time
  .picker__button--clear:focus {
