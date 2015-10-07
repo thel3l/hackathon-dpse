@@ -121,7 +121,7 @@ body {
 
 .separator {
     /*We gotta design a separator*/
-    background-image: url(../images/graphics/secb.png);
+    background-image: url(../images/graphics/secb1.png);
     background-repeat: no-repeat;
     background-size: contain;
     opacity: .4;
