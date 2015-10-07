@@ -424,7 +424,7 @@ button{
     width: 25%;
     padding: 2%;
     border: solid 1em #c9c9c9;
-
+    transition: background-color     0.5;
 }
 #phoneinfo {
     float: left;
