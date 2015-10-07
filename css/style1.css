@@ -5,7 +5,7 @@
 @import  "https://fonts.googleapis.com/css?family=Lato:300,400";
 
 @import  "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800";
-/* On off switch. Lel. Courtesy of materialize */
+/* On off switch. Lel. Courtesy of proto.io */
 
 .cmn-toggle {
   position: absolute;
@@ -385,6 +385,22 @@ button{
     background-color: #FF4444;
 }
 
+#phoneinfo, #emailinfo{
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    background-color: #FFFFFF;
+    width: 20%;
+    padding: 1%;
+}
+
+#phineinfo {
+
+}
+
+#emailinfo {
+    float: right;
+}
 
 label {
     width: 200px;
