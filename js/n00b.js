@@ -1,5 +1,5 @@
 $(function() {
     $(".switch").change(function() {
-        alert("lel");
+        window.location.assign("login/index.html");
     })
 });
