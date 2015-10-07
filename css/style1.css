@@ -13,6 +13,7 @@
     position: fixed;
     left: 0;
     top: 3.1em;
+    z-index: 10;
 }
 
 
@@ -124,7 +125,7 @@ body {
     background-image: url(../images/graphics/secb1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: .4;
+    /*opacity: .4;*/
     padding-top: 2em;
     padding-bottom: 2em;
 }
