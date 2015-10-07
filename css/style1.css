@@ -229,6 +229,9 @@ section {
     background-color: #000000
 }
 
+a {
+    text-decoration: none;
+}
 
 .map {
     display: block;
@@ -414,7 +417,7 @@ button{
     color: #1B1C1E;
     background-color: #EEEEEE;
     width: 25%;
-    padding: 1%;
+    padding: 2%;
     border: solid 1em #c9c9c9;
 
 }
