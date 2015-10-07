@@ -1,5 +1,5 @@
 $(function() {
-    $(".switch").on('change', function() {
+    $(".switch").change(function() {
         alert("lel");
-    }
+    })
 });
