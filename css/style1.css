@@ -271,6 +271,15 @@ h1 {
     -webkit-border-radius: 0 12.5em 0 12.5em;
 }
 
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h3 {
+
+}
+
 p {
     padding: 0.5em;
     padding-top: 1em;
@@ -343,10 +352,6 @@ strong {
     overflow: auto;
 }
 
-h2 {
-    text-align: center;
-    padding-bottom: 20px;
-}
 
 input[type="text"] {
     display: inline;
@@ -429,11 +434,13 @@ button{
 }
 #phoneinfo:hover, #emailinfo:hover {
     background-color: #000000;
+    border-color: #969696;
 }
 label {
     width: 200px;
     display: inline-block;
     text-align: right;
+
 }
 
 .inputfield {
