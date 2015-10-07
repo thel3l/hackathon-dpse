@@ -7,6 +7,28 @@
 @import  "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800";
 /* On off switch. Lel. Courtesy of proto.io */
 
+/*
+    COLOR SCHEME
+
+        Dark
+            #1
+                #1B1C1E
+                Background of the page
+            #2
+        Light
+            #1
+                #EEEEEE
+                Used for body of all light items
+            #2
+                #C9C9C9
+                Used for the borders
+        Text
+            #1
+                #ABB2BF
+        Highlight
+            #1
+*/
+
 .cmn-toggle {
   position: absolute;
   margin-left: -9999px;
