@@ -12,11 +12,12 @@
 
         <!-- Stylesheet(s) -->
         <link href="css/style1.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <!-- Script(s) -->
         <script src=
         "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/jquery.countdown.min.js"></script><!-- Jquery plugin -->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
 
         <script src="js/countdown.js"></script>
         <script src="js/smoothscroll.js"></script>
@@ -65,10 +66,14 @@
         <!-- First section -->
         <section id="sect1">
 
-            <div class="switch">
-                <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
-                <label for="cmn-toggle-1"></label>
-            </div>
+        <div class="switch">
+            <label>
+                Off
+                <input type="checkbox">
+                <span class="lever"></span>
+                On
+            </label>
+        </div>
 
             <!-- The fest logo -->
             <div class="Logo">
