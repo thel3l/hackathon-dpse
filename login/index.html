@@ -5,6 +5,16 @@
         <meta charset="UTF-8">
         <title>Login</title>
         <link rel="stylesheet" href="css/style.css">
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password match*/
+                if(form.userid.value == "login__username" && form.pswrd.value == "login__password") {
+                    window.open('../index.htm')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
     </head>
 
     <body class="align">
