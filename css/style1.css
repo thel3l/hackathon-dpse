@@ -217,7 +217,6 @@ section {
     padding: 15em;
     text-align: center;
 }
-
 #sect2,#sect3,#sect4,#sect5, #sect6 {
     padding-left: 10%;
     padding-right: 10%;
@@ -268,14 +267,12 @@ h1 {
     -moz-border-radius: 0 12.5em;
     -webkit-border-radius: 0 12.5em 0 12.5em;
 }
-
 h2 {
     text-align: center;
     padding-bottom: 20px;
 }
-
 h3 {
-
+    /**/
 }
 
 p {
@@ -284,13 +281,7 @@ p {
     text-align: justify;
 }
 
-strong {
-    color: #FFF;
-    font-weight: 400;
-}
-
-
-.strongcountdown {
+strong, .strongcountdown {
     color: #FFF;
     font-weight: 400;
 }
@@ -317,7 +308,6 @@ strong {
     opacity: .666;
     font-size: 75%;
 }
-
 .copyright a {
     color: #f50a2c;
     font-weight: 700;
@@ -434,6 +424,7 @@ button{
     background-color: #005f5f;
     border-color: #969696;
 }
+
 label {
     width: 200px;
     display: inline-block;
@@ -479,7 +470,6 @@ ul#rules {
     margin-bottom: 50px;
     margin-top: 25px;
 }
-
 .styled div {
     display: inline-block;
     margin-left: 10px;
@@ -488,11 +478,9 @@ ul#rules {
     line-height: 1;
     text-align: left;
 }
-
 .styled div:first-child {
     margin-left: 0;
 }
-
 .styled div span {
     display: block;
     border-top: 1px solid #CECECE;
