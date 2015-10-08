@@ -1,5 +1,5 @@
 $(function() {
     $(".switch").change(function() {
-        window.location.assign("login/index.html");
+        window.location.assign("1337Toggle/1337Toggle.html");
     })
 });
