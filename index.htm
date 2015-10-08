@@ -31,7 +31,7 @@
             CodeFest 2015
         </title>
     </head>
-    <body>
+    <body onload="$('body').toggleClass('loaded');">
 
         <header>
             <!-- Navigation bar -->
@@ -69,14 +69,14 @@
         <!-- First section -->
         <section id="sect1">
 
-        <div class="switch">
-            <label>
-                n00b
-                <input type="checkbox">
-                <span class="lever"></span>
-                1337
-            </label>
-        </div>
+            <div class="switch">
+                <label>
+                    n00b
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    1337
+                </label>
+            </div>
 
             <!-- The fest logo -->
             <div class="Logo">
@@ -332,7 +332,15 @@
 
             </form>
         </div>
+        <div>
+            <div id="loader">
+                <div id="spinner"></div>
 
+                <div class="loader-section left"></div>
+                <div class="loader-section right"></div>
+
+            </div>
+        </div>
         <footer>
             <div class="copyright">
                 <strong>There are 10 types of people in this world: Those who
