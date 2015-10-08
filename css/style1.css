@@ -190,11 +190,10 @@ body {
 .separator {
     /*We gotta design a separator*/
     background-image: url(../images/graphics/secb1.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: contain;
     /*opacity: .4;*/
-    padding-top: 2em;
-    padding-bottom: 2em;
+    height: 64px;
 }
 
 .Logo {
@@ -217,7 +216,8 @@ section {
     padding: 15em;
     text-align: center;
 }
-#sect2,#sect3,#sect4,#sect5, #sect6 {
+#sect2,#sect3,#sect4,#sect5,#sect6 {
+
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -232,7 +232,6 @@ a {
 
 .map {
     display: block;
-    padding-top: 2em;
     opacity: .666;
     text-align : center;
     position: relative;
@@ -240,6 +239,7 @@ a {
     right: auto;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 1em;
 }
 
 .Subline {
@@ -404,6 +404,9 @@ button{
     background-color: #FF4444;
 }
 
+#contactlinks {
+    padding-top: 1em;
+}
 #phoneinfo, #emailinfo{
     display: inline-block;
     text-align: center;
