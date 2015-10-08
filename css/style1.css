@@ -341,7 +341,7 @@ strong {
     margin-right: auto;
     margin-left: auto;
     bottom: 0;
-    z-index: 10;
+    z-index: 20;
     padding: 25px 50px 50px 50px;
     color: #1B1C1E;
     background-color: #EEE;
