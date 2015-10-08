@@ -422,7 +422,7 @@ button{
     width: 25%;
     padding: 2%;
     border: solid 1em #c9c9c9;
-    transition: background-color     0.5;
+    transition: background-color 0.3s, border-color 1s;
 }
 #phoneinfo {
     float: left;
@@ -431,7 +431,7 @@ button{
     float: right;
 }
 #phoneinfo:hover, #emailinfo:hover {
-    background-color: #000000;
+    background-color: #005f5f;
     border-color: #969696;
 }
 label {
