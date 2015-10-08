@@ -261,9 +261,9 @@ h1 {
     text-align: center;
     margin-top: 0;
     padding: 0.5em;
-    color: #CCC;
+    color: #ABB2BF;
     font-size: 2em;
-    border: 0.4em solid #202020;
+    border: 0.4em solid #303030;
     border-radius: 0 12.5em 0 12.5em;
     -moz-border-radius: 0 12.5em;
     -webkit-border-radius: 0 12.5em 0 12.5em;
@@ -366,7 +366,7 @@ input[type="text"] {
 input[type="text"]:focus {
     border: solid 5px #969696;
     background-color: #000000;
-    color: #FFFFFF;
+    color: #ABB2BF;
 }
 
 .submitter {
