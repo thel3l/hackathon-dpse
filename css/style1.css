@@ -499,7 +499,7 @@ ul#rules {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #222222;
+    background: #1B1C1E;
     z-index: 1000;
 }
 #loader .loader-section.left {
@@ -512,14 +512,7 @@ ul#rules {
 
 }
 .loaded #loader {
-    /*visibility: hidden;*/
-
-    /*-webkit-transform: translateY(-100%);*/
-    /*-ms-transform: translateY(-100%);
-    transform: translateY(-100%);*/
-
-    /*-webkit-transition: all 0.3s 0.6s ease-out;
-    transition: all 0.3s 0.6s ease-out;*/
+    visibility: hidden;
 }
 .loaded #loader .loader-section.left {
     -webkit-transform: translateX(-100%);
@@ -543,7 +536,7 @@ ul#rules {
 }
 
 #spinner {
-    background-image: url("images/graphics/secb1.png");
+
     padding: 2em;
     z-index: 1005;
 }
