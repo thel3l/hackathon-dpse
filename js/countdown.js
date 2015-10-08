@@ -5,7 +5,7 @@ $(function() {
     $('.countdown.styled').countdown({
         date: "November 7, 2015 07:00:00",
         render: function(data) {
-            $(this.el).html("<div class=\"strongclass\">" +
+            $(this.el).html("<div class=\"strongcountdown\">" +
                 this.leadingZeros(data.days, 2) +
                 " <span>days</span></div><div>" + this.leadingZeros(
                     data.hours, 2) +

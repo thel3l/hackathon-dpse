@@ -289,11 +289,11 @@ strong {
     font-weight: 400;
 }
 
-/*is this class unused?
-.strongclass {
+
+.strongcountdown {
     color: #FFF;
     font-weight: 400;
-}*/
+}
 
 #agendaimg {
     display: block;
