@@ -7,7 +7,7 @@ $(function() {
         render: function(data) {
             $(this.el).html("<div class=\"strongcountdown\">" +
                 this.leadingZeros(data.days, 2) +
-                " <span>days</span></div><div>" + this.leadingZeros(
+                " <span>days</span></div><div class=\"strongcountdown\">" + this.leadingZeros(
                     data.hours, 2) +
                 " <span>hrs</span></div><div>" + this.leadingZeros(
                     data.min, 2) +
