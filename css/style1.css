@@ -528,15 +528,15 @@ ul#rules {
     -webkit-transition: all 0.7s 0.3s ease-out;
     transition: all 0.7s 0.3s ease-out;
 }
-.loaded #spinner {
+.loaded .spinner {
     opacity: 0;
 
     -webkit-transition: all 0.3 ease-out;
     transition: all 0.3s ease-out;
 }
 
-#spinner {
-    display: block;
+.spinner {
+    /*display: block;*/
     position: fixed;
     left: 50%;
     top: 50%;
@@ -544,14 +544,27 @@ ul#rules {
 }
 
 #spinner1 {
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-top-color: #005F5F;
+    border-bottom-color: #005F5F;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    animation: spin 1s ease-in-out infinite;
+}
+
+ #spinner2 {
     width: 300px;
     height: 300px;
     margin: -150px 0 0 -150px;
     border-radius: 50%;
     border: 1px solid transparent;
     border-top-color: #EEEEEE;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
+    border-bottom-color: #EEEEEE;
+    -webkit-animation: oppspin 1s ease-in-out infinite;
+    animation: oppspin 1s ease-in-out infinite;
 }
 
 @-webkit-keyframes spin {
