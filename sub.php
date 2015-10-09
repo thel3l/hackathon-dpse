@@ -11,14 +11,11 @@ function generateActivationCode($length = 10) {
 }
 
 $name = $_POST["name"];
-//echo $name;
-//$name = "nammmmee";                         // DEBUG VARIABLE
 $email = $_POST["email"];
-//$email = "rithvikvibhu@gmail.com";                    // DEBUG VARIABLE
 $ip    = $_SERVER['REMOTE_ADDR'];
 $activation = generateActivationCode();
-//echo "$name, $email, $activation";                // DEBUG VARIABLE
 
+//Check empty fields
 if ($name == "" || $email == "" || $name == NULL || $email == NULL) {
     die("Fill up your name and your email");
 }
@@ -33,28 +30,31 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     die("Invalid email format");
 }
 
-$servername = getenv('IP');
-$username   = getenv('C9_USER');
-$password   = "";
-$database   = "dpse";
-$dbport     = 3306;
+include 'db.php'; //Connect to MySql
 
-$db    = new mysqli($servername, $username, $password, $database, $dbport);
-$query = "INSERT INTO `subs` (`Name`, `Email`, `Date`, `IP`, `Activation`) VALUES ('" . $name . "','" . $email . "',NOW(),'" . $ip . "','" . $activation . "')";
+$insertquery = "INSERT INTO `subs` (`Name`, `Email`, `Date`, `IP`, `Activation`) VALUES ('" . $name . "','" . $email . "',NOW(),'" . $ip . "','" . $activation . "')";
+$countquery    = mysqli_query($db, "SELECT ID FROM subs WHERE Email='$email'");
 
-if (!$result = $db->query($query)) {
-    die('There was an error running the query [' . $db->error . ']');
+if (mysqli_num_rows($countquery) == 0) {
+    
+    //Error handling
+    if (!$result = $db->query($insertquery)) {
+        die('There was an error running the query [' . $db->error . ']');
+    }
+    
+    //Success notification
+    if($result == true) {
+        echo "Success. Check your mail to activate.";
+    } else {
+        die( "Sorry, an error occured" );
+    };
+
+} elseif (mysqli_num_rows($countquery) == 1) {
+    die( "You have already registered." );
 }
 
-if($result == true) {
-    echo "Success. Check your mail to activate.";
-} else {
-    echo "Sorry, an error occured";
-}; // DEBUG VARIABLE
-
-
 //Email
-//$link = "https://quadricfusion-rithvikvibhu.c9.io/sendgrid/sendemail.php?getname=" . $name . "&getemail=" . $email . "&getcode=" . $activation;
-//$result = file_get_contents($link);
+$link = "https://quadricfusion-rithvikvibhu.c9.io/sendgrid/sendemail.php?getname=" . $name . "&getemail=" . $email . "&getcode=" . $activation;
+$result = file_get_contents($link);
 
 ?>
