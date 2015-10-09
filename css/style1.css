@@ -545,13 +545,12 @@ ul#rules {
     top: 50%;
     z-index: 1025;
 }
-
 #spinner1 {
     width: 150px;
     height: 150px;
     margin: -75px 0 0 -75px;
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: 3px solid transparent;
     border-top-color: #005F5F;
     border-bottom-color: #005F5F;
     -webkit-animation: spin 1s ease-in-out infinite;
@@ -563,7 +562,7 @@ ul#rules {
     height: 300px;
     margin: -150px 0 0 -150px;
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: 3px solid transparent;
     border-top-color: #EEEEEE;
     border-bottom-color: #EEEEEE;
     -webkit-animation: oppspin 1s ease-in-out infinite;
