@@ -427,6 +427,9 @@ button{
     background-color: #005f5f;
     border-color: #969696;
 }
+#maptoggle{
+    display: block;
+}
 
 label {
     width: 200px;
