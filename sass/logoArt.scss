@@ -33,16 +33,7 @@ $time-step: $time/$max;
     stroke-dashoffset: - ($dash + $dash-gap) * $max;
   }
 }
-/* Other stuff */
-$bgcolor: #111;
-// html,
-// body {
-//   height: 100%;
-// }
-// body {
-//   background: $bgcolor;
-//   color: #fff;
-// }
+
 .content {
   font: 800 14.5em/1  'Open Sans', Impact;
 }
