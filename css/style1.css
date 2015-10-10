@@ -452,6 +452,7 @@ ul[class="droplist"]>li {
     padding: 1.25em;
     padding-left: 4em;
     margin: 1em;
+    transition: background-color 0.5s;
 }
 ul[class="droplist"]>li:hover {
     background-color: #EEEEEE;
