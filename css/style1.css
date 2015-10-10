@@ -443,13 +443,20 @@ label {
 }
 
 ul[class="droplist"]>li {
-    background-color: #EEE;
-    color: #000;
+    background-color: #1B1C1E;
+    color: #EEEEEE;
     font-size: 1em;
     list-style: none;
+    border: 1px solid;
+    border-color: #EEEEEE;
     padding: 1.25em;
     padding-left: 4em;
     margin: 1em;
+    transition: background-color 0.5s;
+}
+ul[class="droplist"]>li:hover {
+    background-color: #EEEEEE;
+    color: #1B1C1E;
 }
 ul[class="droplist"]>li:hover > div[class="description"]{
     /*On hover*/
