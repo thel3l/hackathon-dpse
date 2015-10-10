@@ -443,10 +443,11 @@ label {
 }
 
 ul[class="droplist"]>li {
-    background-color: #EEE;
-    color: #000;
+    background-color: #1B1C1E;
+    color: #1B1C1E;
     font-size: 1em;
     list-style: none;
+    /*border: 1px #EEEEEE;*/
     padding: 1.25em;
     padding-left: 4em;
     margin: 1em;
