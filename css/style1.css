@@ -453,6 +453,10 @@ ul[class="droplist"]>li {
     padding-left: 4em;
     margin: 1em;
 }
+ul[class="droplist"]>li:hover {
+    background-color: #EEEEEE;
+    color: #1B1C1E;
+}
 ul[class="droplist"]>li:hover > div[class="description"]{
     /*On hover*/
     max-height: 10em;
