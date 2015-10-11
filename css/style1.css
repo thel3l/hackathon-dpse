@@ -62,6 +62,8 @@ input.cmn-toggle-round + label:before {
   right: 1px;
   background-color: #f1f1f1;
   border-radius: 60px;
+
+  -webkit-transition: margin 0.4s;
   transition: background 0.4s;
 }
 input.cmn-toggle-round + label:after {
@@ -69,6 +71,8 @@ input.cmn-toggle-round + label:after {
   background-color: #fff;
   border-radius: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+  -webkit-transition: margin 0.4s;
   transition: margin 0.4s;
 }
 input.cmn-toggle-round:checked + label:before {
@@ -128,7 +132,7 @@ svg {
     width: 50%;
     margin: 0 auto 50px;
     display: block;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 * {
