@@ -1,28 +1,218 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="Official website of DPS Codefest 2015." name="description">
-  <meta content="english" name="language">
-  <!-- Stylesheet(s) -->
-  <link href="css/1337.css" rel="stylesheet" type="text/css">
-  <!-- Script(s) -->
-  <script src="js/terminal.js"></script>
-
-  <title>1337. Power user.   </title>
-</head>
-<body>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <title>Examples for JQuery Terminal Emulator Plugin</title> -->
+    <!-- <link rel="canonical" href="http://terminal.jcubic.pl/examples.php"/>
+    <meta name="author" content="Jakub Jankiewicz - jcubic&#64;onet.pl"/>
+    <meta name="Description" content="This is a bunch of usefull things that you can do with jQuery Terminal Emulator plugin. Live demos and source code likewise."/>
+    <meta name="keywords" content="jquery,terminal,interpreter,console,bash,history,authentication,ajax,server,client"/>
+    <link rel="alternate" type="application/rss+xml" title="Notification RSS" href="http://terminal.jcubic.pl/notification.rss"/>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css"/> -->
+    <link rel="stylesheet" href="css/1337.css"/>
+    <script src="js/jquery-1.5.min.js"></script>
+    <!-- lel use prototype -->
+    <script>jQuery.noConflict();</script>
+    <!-- Terminal Files -->
+    <script src="js/jquery.mousewheel-min.js"></script>
+    <script src="js/jquery.terminal-min.js"></script>
+    <link href="css/jquery.terminal.css" rel="stylesheet"/>
+    <!-- Other files -->
+    <link href="css/jquery-ui-1.8.7.custom.css" rel="stylesheet"/>
+    <script src="js/jquery-ui-1.8.7.custom.min.js"></script>
+    <script src="js/lel.min.js"></script>
+    <script src="js/lel.func.js"></script>
+    <script src="js/dterm.js"></script>
+    <script src="js/code.js"></script>
+    <script src="js/jq.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
   <body>
-      <footer>
-          <div class="copyright">
-              Coded with ❤ by: <a href=
-              "https://www.github.com/thel3l/" target="_blank">@thel3l</a>
-              <a href="https://www.github.com/lunaroyster/" target=
-              "_blank">@lunaroyster</a> <a href=
-              "https://www.github.com/rithvikvibhu/" target=
-              "_blank">@rithvikvibhu</a>
-          </div>
-      </footer>
-  </body>
+        <p><button id="open_term">Open a Terminal.</button></p>
+        <pre class="javascript">(.click ($ ".terminal") (lambda () (display "click")))</pre>
+        <div id="dialogterm"></div>
+      </article>
+    <script>//<![CDATA[
+
+function unbalanced_parentheses(text_code) {
+    var tokens = (new lel.Parser(text_code)).tokens;
+    var parentheses = 0;
+    var brackets = 0;
+    for(var i=0; i<tokens.length; ++i) {
+        switch(tokens[i]) {
+            case "[": ++brackets; break;
+            case "]": --brackets; break;
+            case "(": ++parentheses; break;
+            case ")": --parentheses; break;
+        }
+    }
+    return parentheses != 0 || brackets != 0;
+}
+
+jQuery(function($, undefined) {
+    var blel = new lel.Interpreter(function(e, state) {
+
+        dterm.terminal.error(e.message);
+    });
+    var trace = false;
+
+    puts = function(string) {
+        dterm.terminal.echo(string);
+    };
+    var code_to_evaluate = '';
+    var dterm = $('#dialogterm').dterm(function(command, term) {
+        code_to_evaluate += ' ' + command;
+        if (!unbalanced_parentheses(code_to_evaluate)) {
+            try {
+                blel.evaluate(code_to_evaluate, function(result) {
+                    if (result !== undefined && result !== lel.undef) {
+                        if (result instanceof $.fn.init) {
+                            term.echo('=> ' + '#<object $("' + result.selector + '")>');
+                        } else if (typeof result == 'boolean') {
+                            term.echo('=> ' + (result ? 'true' : 'false'));
+                        } else {
+                            term.echo('=> ' + lel.to_write(result));
+                        }
+                    }
+                });
+            } catch(e) {
+                term.error(e.message);
+                throw(e);
+            }
+            term.set_prompt('lel> ');
+            code_to_evaluate = '';
+        } else {
+            term.set_prompt('... ');
+
+        }
+    }, {
+        greetings: false,
+        onInit: function(terminal) {
+            terminal.echo('DPS East Codefest version 1.13 '+
+                          '\nCopyright (C) @thel3l @lunaroyster @rithvikvibhu\n');
+        },
+        width: 480,
+        height: 320,
+        exit: false,
+        autoOpen: false,
+        name: '',
+        prompt: 'lel> '
+    });
+    // redefine sleep it should pause terminal
+    lel.define_libfunc("sleep", 1, 1, function(ar){
+        var sec = ar[0];
+        assert_real(sec);
+        dterm.terminal.pause();
+        return new lel.Pause(function(pause){
+            setTimeout(function(){
+                dterm.terminal.resume();
+                pause.resume(lel.nil);
+            }, sec * 1000);
+        });
+    });
+    // clear terminal
+    lel.define_libfunc('clear', 0, 0, function(args) {
+        dterm.terminal.clear();
+        return lel.undef;
+    });
+    $('#open_term').click(function() {
+        dterm.dialog('open');
+    });
+    //install library functions
+    $.jq();
+    // END lel
+    // ------------------------------------------------------------
+    // syntax highlight
+    $('pre.javascript, pre.php').each(function() {
+        var self=$(this);
+        self.syntax(self.attr('class'));
+    });
+    // ------------------------------------------------------------
+    // STARWARS
+    // ------------------------------------------------------------
+    var frames = [];
+    var LINES_PER_FRAME = 14;
+    var DELAY = 67;
+    var lines = star_wars.length;
+    for (var i=0; i<lines; i+=LINES_PER_FRAME) {
+        frames.push(star_wars.slice(i, i+LINES_PER_FRAME));
+    }
+    var stop = false;
+    function greetings(term) {
+        term.echo('STAR WARS ASCIIMACTION\n'+
+                  'Simon Jansen (C) 1997 - 2008\n'+
+                  'www.asciimation.co.nz\n\n'+
+                  'type "play" to start animation, press CTRL+D to stop');
+    }
+    function play(term, delay) {
+        var i = 0;
+        var next_delay;
+        if (delay == undefined) {
+            delay = DELAY;
+        }
+        function display() {
+            if (!stop) {
+                if (i == frames.length) {
+                    i = 0;
+                }
+                term.clear();
+                if (frames[i][0].match(/[0-9]+/)) {
+                    next_delay = frames[i][0] * delay;
+                } else {
+                    next_delay = delay;
+                }
+                term.echo(frames[i++].slice(1).join('\n')+'\n');
+                setTimeout(display, next_delay);
+            } else {
+                i = 0;
+            }
+        }
+        display();
+    }
+
+    $('#starwarsterm').terminal(function(command, term){
+        if (command == 'play') {
+            term.pause();
+            stop = false;
+            play(term);
+        }
+    }, {
+        width: 500,
+        height: 230,
+        prompt: 'starwars> ',
+        greetings: null,
+        onInit: function(term) {
+            greetings(term);
+        },
+        keydown: function(e, term) {
+            if (e.which == 68 && e.ctrlKey) {
+                stop = true;
+                term.resume();
+                term.clear();
+                greetings(term);
+                return false;
+            }
+        }
+    });
+});
+  //]]></script>
+        <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.jcubic.pl/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+
+    </script>
+    <noscript><p><img src="http://piwik.jcubic.pl/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+      </body>
 </html>
