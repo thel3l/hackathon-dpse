@@ -194,6 +194,9 @@ body {
     opacity: .888;
     z-index: 100;
 }
+.menu-btn {
+    display:none;
+}
 
 .separator {
     /*We gotta design a separator*/
