@@ -554,6 +554,9 @@ ul#rules {
     -webkit-transition: all 0.3 ease-out;
     transition: all 0.3s ease-out;
 }
+.no-js #loader {
+    display: none;
+}
 
 .spinner {
     /*display: block;*/
