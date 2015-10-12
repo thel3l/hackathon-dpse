@@ -5,14 +5,10 @@
 
 
 @media only screen and (orientation: portrait) {
-    
-    #dpslogo {
-        width: 300%;
-        height: auto;
-    }
+    //#dpslogo
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+@media only screen and (max-device-width: 480px) {
     
     #dpslogo {
         margin: auto;
@@ -20,9 +16,7 @@
         max-width: 100%;
         height: auto;
     }
-    
-    
-    //Actual nav stuff
+
     .menu-btn {
         display: block;
     }
