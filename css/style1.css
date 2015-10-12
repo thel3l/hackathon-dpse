@@ -1,3 +1,6 @@
+/*By rithvikvibhu and lunaroyster and thel3l*/
+/*Written from scratch. No template was used to make our life easier*/
+
 @charset  "UTF-8";
 
 @import  "font-awesome.min.css";
@@ -117,8 +120,9 @@ input.cmn-toggle-round:checked + label:after {
     .text:nth-child(5n + 5) {
         stroke: #3aa1bf;
         -webkit-animation-delay: -6s;
-        animation-delay: -6s; }
-
+        animation-delay: -6s;
+    }
+}
 @-webkit-keyframes stroke {
     100% {
         stroke-dashoffset: -400; } }
