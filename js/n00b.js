@@ -1,6 +1,6 @@
 $(function() {
     $(".switch").change(function() {
-        window.location.assign("1337toggle/1337Toggle.html");
+        window.location.assign("1337toggle/rpc-demo.html");
     })
 
     $("#maptoggle").click(function() {
