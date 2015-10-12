@@ -46,7 +46,10 @@ def instructions_end_user():
     print t.green("[*] Enter 'quit' or 'exit' to exit the program.")
 
 def main_control():
-    usr_input = raw_input("Option: ")
+    if sys.version_info[0] == 3:
+        usr_input = input("Option: ")
+    else:
+        usr_input = raw_input("Option: ")
     if usr_input == "1":
         cleardeadbodies()
         print t.cyan("[*] For the Hackathon, you will be expected to bring the following items:\n")
