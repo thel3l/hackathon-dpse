@@ -13,28 +13,31 @@
         <!-- Stylesheet(s) -->
         <link href="css/style1.css" rel="stylesheet" type="text/css">
         <link href="css/switch.css" rel="stylesheet" type="text/css">
+        <link href="css/mobile.css" rel="stylesheet" type="text/css">
+        
         <!-- Script(s) -->
-        <script src=
-        "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script><!-- Jquery plugin -->
-        <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
         <script src="js/countdown.js"></script>
         <script src="js/smoothscroll.js"></script>
         <script src="js/n00b.js"></script>
         <script src="js/toggleelements.js"></script>
         <script src="js/ajax.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.3/gist-embed.min.js"></script>
+        <script src="js/responsivenav.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.3/gist-embed.min.js"></script>
+        
         <title>
             CodeFest 2015
         </title>
     </head>
+    
     <body onload="$('body').toggleClass('loaded');">
 
         <header>
+            
             <!-- Navigation bar -->
-
-            <div class="nav">
+            
+            <div class="nav pushy pushy-left">
                 <ul>
                     <li>
                         <a href="#sect1">Home</a>
@@ -62,8 +65,13 @@
                 </ul>
             </div>
         </header>
-
-
+        
+        <button class="menu-btn">MENU</button>
+        
+        <div class="site-overlay"></div>
+        
+        <div id="site-container">
+            
         <!-- First section -->
         <section id="sect1">
 
@@ -311,6 +319,9 @@
 
             </div>
         </div>
+        
+        </div> <!-- .site-container end -->
+        
         <footer>
             <div class="copyright">
                 <strong>There are 10 types of people in this world: Those who

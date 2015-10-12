@@ -194,6 +194,13 @@ body {
     opacity: .888;
     z-index: 100;
 }
+.menu-btn {
+    display:none;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    z-index: 100;
+}
 
 .separator {
     /*We gotta design a separator*/
@@ -221,7 +228,7 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 15em;
+    padding: 10em;
     text-align: center;
 }
 #sect2,#sect3,#sect4,#sect5,#sect6 {
