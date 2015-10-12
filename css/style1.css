@@ -478,6 +478,7 @@ ul[class="droplist"]>li>div[class="heading"] {
 ul[class="droplist"]>li>div[class="headingright"] {
     display: inline-block;
     float:right;
+    padding-right: 2em;
 }
 ul#rules {
     padding-left: 3%;
