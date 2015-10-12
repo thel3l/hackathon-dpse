@@ -226,7 +226,7 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 10em;
+    padding: 5em;
     text-align: center;
 }
 #sect2,#sect3,#sect4,#sect5,#sect6 {
@@ -260,6 +260,10 @@ a {
     font-size: 100%;
     width: 25%;
     margin: auto;
+}
+
+#Logo {
+    padding-top: 5em;
 }
 
 h1 {
