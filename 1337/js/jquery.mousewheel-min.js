@@ -1,3 +1,4 @@
+// lel. This allows you to scroll through commands.
 (function(c) {
     function g(a) {
         var b = a || window.event,
