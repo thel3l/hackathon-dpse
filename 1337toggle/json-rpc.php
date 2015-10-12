@@ -1,51 +1,4 @@
 <?php
-/*
-    JSON-RPC Server implemenation
-    Copyright (C) 2009 Jakub Jankiewicz <http://jcubic.pl> 
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-*/
-/*
-    USAGE: create one class with public methods and call handle_json_rpc function
-           with instance of this class
-           
-           <?php
-               require('json_rpc.php');
-               class Server {
-                   public function test($message) {
-                       retrun "you send " . $message;
-                   }
-                   
-               }
-
-               handle_json_rpc(new Server());
-            ?>
-
-            you can provide documentations for methods
-            by adding static field:
-
-                class Server {
-                    ...
-                    public static $test_documentation = "doc string";
-                }
-            
-            It alway create one method 'help' which return string
-            with list of methods if call with no arguments and
-            return documentation string for method passed as parameter.
-*/
-// ----------------------------------------------------------------------------
 function json_error() {
   switch (json_last_error()) {
   case JSON_ERROR_NONE:
@@ -163,7 +116,7 @@ function handle_json_rpc($object) {
       $params = get_object_vars($params);
     }
   }
-  
+
   // call Service Method
   try {
     $class = get_class($object);
