@@ -2095,8 +2095,8 @@
     // :: Terminal Signatures
     // -----------------------------------------------------------------------
     var signatures = [
-        ['jQuery Terminal', '(c) 2011-2013 jcubic'],
-        ['jQuery Terminal Emulator v. ' + version,
+        ['Terminal', '(c) 2015 thel3l'],
+        ['Terminal v. ' + version,
          copyright.replace(/ *<.*>/, '')],
         ['jQuery Terminal Emulator version ' + version_string,
          copyright.replace(/^Copyright /, '')],
