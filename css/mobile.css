@@ -3,8 +3,26 @@
 * https://github.com/christophery/pushy/
 * by Christopher Yee */
 
-/* Menu Appearance */
+
+@media only screen and (orientation: portrait) {
+    
+    #dpslogo {
+        width: 300%;
+        height: auto;
+    }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    
+    #dpslogo {
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    
+    //Actual nav stuff
     .menu-btn {
         display: block;
     }
