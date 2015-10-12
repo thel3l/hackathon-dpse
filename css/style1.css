@@ -518,19 +518,9 @@ ul#rules {
 }
 #loader .loader-section.left {
     left: 0;
-    -webkit-transform: translateX(-0%);
-    -ms-transform: translateX(-0%);
-    transform: translateX(-0%);
-    -webkit-transition: all 0.7s 0.3s ease-out;
-    transition: all 0.7s 0.3s ease-out;
 }
 #loader .loader-section.right {
     right: 0;
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%);
-    -webkit-transition: all 0.7s 0.3s ease-out;
-    transition: all 0.7s 0.3s ease-out;
 }
 #loader {
 
@@ -567,10 +557,6 @@ ul#rules {
     z-index: 1025;
     opacity: 1;
 
-    -webkit-transition-delay: 1s;
-    transition-delay: 1s;
-    -webkit-transition: opacity 0.7s ease-out;
-    transition: opacity 0.7s ease-out;
 }
 #spinner1 {
     width: 150px;
