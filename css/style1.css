@@ -457,6 +457,9 @@ label {
     padding: 5px;
 }
 
+#agendaviewer {
+    padding-top: 1em;
+}
 ul[class="droplist"]>li {
     background-color: #1B1C1E;
     color: #EEEEEE;
@@ -536,7 +539,7 @@ ul#rules {
     right: 0;
 }
 #loader {
-
+    /*for the entire loader*/
 }
 .loaded #loader {
     visibility: hidden;
@@ -585,7 +588,6 @@ ul#rules {
     -webkit-animation: spin 1s ease-in-out infinite;
     animation: spin 1s ease-in-out infinite;
 }
-
 #spinner2 {
     width: 300px;
     height: 300px;

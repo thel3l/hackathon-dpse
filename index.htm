@@ -14,9 +14,12 @@
         <link href="css/style1.css" rel="stylesheet" type="text/css">
         <link href="css/switch.css" rel="stylesheet" type="text/css">
         <link href="css/mobile.css" rel="stylesheet" type="text/css">
-        
+
         <!-- Script(s) -->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.3/gist-embed.min.js"></script>
+
         <script src="js/jquery.countdown.min.js"></script>
         <script src="js/countdown.js"></script>
         <script src="js/smoothscroll.js"></script>
@@ -24,19 +27,18 @@
         <script src="js/toggleelements.js"></script>
         <script src="js/ajax.js"></script>
         <script src="js/responsivenav.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.3/gist-embed.min.js"></script>
-        
+
         <title>
             CodeFest 2015
         </title>
     </head>
-    
+
     <body onload="$('body').toggleClass('loaded');">
 
         <header>
-            
+
             <!-- Navigation bar -->
-            
+
             <div class="nav pushy pushy-left">
                 <ul>
                     <li>
@@ -65,273 +67,267 @@
                 </ul>
             </div>
         </header>
-        
+
         <button class="menu-btn">MENU</button>
-        
+
         <div class="site-overlay"></div>
-        
+
         <div id="site-container">
-            
-        <!-- First section -->
-        <section id="sect1">
 
-            <div class="switch">
-                <label>
-                    n00b
-                    <input type="checkbox">
-                    <span class="lever"></span>
-                    1337
-                </label>
+            <!-- First section -->
+            <section id="sect1">
+
+                <div class="switch">
+                    <label>
+                        n00b
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        1337
+                    </label>
+                </div>
+
+                <!-- The fest logo -->
+                <div class="Logo">
+                    <img src="images/graphics/glogo.png">
+                    <div class="content">
+                        <svg viewBox="0 0 1430 300">
+
+                            <!-- Symbol -->
+                            <symbol id="s-text">
+                                <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                                    Codefest
+                                </text>
+                            </symbol>
+
+                            <!-- Duplicate symbols. -->
+                            <use xlink:href="#s-text" class="text"></use>
+                            <use xlink:href="#s-text" class="text"></use>
+                            <use xlink:href="#s-text" class="text"></use>
+                            <use xlink:href="#s-text" class="text"></use>
+                            <use xlink:href="#s-text" class="text"></use>
+
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Line that appears below the logo. -->
+                <div class="Subline">
+                    November 7th 2015. Be ready.
+                </div>
+
+                <div class="countdown styled"></div>
+
+            </section>
+
+            <div class="separator">
+            </div>
+            <!-- Event -->
+
+            <section id="sect2">
+                <!-- Heading of the section -->
+
+                <h1>
+                    The Event
+                </h1>
+                <!-- Introductory Paragraph  -->
+                <p>
+                    Welcome, fellow hacker. We at DPS East are thrilled to unveil <strong>DPSE CodeFest 2015</strong>. We implore you to join us on <strong>7<sup>th</sup> November</strong> to create something new and innovative.
+                    <br>
+                    Great minds talk ideas. Greater ones still execute them. The goal of <strong>CodeFest '15</strong> is to create a discourse of ideas. We want to host a hackathon where ideas and innovations flow free.
+                    <br>
+                    We don't judge based on platform or language. The best of ideas are simple. A beautiful GUI is not going to change an unoriginal concept.
+                </p>
+
+            </section>
+
+            <div class="separator">
+            </div>
+            <!-- Plan -->
+
+            <section id="sect3">
+                <!-- Heading of the section -->
+
+                <h1>
+                    Agenda
+                </h1>
+                <!-- Content -->
+                <div id="agendaviewer">
+                    <ul class="droplist">
+
+                        <li>
+
+                            <div class="heading">
+                                Arrival
+                            </div>
+
+                            <div class="headingright">
+                                Until 8:00
+                            </div>
+
+                            <div class="description">
+                                Participants arrive at DPS East and register.
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <div class="heading">
+                                Keynote
+                            </div>
+
+                            <div class="headingright">
+                                8:00 - 8:25
+                            </div>
+
+                            <div class="description">
+                                A presentation put together by the school and sponsors kicks off the event.
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <div class="heading">
+                                Coding
+                            </div>
+
+                            <div class="headingright">
+                                8:30 - 17:30
+                            </div>
+
+                            <div class="description">
+                                People code.
+                                <br />
+                                "When is lunch?"
+                                <br />
+                                Don't worry. You can have lunch whenever you want. [FOOD SPONSOR] will be ready to serve at 12:45.
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <div class="heading">
+                                Presentation
+                            </div>
+
+                            <div class="headingright">
+                                17:30 - 19:00
+                            </div>
+
+                            <div class="description">
+                                Hackers present their creations before the judges.
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <div class="heading">
+                                Closing Ceremony
+                            </div>
+
+                            <div class="headingright">
+                                19:00 - 19:30
+                            </div>
+
+                            <div class="description">
+                                The best of hacks get awarded.
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <img id="agendaimg" src="images/agenda.png"> -->
+            </section>
+
+            <div class="separator">
             </div>
 
-            <!-- The fest logo -->
-            <div class="Logo">
-                <img src="images/graphics/glogo.png">
-                <div class="content">
-                    <svg viewBox="0 0 1430 300">
+            <!-- Requirements/Rulebook -->
+            <section id="sect4">
+                <h1>
+                    What else?
+                </h1>
+                <p>
+                    There's enough to get started. We'll inform you when more information is available. You could sign up to be notified. If you have any urgent questions, you could contact us. <br>
+                    <button id="signuptoggler">Sign me up.</button>
+                </p>
+            </section>
 
-                        <!-- Symbol -->
-                        <symbol id="s-text">
-                            <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-                                Codefest
-                            </text>
-                        </symbol>
+            <div class="separator">
+            </div>
 
-                        <!-- Duplicate symbols. -->
-                        <use xlink:href="#s-text" class="text"></use>
-                        <use xlink:href="#s-text" class="text"></use>
-                        <use xlink:href="#s-text" class="text"></use>
-                        <use xlink:href="#s-text" class="text"></use>
-                        <use xlink:href="#s-text" class="text"></use>
+            <!-- The map and location -->
+            <section id="sect5">
+                <h1>
+                    How to get here
+                </h1>
+                <div id="infocontainer">
+                    <div id="contactlinks">
+                        <a href="tel:08044448888" id="phoneinfo">
+                            <h3>Call Us</h3>
+                            [NUMBAH]
+                        </a>
+                        <a href="mailto:lel@lel.lel" id="emailinfo">
+                            <h3>Email Us</h3>
+                            lel@lel.lel
+                        </a>
+                    </div>
+                </div>
+                <button id="maptoggle">Show map</button>
+            </section>
 
-                    </svg>
+            <div class="signup">
+
+                <button id="xButton">
+
+                </button>
+
+                <form action="#" method="post" id="subform">
+
+                    <h2>
+                        Sign up to be notified
+                    </h2>
+
+                    <div class="inputfield">
+
+                            <div class="inputfield">
+                                <label for="name">Name:</label>
+                                <input type="text" style="width:666px" name="name" value="" />
+                            </div>
+
+                            <div class="inputfield">
+                                <label for="email">Email:</label>
+                                <input type="text" style="width:666px" name="email" value="" />
+                            </div>
+
+                            <input type="submit" class="submitter" value="I'm In" />
+
+                    </div>
+
+                    <div class="g-recaptcha" data-sitekey="6LevoA4TAAAAALxIWDWF3J_lou_Wjoi0vt1_xOEi"></div>
+                </form>
+            </div>
+            <div>
+                <div id="loader">
+                    <div id="spinner1" class="spinner"></div>
+                    <div id="spinner2" class="spinner"></div>
+
+                    <div class="loader-section left"></div>
+                    <div class="loader-section right"></div>
+
                 </div>
             </div>
 
-            <!-- Line that appears below the logo. -->
-            <div class="Subline">
-                November 7th 2015. Be ready.
-            </div>
-
-            <div class="countdown styled"></div>
-
-        </section>
-
-        <div class="separator">
-        </div>
-        <!-- Event -->
-
-        <section id="sect2">
-            <!-- Heading of the section -->
-
-            <h1>
-                The Event
-            </h1>
-            <!-- Introductory Paragraph  -->
-            <p>
-                Welcome, fellow hacker. We at DPS East are thrilled to unveil <strong>DPSE CodeFest 2015</strong>. We implore you to join us on <strong>7<sup>th</sup> November</strong> to create something new and innovative.
-                <br>
-                Great minds talk ideas. Greater ones still execute them. The goal of <strong>CodeFest '15</strong> is to create a discourse of ideas. We want to host a hackathon where ideas and innovations flow free.
-                <br>
-                We don't judge based on platform or language. The best of ideas are simple. A beautiful GUI is not going to change an unoriginal concept.
-            </p>
-
-        </section>
-
-        <div class="separator">
-        </div>
-        <!-- Plan -->
-
-        <section id="sect3">
-            <!-- Heading of the section -->
-
-            <h1>
-                Agenda
-            </h1>
-            <!-- Content -->
-            <div id="agendaviewer">
-                <ul class="droplist">
-
-                    <li>
-
-                        <div class="heading">
-                            Arrival
-                        </div>
-
-                        <div class="headingright">
-                            Until 8
-                        </div>
-
-                        <div class="description">
-                            Participants arrive at DPS East and register.
-                        </div>
-
-                    </li>
-
-                    <li>
-
-                        <div class="heading">
-                            Keynote
-                        </div>
-
-                        <div class="headingright">
-                            8:00 - 8:25
-                        </div>
-
-                        <div class="description">
-                            A presentation by the school kicks off the event.
-                        </div>
-
-                    </li>
-
-                    <li>
-
-                        <div class="heading">
-                            Coding
-                        </div>
-
-                        <div class="headingright">
-                            8:30 - 18:00
-                        </div>
-
-                        <div class="description">
-                            People code. D'oh.
-                            <br />
-                            "When is lunch?"
-                            <br />
-                            Don't worry. You can have lunch whenever you want. [FOOD SPONSOR] will be ready at 12:45.
-                        </div>
-
-                    </li>
-
-                    <li>
-
-                        <div class="heading">
-                            Presentation
-                        </div>
-
-                        <div class="headingright">
-                            18:00 - 19:30
-                        </div>
-
-                        <div class="description">
-                            Hackers present their creations before the judges.
-                        </div>
-
-                    </li>
-
-                    <li>
-
-                        <div class="heading">
-                            Closing Ceremony
-                        </div>
-
-                        <div class="headingright">
-                            19:30 - 20:00
-                        </div>
-
-                        <div class="description">
-                            The best of hacks get awarded.
-                        </div>
-
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- <img id="agendaimg" src="images/agenda.png"> -->
-        </section>
-
-        <div class="separator">
-        </div>
-
-        <!-- Requirements/Rulebook -->
-        <section id="sect4">
-            <h1>
-                What else?
-            </h1>
-            <p>
-                There's enough to get started. We'll inform you when more information is available. You could sign up to be notified. If you have any urgent questions, you could contact us. <br>
-                <button id="signuptoggler">Sign me up.</button>
-            </p>
-        </section>
-
-        <div class="separator">
-        </div>
-
-        <!-- The map and location -->
-        <section id="sect5">
-            <h1>
-                How to get here
-            </h1>
-            <div id="infocontainer">
-                <div id="contactlinks">
-                    <a href="tel:08044448888" id="phoneinfo">
-                        <h3>Call Us</h3>
-                        [NUMBAH]
-                    </a>
-                    <a href="mailto:lel@lel.lel" id="emailinfo">
-                        <h3>Email Us</h3>
-                        lel@lel.lel
-                    </a>
-                </div>
-            </div>
-            <button id="maptoggle">Show map</button>
-        </section>
-
-        <div class="signup">
-
-            <button id="xButton">
-
-            </button>
-
-            <form action="#" method="post" id="subform">
-
-                <h2>
-                    Sign up to be notified
-                </h2>
-
-                <div class="inputfield">
-
-                        <div class="inputfield">
-                            <label for="name">Name:</label>
-                            <input type="text" style="width:666px" name="name" value="" />
-                        </div>
-
-                        <div class="inputfield">
-                            <label for="email">Email:</label>
-                            <input type="text" style="width:666px" name="email" value="" />
-                        </div>
-
-                        <input type="submit" class="submitter" value="I'm In" />
-
-                </div>
-
-            </form>
-        </div>
-        <div>
-            <div id="loader">
-                <div id="spinner1" class="spinner"></div>
-                <div id="spinner2" class="spinner"></div>
-
-                <div class="loader-section left"></div>
-                <div class="loader-section right"></div>
-
-            </div>
-        </div>
-        
         </div> <!-- .site-container end -->
-        
+
         <footer>
             <div class="copyright">
-                <strong>There are 10 types of people in this world: Those who
-                know binary, those who don't, and those who didn't expect this
-                to be in base 3.</strong><br /> &lt; &gt; with ❤ by: <a href=
-                "https://www.github.com/thel3l/" target="_blank">@thel3l</a>
-                <a href="https://www.github.com/lunaroyster/" target=
-                "_blank">@lunaroyster</a> <a href=
-                "https://www.github.com/rithvikvibhu/" target=
-                "_blank">@rithvikvibhu</a>
+                <strong>There are 10 types of people in this world: Those who know binary, those who don't, and those who <a style="color:#fff; font-weight:initial;" onClick="alert(&#34;SecretMessage&#34;)">didn't expect</a> this to be in base 3.</strong><br /> &lt; &gt; with ❤ by: <a href= "https://www.github.com/thel3l/" target="_blank">@thel3l</a> <a href="https://www.github.com/lunaroyster/" target= "_blank">@lunaroyster</a> <a href= "https://www.github.com/rithvikvibhu/" target= "_blank">@rithvikvibhu</a>
             </div>
         </footer>
         <!-- Google Analytics -->
