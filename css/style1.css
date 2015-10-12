@@ -211,9 +211,7 @@ body {
     height: 64px;
 }
 
-.Logo {
-    //Empty?
-}
+
 
 section {
     display: block;
@@ -259,8 +257,8 @@ a {
 
 .Subline {
     /*The line below the logo in section 1*/
-    font-size: 2em;
-    width: auto;
+    font-size: 100%;
+    width: 25%;
     margin: auto;
 }
 
