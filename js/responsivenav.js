@@ -11,7 +11,7 @@ $(function() {
 		siteOverlay = $('.site-overlay'), //site overlay
 		pushyClass = "pushy-left pushy-open", //menu position & menu open class
 		pushyActiveClass = "pushy-active", //css class to toggle site overlay
-		containerClass = "container", //container open class
+		containerClass = "site-container", //container open class
 		pushClass = "push-push", //css class to add pushy capability
 		menuBtn = $('.menu-btn, .pushy a'), //css classes to toggle the menu
 		menuSpeed = 200, //jQuery fallback menu speed
