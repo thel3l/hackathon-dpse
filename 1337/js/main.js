@@ -174,6 +174,7 @@ jQuery(document).ready(function($) {
                 }
             }
             p("root@codefest" + ":" + path + "# ");
+            // When you get the api: p(e + ":" + path + "# ");
         },
         onBlur: function() {
             // prevent loosing focus
