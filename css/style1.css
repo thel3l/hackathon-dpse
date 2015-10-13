@@ -507,7 +507,7 @@ ul[class="clicklist"]>li {
     margin: 1em;
     transition: background-color 0.5s;
 }
-ul[class="clicklist"]>li: {
+ul[class="clicklist"]>button:focus {
     background-color: #DDDDDD;
 }
 ul[class="clicklist"]>li:hover > div[class="description"] {
@@ -620,7 +620,7 @@ ul[class="clicklist"]>li>div[class="heading"] {
 }
 
 #menuicon {
-    display: inline-block;
+    display: none;
     width: auto;
     padding: 5px;
     border: 1px solid #EEEEEE;
