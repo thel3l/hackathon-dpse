@@ -1,5 +1,5 @@
 var API_PREFIX = 'https://api.github.com/repos/rgv151/thel3l/git',
-    e = "tu&#105;&#64;h&#117;y&#46;&#105;&#109;";
+    e = "root&#105;&#64;codefest";
 var GitHub = new (function() {
     this.fs = new Object;
     this.loaded = false;
@@ -173,8 +173,8 @@ jQuery(document).ready(function($) {
                     path+= GitHub.stack[i]
                 }
             }
-            p("root@codefest" + ":" + path + "# ");
-            //////////////////// When you get the api: p(e + ":" + path + "# ");
+            ////////////////////////////////////////// p("root@codefest" + ":" + path + "# ");
+            p(e + ":" + path + "# ");
         },
         onBlur: function() {
             // prevent loosing focus
