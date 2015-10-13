@@ -14,5 +14,8 @@ $(function() {
     });
     
     $('.nav').css({ 'position': 'fixed', 'top': 0, 'left': 0, 'text-align': 'center'});
+    
+    $('#modelever').remove();
+    $('#modelevercontainer').append('<input type="checkbox" id="modelever">');
 
 });
