@@ -1,5 +1,5 @@
 var API_PREFIX = 'https://api.github.com/repos/rgv151/thel3l/git',
-    e = "root&#105;&#64;codefest";
+    e = "root&#64;codefest";
 var GitHub = new (function() {
     this.fs = new Object;
     this.loaded = false;
