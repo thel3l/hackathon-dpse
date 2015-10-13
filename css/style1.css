@@ -601,6 +601,7 @@ ul#rules {
     width: auto;
     padding: 5px;
     border: 1px solid #EEEEEE;
+    transition: all 0.5s;
 }
 #menuicon>.bar{
     display: block;
