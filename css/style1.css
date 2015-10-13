@@ -257,8 +257,8 @@ a {
 
 .Subline {
     /*The line below the logo in section 1*/
-    font-size: 100%;
-    width: 25%;
+    font-size: 125%;
+    width: 50%;
     margin: auto;
 }
 
