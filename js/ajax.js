@@ -27,7 +27,7 @@ $(function() {
     
         // Fire off the request to /form.php
         request = $.ajax({
-            url: "https://quadricfusion-rithvikvibhu.c9.io/hackathon-dpse/sub.php",
+            url: "https://quadricfusion-rithvikvibhu.c9.io/api/codefest/sub.php",
             type: "post",
             data: serializedData
         });
