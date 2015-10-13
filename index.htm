@@ -41,27 +41,27 @@
             <div class="nav pushy pushy-left">
                 <ul>
                     <li>
-                        <a href="#sect1">Home</a>
+                        <a id ="navlink1" href="#sect1">Home</a>
                     </li>
 
                     <li>
-                        <a href="#sect2">Event</a>
+                        <a id ="navlink2" href="#sect2">Event</a>
                     </li>
 
                     <li>
-                        <a href="#sect3">Agenda</a>
+                        <a id ="navlink3" href="#sect3">Agenda</a>
                     </li>
 
                     <li>
-                        <a href="#sect4">Rulebook</a>
+                        <a id ="navlink4" href="#sect4">Rulebook</a>
                     </li>
 
                     <li>
-                        <a href="#sect5">Contact</a>
+                        <a id ="navlink5" href="#sect5">Contact</a>
                     </li>
 
                     <li>
-                        <a href="login/">Login</a>
+                        <a id ="navlink6" href="login/">Login</a>
                     </li>
                 </ul>
             </div>
@@ -341,5 +341,41 @@
             ga('send', 'pageview');
 
         </script> -->
+        <script>
+        $(document).ready(function(){
+                    var falsehandler;
+                    var truesect;
+                    $.fn.isOnScreen = function(){
+                        var element = this.get(0);
+                        var bounds = element.getBoundingClientRect();
+                        return bounds.top < window.innerHeight && bounds.top >= 0 && bounds.bottom <= window.innerHeight + 100;
+                                                            };
+                    $(window).scroll(function(){
+                        checkandreplace();
+                    });
+                    function checkandreplace() {
+                        falsehandler = 0;
+                        truesect = 0;
+                        for (i=1;i<=5;i++) {
+                        if ($("#sect"+i).isOnScreen() == true) {
+                            truesect = i;
+                        } else {
+                            falsehandler++;
+                        };
+                    };
+                        if (falsehandler!==5) {
+                            for (i=1;i<=5;i++) {
+                                if (i==truesect) {
+                                document.getElementById("navlink"+i).className = "active";
+                            } else {
+                                document.getElementById("navlink"+i).className = "";
+                            }
+                        };
+                    };
+                };
+                checkandreplace();
+
+        });
+        </script>
     </body>
 </html>
