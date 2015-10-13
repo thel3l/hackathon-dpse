@@ -173,7 +173,7 @@ jQuery(document).ready(function($) {
                     path+= GitHub.stack[i]
                 }
             }
-            p(e + ":" + path + "# ");
+            p("root@codefest" + ":" + path + "# ");
         },
         onBlur: function() {
             // prevent loosing focus
