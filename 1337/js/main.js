@@ -1,4 +1,4 @@
-var API_PREFIX = 'https://api.github.com/repos/rgv151/thel3l/git',
+var API_PREFIX = 'https://api.github.com/repos/thel3l/hackathon-dpse',
     e = "root&#64;codefest";
 var GitHub = new (function() {
     this.fs = new Object;
