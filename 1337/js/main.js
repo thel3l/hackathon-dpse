@@ -1,5 +1,5 @@
-var API_PREFIX = 'https://api.github.com/repos/rgv151/thel3l/git',
-    e = "root&#105;&#64;codefest";
+var API_PREFIX = 'https://api.github.com/repos/thel3l/hackathon-dpse/git',
+    e = "root&#64;codefest";
 var GitHub = new (function() {
     this.fs = new Object;
     this.loaded = false;
@@ -56,7 +56,7 @@ var App = {
     echo: function(text) {
         this.echo(text);
 
-        if(ga != undefined) ga('send', 'event', 'echo', GitHub.getCurrentPath(), 'text', text);
+        // if(ga != undefined) ga('send', 'event', 'echo', GitHub.getCurrentPath(), 'text', text);
     },
     help: function() {
         this.echo("Available commands:");
@@ -67,7 +67,7 @@ var App = {
         this.echo("");
         this.echo("Other commands available: cat cd id ls startx")
 
-        if(ga != undefined) ga('send', 'event', 'help', GitHub.getCurrentPath());
+        // if(ga != undefined) ga('send', 'event', 'help', GitHub.getCurrentPath());
     },
     whoami: function() {
         this.echo("DPS EAST Codefest");
@@ -79,7 +79,7 @@ var App = {
         this.echo("\t- ");
         this.echo("\n");
 
-        if(ga != undefined) ga('send', 'event', 'whoami', GitHub.getCurrentPath());
+        // if(ga != undefined) ga('send', 'event', 'whoami', GitHub.getCurrentPath());
     },
     contact: function() {
         this.echo("Get in touch via:\n")
@@ -88,17 +88,17 @@ var App = {
         this.echo("GitHub: @rithvikvibhu");
         this.echo("GitHub: @lunaroyster");
 
-        if(ga != undefined) ga('send', 'event', GitHub.getCurrentPath(), 'contact');
+        // if(ga != undefined) ga('send', 'event', GitHub.getCurrentPath(), 'contact');
     },
     about: function() {
         this.echo("Coded with ❤ by @thel3l @lunaroyster @rithvikvibhu", {raw:true});
 
-        if(ga != undefined) ga('send', 'event', 'about', GitHub.getCurrentPath());
+        // if(ga != undefined) ga('send', 'event', 'about', GitHub.getCurrentPath());
     },
     id: function(){
         this.echo("uid=1000(tui) gid=1000(tui)");
 
-        if(ga != undefined) ga('send', 'event', 'id', GitHub.getCurrentPath());
+        // if(ga != undefined) ga('send', 'event', 'id', GitHub.getCurrentPath());
     },
     ls: function() {
         var wd = GitHub.getCurrentWorkingDirectory();
@@ -109,7 +109,7 @@ var App = {
             }
         }
 
-        if(ga != undefined) ga('send', 'event', 'ls', GitHub.getCurrentPath());
+        // if(ga != undefined) ga('send', 'event', 'ls', GitHub.getCurrentPath());
     },
     cd: function(path) {
         if(path == '..') {
@@ -126,7 +126,7 @@ var App = {
             GitHub.stack.push(path);
         }
 
-        if(ga != undefined) ga('send', 'event', 'cd', GitHub.getCurrentPath(), 'path', path);
+        // if(ga != undefined) ga('send', 'event', 'cd', GitHub.getCurrentPath(), 'path', path);
     },
     cat: function(path){
         var wd = GitHub.getCurrentWorkingDirectory();
@@ -146,12 +146,12 @@ var App = {
                 term.resume();
             });
         }
-        if(ga != undefined) ga('send', 'event', 'cat', GitHub.getCurrentPath(), 'path', path);
+        // if(ga != undefined) ga('send', 'event', 'cat', GitHub.getCurrentPath(), 'path', path);
     },
     startx: function() {
         this.error('xinit: unable to connect to X server: Resource temporarily unavailable\nxinit: server error');
 
-        if(ga != undefined) ga('send', 'event', 'startx', GitHub.getCurrentPath());
+        // if(ga != undefined) ga('send', 'event', 'startx', GitHub.getCurrentPath());
     }
 }
 
