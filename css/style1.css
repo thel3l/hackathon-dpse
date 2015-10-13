@@ -472,7 +472,7 @@ ul[class="droplist"]>li:hover {
     background-color: #EEEEEE;
     color: #1B1C1E;
 }
-ul[class="droplist"]>li:hover > div[class="description"]{
+ul[class="droplist"]>li:hover > div[class="description"] {
     /*On hover*/
     max-height: 10em;
     /*transition: max-height 3s;*/
@@ -496,7 +496,16 @@ ul#rules {
 }
 
 ul[class="clicklist"]>li {
-    
+
+}
+ul[class="clicklist"]>li:hover {
+
+}
+ul[class="clicklist"]>li:hover > div[class="description"] {
+
+}
+ul[class="clicklist"]>li>div[class="heading"] {
+
 }
 
 
