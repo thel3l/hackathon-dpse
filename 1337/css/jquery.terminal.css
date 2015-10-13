@@ -55,6 +55,7 @@
 .terminal .cmd span.inverted {
     background-color: #aaa;
     color: #000;
+    animation: blink 0.5s step-end infinite;
 }
 .terminal .terminal-output div div::-moz-selection,
 .terminal .terminal-output div span::-moz-selection,
@@ -89,5 +90,14 @@
 }
 .terminal a:hover {
     text-decoration: underline;
-    
+
+}
+
+@keyframes blink {
+    0% {
+        background-color: #aaa;
+    }
+    50% {
+        background-color: inherit;
+    }
 }
