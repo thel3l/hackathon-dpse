@@ -1,6 +1,7 @@
 language: python, bash
 python: 3.4
 
+sudo: required
 install: Rule\ booklet\ in\ Python/./requiredModulesPython.sh
 script: echo foo
 notifications:
