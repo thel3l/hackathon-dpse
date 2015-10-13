@@ -123,12 +123,6 @@ input.cmn-toggle-round:checked + label:after {
         animation-delay: -6s;
     }
 }
-@-webkit-keyframes stroke {
-    100% {
-        stroke-dashoffset: -400; } }
-@keyframes stroke {
-    100% {
-        stroke-dashoffset: -400; } }
 
 .content {
     font: 800 14.5em/1  'Open Sans', Impact; }
@@ -194,7 +188,7 @@ body {
     opacity: .888;
     z-index: 100;
 }
-.menu-btn {
+#menuicon {
     display:none;
     position: fixed;
     right: 5%;
@@ -257,8 +251,8 @@ a {
 
 .Subline {
     /*The line below the logo in section 1*/
-    font-size: 100%;
-    width: 25%;
+    font-size: 125%;
+    width: 50%;
     margin: auto;
 }
 
@@ -601,6 +595,40 @@ ul#rules {
     -webkit-animation: oppspin 1s ease-in-out infinite;
     animation: oppspin 1s ease-in-out infinite;
 }
+
+#menuicon {
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    border: 1px solid #EEEEEE;
+    transition: all 0.5s;
+}
+#menuicon>.bar{
+    display: block;
+    width: 1em;
+    height: 2px;
+    margin: 2px;
+    background: #EEEEEE;
+}
+#menuicon:hover {
+    background-color: #EEEEEE;
+}
+#menuicon:hover>.bar {
+    background-color: #1B1C1E;
+}
+/*animations*/
+
+@-webkit-keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
 
 @-webkit-keyframes spin {
     0%   {
