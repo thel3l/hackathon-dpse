@@ -602,6 +602,19 @@ ul#rules {
     animation: oppspin 1s ease-in-out infinite;
 }
 
+#menuicon {
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    border: 1px solid #EEEEEE;
+}
+#menuicon>.bar{
+    display: block;
+    width: 1em;
+    height: 2px;
+    margin: 2px;
+    background: #EEEEEE;
+}
 @-webkit-keyframes spin {
     0%   {
         -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
