@@ -9,7 +9,11 @@
 }
 
 @media only screen and (max-device-width: 480px) {
-    
+
+    #menuicon {
+        display: inline-block;
+    }
+
     #dpslogo {
         margin: auto;
         width: 100%;
@@ -20,7 +24,7 @@
     .menu-btn {
         display: block;
     }
-    
+
     .pushy{
         position: fixed;
         width: 200px;
@@ -36,7 +40,7 @@
         overflow: auto;
         -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
     }
-    
+
     .pushy a{
         display: block;
         color: #b3b3b1;
@@ -45,14 +49,14 @@
         border-top: 1px solid rgba(255, 255, 255, .1);
         text-decoration: none;
     }
-    
+
     .pushy a:hover{
         background: #00b4ff;
         color: #FFF;
     }
-    
+
     /* Menu Movement */
-    
+
     .pushy-left{
         -webkit-transform: translate3d(-200px,0,0);
         -moz-transform: translate3d(-200px,0,0);
@@ -60,7 +64,7 @@
         -o-transform: translate3d(-200px,0,0);
         transform: translate3d(-200px,0,0);
     }
-    
+
     .pushy-open{
         -webkit-transform: translate3d(0,0,0);
         -moz-transform: translate3d(0,0,0);
@@ -68,7 +72,7 @@
         -o-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
     }
-    
+
     .container-push, .push-push{
         -webkit-transform: translate3d(200px,0,0);
         -moz-transform: translate3d(200px,0,0);
@@ -76,22 +80,22 @@
         -o-transform: translate3d(200px,0,0);
         transform: translate3d(200px,0,0);
     }
-    
+
     /* Menu Transitions */
-    
+
     .pushy, #container, .push{
         -webkit-transition: -webkit-transform .2s cubic-bezier(.16, .68, .43, .99);
         -moz-transition: -moz-transform .2s cubic-bezier(.16, .68, .43, .99);
         -o-transition: -o-transform .2s cubic-bezier(.16, .68, .43, .99);
         transition: transform .2s cubic-bezier(.16, .68, .43, .99);
     }
-    
+
     /* Site Overlay */
-    
+
     .site-overlay{
         display: none;
     }
-    
+
     .pushy-active .site-overlay{
         display: block;
         position: fixed;
@@ -101,12 +105,12 @@
         left: 0;
         z-index: 9998;
         background-color: rgba(0,0,0,0.5);
-        -webkit-animation: fade 500ms; 
-        -moz-animation: fade 500ms; 
+        -webkit-animation: fade 500ms;
+        -moz-animation: fade 500ms;
         -o-animation: fade 500ms;
         animation: fade 500ms;
     }
-    
+
     @keyframes fade {
         0%   { opacity: 0; }
         100% { opacity: 1; }
