@@ -188,7 +188,7 @@ body {
     opacity: .888;
     z-index: 100;
 }
-.menu-btn {
+#menuicon {
     display:none;
     position: fixed;
     right: 5%;
