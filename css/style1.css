@@ -123,12 +123,6 @@ input.cmn-toggle-round:checked + label:after {
         animation-delay: -6s;
     }
 }
-@-webkit-keyframes stroke {
-    100% {
-        stroke-dashoffset: -400; } }
-@keyframes stroke {
-    100% {
-        stroke-dashoffset: -400; } }
 
 .content {
     font: 800 14.5em/1  'Open Sans', Impact; }
@@ -615,6 +609,21 @@ ul#rules {
     margin: 2px;
     background: #EEEEEE;
 }
+
+/*animations*/
+
+@-webkit-keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
+
 @-webkit-keyframes spin {
     0%   {
         -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
