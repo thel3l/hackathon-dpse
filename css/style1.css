@@ -496,10 +496,19 @@ ul#rules {
 }
 
 ul[class="clicklist"]>li {
-
+    background-color: #1B1C1E;
+    color: #EEEEEE;
+    font-size: 1em;
+    list-style: none;
+    border: 1px solid;
+    border-color: #EEEEEE;
+    padding: 1.25em;
+    padding-left: 4em;
+    margin: 1em;
+    transition: background-color 0.5s;
 }
-ul[class="clicklist"]>li:hover {
-
+ul[class="clicklist"]>li: {
+    background-color: #DDDDDD;
 }
 ul[class="clicklist"]>li:hover > div[class="description"] {
 
