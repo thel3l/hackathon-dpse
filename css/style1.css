@@ -609,7 +609,12 @@ ul#rules {
     margin: 2px;
     background: #EEEEEE;
 }
-
+#menuicon:hover {
+    background-color: #EEEEEE;
+}
+#menuicon:hover>.bar {
+    background-color: #1B1C1E;
+}
 /*animations*/
 
 @-webkit-keyframes stroke {
