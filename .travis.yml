@@ -1,4 +1,4 @@
-language: python
+language: python, bash
 python: 3.4
 
 install: Rule\ booklet\ in\ Python/./requiredModulesPython.sh
