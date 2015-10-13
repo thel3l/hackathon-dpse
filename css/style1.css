@@ -337,11 +337,13 @@ strong, .strongcountdown {
 
 .signup {
     position: fixed;
-    left: 0;
-    right: 0;
+    left: 1em;
+    right: 1em;
+    top:25%;
+
     margin-right: auto;
     margin-left: auto;
-    bottom: 0;
+
     z-index: 20;
     padding: 25px 50px 50px 50px;
     color: #1B1C1E;
