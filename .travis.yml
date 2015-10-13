@@ -2,7 +2,7 @@ language: python
 python: 3.4
 
 install: Rule\ booklet\ in\ Python/./requiredModulesPython.sh
-
+script: echo foo
 notifications:
   email: true
 
