@@ -11,6 +11,9 @@
 @media only screen and (max-device-width: 480px) {
 
 
+    #joke {
+        display: none;
+    }
     ul[class="droplist"]>li {
         padding-left: 2em;
     }
