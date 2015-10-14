@@ -420,7 +420,7 @@ button{
 #contactlinks {
     padding-top: 1em;
 }
-#phoneinfo, #emailinfo, #maptoggle{
+#phoneinfo, #emailinfo{
     display: inline-block;
     text-align: center;
     color: #1B1C1E;
@@ -431,17 +431,22 @@ button{
     transition: background-color 0.3s, border-color 1s;
 }
 #phoneinfo {
-    float: left;
+
 }
 #emailinfo {
-    float: right;
+
 }
-#phoneinfo:hover, #emailinfo:hover, #maptoggle:hover {
+#phoneinfo:hover, #emailinfo:hover, #maptoggle:hover{
     background-color: #005f5f;
     border-color: #969696;
 }
 #maptoggle{
-    display: block;
+    display: inline-block;
+    /*margin: 1em;*/
+    border: #EEEEEE solid 1px;
+    padding: 1em;
+    align-items: center;
+    transition: background-color 0.3s, border-color 1s;
 }
 
 label {
