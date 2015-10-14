@@ -10,6 +10,11 @@
 
 @media only screen and (max-device-width: 480px) {
 
+    #sect2, #sect3, #sect4, #sect5, #sect6 {
+        padding-left: 0em;
+        padding-right: 0em;
+        text-align: left;
+    }
 
     h1 {
         border: 0.2em solid #303030;
