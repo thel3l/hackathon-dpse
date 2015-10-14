@@ -94,6 +94,7 @@ input.cmn-toggle-round:checked + label:after {
 }
 
 .text {
+    font-size: 10em;
     fill: none;
     stroke-width: 6;
     stroke-linejoin: round;
@@ -442,7 +443,7 @@ button{
 }
 #maptoggle{
     display: inline-block;
-    /*margin: 1em;*/
+    margin-top: 1em;
     border: #EEEEEE solid 1px;
     padding: 1em;
     align-items: center;
@@ -647,6 +648,7 @@ ul[class="clicklist"]>li>div[class="heading"] {
     background-color: #1B1C1E;
 }
 /*animations*/
+
 
 @-webkit-keyframes stroke {
     100% {
