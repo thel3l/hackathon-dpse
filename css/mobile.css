@@ -10,8 +10,14 @@
 
 @media only screen and (max-width: 480px) {
 
+    .switch {
+        display: none;
+        visibility: hidden;
+    }
+
     #joke {
         display: none;
+        visibility: hidden;
     }
     ul[class="droplist"]>li {
         padding-left: 2em;
