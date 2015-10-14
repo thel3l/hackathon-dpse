@@ -10,6 +10,14 @@
 
 @media only screen and (max-device-width: 480px) {
 
+
+    ul[class="droplist"]>li {
+        padding-left: 2em;
+    }
+    ul[class="droplist"]>li>div[class="headingright"] {
+        padding-right: 1em;
+    }
+
     #sect2, #sect3, #sect4, #sect5, #sect6 {
         padding-left: 0em;
         padding-right: 0em;
