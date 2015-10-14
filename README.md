@@ -1,6 +1,8 @@
 # DPS East Hackathon project and guidelines
 [![Build Status](https://api.travis-ci.org/thel3l/hackathon-dpse.svg?branch=master)](https://travis-ci.org/thel3l/hackathon-dpse)
 
+Our website is up! Check it at : https://dpse.cf
+
 This is the DPS East Hackathon/codefest Rule booklet. To view the rule booklet, please follow the instructions for the respective languages:
 
 **1. Python:**
