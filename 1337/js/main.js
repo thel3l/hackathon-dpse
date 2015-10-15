@@ -91,7 +91,7 @@ var App = {
         // if(ga != undefined) ga('send', 'event', GitHub.getCurrentPath(), 'contact');
     },
     about: function() {
-        this.echo("Coded with ❤ by @thel3l @lunaroyster @rithvikvibhu", {raw:true});
+        this.echo("\nCoded with ❤ by @thel3l @lunaroyster @rithvikvibhu\n", {raw:true});
 
         // if(ga != undefined) ga('send', 'event', 'about', GitHub.getCurrentPath());
     },
