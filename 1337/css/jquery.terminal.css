@@ -105,7 +105,18 @@
   50% { opacity: 0; }
   100% { opacity: 1; }
 }
-.prompt, .command {
+@-ms-keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}.prompt, .command {
   color: #0c0;
   text-shadow: 0 0 3px rgba(0,100,0,50);
 }
