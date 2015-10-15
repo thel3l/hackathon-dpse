@@ -149,13 +149,13 @@ var App = {
         // if(ga != undefined) ga('send', 'event', 'cat', GitHub.getCurrentPath(), 'path', path);
     },
 
-    whoami: function() {
-      this.echo(navigator.userAgent);
-  this.echo(user_ip);
-  this.echo(user_city + ', ' + user_country);
-  this.echo('<a href="https://www.google.com/maps/place/' + user_lat + ',' + user_long + '" target="_blank">' + user_lat + ',' + user_long + '</a>', {raw:true});
-  }
-
+  //   whoami: function() {
+  //     this.echo(navigator.userAgent);
+  // this.echo(user_ip);
+  // this.echo(user_city + ', ' + user_country);
+  // this.echo('<a href="https://www.google.com/maps/place/' + user_lat + ',' + user_long + '" target="_blank">' + user_lat + ',' + user_long + '</a>', {raw:true});
+  // }
+  //
     startx: function() {
         this.error('xinit: unable to connect to X server: Resource temporarily unavailable\nxinit: server error');
 
