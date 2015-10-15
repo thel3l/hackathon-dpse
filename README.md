@@ -3,6 +3,10 @@
 
 Our website is up! Check it at : https://dpse.cf
 
+To view this project's files, go to our site, and toggle the 1337 slider. This will throw you into a Linux terminal. Next enter 
+```bash
+cd 'Rule bookle in Python'
+```
 This is the DPS East Hackathon/codefest Rule booklet. To view the rule booklet, please follow the instructions for the respective languages:
 
 **1. Python:**
