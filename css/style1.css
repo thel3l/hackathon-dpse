@@ -447,8 +447,10 @@ button{
 
     display: inline-block;
     margin-top: 1em;
+    margin-bottom: 1em;
     border: #EEEEEE solid 1px;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     align-items: center;
     transition: background-color 0.3s, border-color 1s;
 }
