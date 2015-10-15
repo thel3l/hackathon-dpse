@@ -148,6 +148,10 @@
 }
 
 @media only screen and (max-width:1024px) and (min-width:480px) {
+    .nav li {
+    width: 4.75em;
+    font-size: 1em;
+    }
 }
 
 /* Example Media Query */
