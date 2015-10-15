@@ -433,9 +433,11 @@ button{
 }
 #phoneinfo {
 
+    float: left;
 }
 #emailinfo {
 
+    float: right;
 }
 #phoneinfo:hover, #emailinfo:hover, #maptoggle:hover{
     background-color: #005f5f;
