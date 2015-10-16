@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<xml>
     <information>
-
+        <i>We made the website. It's https://dpse.cf</i>
+        <i>We contacted some sponsors</i>
     </information>
+    <sponsors>
+        
+    </sponsors>
     <questions>
-        <Q>Are we doing T-shirts?</Q>
-        <Q>Where is the event going to be?</Q>
-        <Q>
+        <q>Are we doing T-shirts?</q>
+        <q>Where is the event going to be?</q>
+        <q>What date is plausible?</q>
     </questions>
 </xml>
