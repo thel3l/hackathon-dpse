@@ -70,17 +70,11 @@ var App = {
         // if(ga != undefined) ga('send', 'event', 'help', GitHub.getCurrentPath());
     },
     whoami: function() {
-        this.echo("DPS EAST Codefest");
-        this.echo("***INSERT BS HERE***");
-        this.echo("More reserved space for bs.");
-        this.echo("\t");
-        this.echo("\t-");
-        this.echo("\t-");
-        this.echo("\t- ");
-        this.echo("\n");
-
-        // if(ga != undefined) ga('send', 'event', 'whoami', GitHub.getCurrentPath());
-    },
+      this.echo(navigator.userAgent);
+  this.echo(user_ip);
+  this.echo(user_city + ', ' + user_country);
+  this.echo('<a href="https://www.google.com/maps/place/' + user_lat + ',' + user_long + '" target="_blank">' + user_lat + ',' + user_long + '</a>', {raw:true});
+},
     contact: function() {
         this.echo("Get in touch via:\n")
         this.echo("Email: i.rithwik@protonmail.com\n");
@@ -155,7 +149,7 @@ var App = {
   // this.echo(user_city + ', ' + user_country);
   // this.echo('<a href="https://www.google.com/maps/place/' + user_lat + ',' + user_long + '" target="_blank">' + user_lat + ',' + user_long + '</a>', {raw:true});
   // }
-  //
+
     startx: function() {
         this.error('xinit: unable to connect to X server: Resource temporarily unavailable\nxinit: server error');
 
