@@ -3,16 +3,16 @@
 * https://github.com/christophery/pushy/
 * by Christopher Yee */
 
-
-@media only screen and (orientation: portrait) {
-    //#dpslogo
-}
-
 @media only screen and (max-width: 480px) {
 
     .switch {
         display: none;
         visibility: hidden;
+    }
+    
+    #phoneinfo, #emailinfo, #maptoggle {
+        width: 80%;
+        margin-left: 1.6%;
     }
 
     #joke {
@@ -27,8 +27,8 @@
     }
 
     #sect2, #sect3, #sect4, #sect5, #sect6 {
-        padding-left: 0em;
-        padding-right: 0em;
+        padding-left: 5%;
+        padding-right: 5%;
         text-align: left;
     }
 
