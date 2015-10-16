@@ -173,7 +173,7 @@ body {
     text-decoration: none;
     color: #ABB2BF;
     display: block;
-    transition: .2s background-color
+    transition: .4s background-color
 }
 .nav a:hover {
     background-color: #005f5f
