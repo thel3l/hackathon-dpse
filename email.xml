@@ -6,7 +6,9 @@
         <!-- <i>We created Facebook page</i> -->
     </information>
     <sponsors>
-
+        <sp>HackerEarth</sp>
+        <sp></sp>    
+        <sp>Acehacker</sp>
     </sponsors>
     <questions>
         <q>Are we doing T-shirts?</q>
