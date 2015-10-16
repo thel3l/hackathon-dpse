@@ -170,7 +170,7 @@ jQuery(document).ready(function($) {
             "███    ███   ███                 ███        ███    █▄    ███    ███          ███     ███\n" +
             "███   ▄███   ███           ▄█    ███        ███    ███   ███    ███    ▄█    ███     ███\n" +
             "████████▀   ▄████▀       ▄████████▀         ██████████   ███    █▀   ▄████████▀     ▄████▀\n\n" +
-            "Hey! Let's all be bleks! ***BS HERE***",
+            "Hey! Let's all be bleks! ***BS HERE***\n\n",
         prompt: function(p){
             var path = '~'
             if(GitHub.stack.length > 0) {
