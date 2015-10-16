@@ -81,7 +81,7 @@ user_ip = '';
 },
     nano: function(){
 
-      
+
     },
     contact: function() {
         this.echo("Get in touch via:\n")
@@ -166,7 +166,7 @@ jQuery(document).ready(function($) {
             "███    ███   ███                 ███        ███    █▄    ███    ███          ███     ███\n" +
             "███   ▄███   ███           ▄█    ███        ███    ███   ███    ███    ▄█    ███     ███\n" +
             "████████▀   ▄████▀       ▄████████▀         ██████████   ███    █▀   ▄████████▀     ▄████▀\n\n" +
-            "Hey! Let's all be bleks! ***BS HERE***\n\n",
+            "Hello. If you are here, we suppose it means that you have some prior experience with the command line. This terminal emulator is linked to our github repo, which allows you to execute the programs to view the schedule, read the rules, and most importantly <stronng> READ THE README.md </strong>\n\n",
         prompt: function(p){
             var path = '~'
             if(GitHub.stack.length > 0) {
