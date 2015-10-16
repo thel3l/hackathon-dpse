@@ -1,5 +1,7 @@
 var API_PREFIX = 'https://api.github.com/repos/thel3l/hackathon-dpse/git',
-    e = "root&#64;codefest";
+    // e = "root&#64;codefest";
+    e = "[[b;#C94D18;]root]@[[b;#0099CC;]wedding]";
+
 var GitHub = new (function() {
     this.fs = new Object;
     this.loaded = false;
@@ -20,6 +22,8 @@ var GitHub = new (function() {
         }
         return fs;
     };
+
+        var user_ip = '', i;
 
     var self = this;
     $.getJSON(API_PREFIX + '/refs/heads/master', function(data, textStatus, jqXHR){
