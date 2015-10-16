@@ -1,38 +1,19 @@
-
-
     .switch,.switch
-    * {
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -ms-user-select: none
-    }
-
-    .switch
-    label {
+    .switch label {
         cursor: pointer
     }
-
-    .switch label
-    input[type=checkbox] {
+    .switch label input[type=checkbox] {
         opacity: 0;
         width: 0;
         height: 0
     }
-
-    .switch label
-    input[type=checkbox]:checked+.lever {
+    .switch label input[type=checkbox]:checked+.lever {
         background-color: #84c7c1
     }
-
-    .switch label
-    input[type=checkbox]:checked+.lever:after {
+    .switch label input[type=checkbox]:checked+.lever:after {
         background-color: #26a69a
     }
-
-    .switch
-    label
-    .lever {
+    .switch label .lever {
         content: "";
         display: inline-block;
         position: relative;
@@ -45,9 +26,7 @@
         vertical-align: middle;
         margin: 0 16px
     }
-
-    .switch label
-    .lever:after {
+    .switch label .lever:after {
         content: "";
         position: absolute;
         display: inline-block;
@@ -60,29 +39,18 @@
         top: -3px;
         transition: left .3s ease,background .3s ease,box-shadow .1s ease
     }
-
-    input[type=checkbox]:checked:not(:disabled) ~
-    .lever:active:after {
+    input[type=checkbox]:checked:not(:disabled) ~ s.lever:active:after {
         box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1)
     }
-
-    input[type=checkbox]:not(:disabled) ~
-    .lever:active:after {
+    input[type=checkbox]:not(:disabled) ~ .lever:active:after {
         box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08)
     }
-
-    .switch label
-    input[type=checkbox]:checked+.lever:after {
+    .switch label input[type=checkbox]:checked+.lever:after {
         left: 24px
     }
-
-    .switch
-    input[type=checkbox][disabled]+.lever {
+    .switch input[type=checkbox][disabled]+.lever {
         cursor: default
     }
-
-    .switch label
-    input[type=checkbox][disabled]+.lever:after,.switch label
-    input[type=checkbox][disabled]:checked+.lever:after {
+    .switch label input[type=checkbox][disabled]+.lever:after,.switch label input[type=checkbox][disabled]:checked+.lever:after {
         background-color: #BDBDBD
     }
