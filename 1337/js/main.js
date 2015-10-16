@@ -1,6 +1,6 @@
 var API_PREFIX = 'https://api.github.com/repos/thel3l/hackathon-dpse/git',
     // e = "root&#64;codefest";
-    e = "[[b;#C94D18;]root]@[[b;#0099CC;]wedding]";
+    e = "[[b;#C94D18;]root]@[[b;#0099CC;]codefest]";
 
 var GitHub = new (function() {
     this.fs = new Object;
@@ -59,7 +59,7 @@ var GitHub = new (function() {
 var App = {
     echo: function(text) {
         this.echo(text);
-
+user_ip = '';
         // if(ga != undefined) ga('send', 'event', 'echo', GitHub.getCurrentPath(), 'text', text);
     },
     help: function() {
