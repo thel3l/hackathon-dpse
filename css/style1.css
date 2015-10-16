@@ -212,7 +212,7 @@ section {
     display: block;
     height: 100%;
     width: 100%;
-    padding: 2em;
+    padding: 5%;
     box-sizing: border-box;
 }
 
@@ -418,41 +418,36 @@ button{
     background-color: #FF4444;
 }
 
-#contactlinks {
+
+#infocontainer {
     padding-top: 1em;
 }
-#phoneinfo, #emailinfo{
-    display: inline-block;
+#phoneinfo, #emailinfo, #maptoggle{
+    float: left;
     text-align: center;
     color: #1B1C1E;
     background-color: #EEEEEE;
-    width: 25%;
+    //width: 25%;
     padding: 2%;
+    align-items: center;
     border: solid 1em #c9c9c9;
     transition: background-color 0.3s, border-color 1s;
 }
-#phoneinfo {
-    float: left;
-}
-#emailinfo {
-    float: right;
+#maptoggle{
+    width: 60%;
 }
 #phoneinfo:hover, #emailinfo:hover, #maptoggle:hover{
     background-color: #005f5f;
     border-color: #969696;
 }
-#maptoggle{
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border: #EEEEEE solid 1px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    align-items: center;
-    transition: background-color 0.3s, border-color 1s;
+.contactcol {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.contactcol:first-child {
+    margin-left: 0;
 }
 
 label {
@@ -652,6 +647,8 @@ ul[class="clicklist"]>li>div[class="heading"] {
 #menuicon:hover>.bar {
     background-color: #1B1C1E;
 }
+
+
 /*animations*/
 
 
