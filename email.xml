@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<information>
+    <information>
 
-</information>
-<questions>
-</questions>
+    </information>
+    <questions>
+        <Q>Are we doing T-shirts?</Q>
+        <Q>Where is the event going to be?</Q>
+        <Q>
+    </questions>
+</xml>
