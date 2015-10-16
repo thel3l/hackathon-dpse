@@ -104,4 +104,44 @@ $(function() {
 			}
 		});
 	}
+
+	//Mark active navbar section
+    var falsehandler;
+    var truesect;
+    $.fn.isOnScreen = function(){
+        var element = this.get(0);
+        var bounds = element.getBoundingClientRect();
+        return bounds.top < window.innerHeight && bounds.top >= 0 && bounds.bottom <= window.innerHeight + 100;
+	};
+	
+    $(window).scroll(function(){
+        checkandreplace();
+    });
+    
+    function checkandreplace() {
+        falsehandler = 0;
+        truesect = 0;
+        for (i=1;i<=5;i++) {
+	        if ($("#sect"+i).isOnScreen() == true) {
+	            truesect = i;
+	        } else {
+	            falsehandler++;
+	        };
+	    };
+	    
+        if (falsehandler!==5) {
+            for (i=1;i<=5;i++) {
+            	
+                if (i==truesect) {
+                document.getElementById("navlink"+i).className = "active";
+				} else {
+					document.getElementById("navlink"+i).className = "";
+				}
+				
+        	};
+    	};
+	};
+
+	checkandreplace();
+
 });
