@@ -444,7 +444,7 @@ button{
 #maptoggle{
     width: 100%;
     text-align: center;
-
+    cursor: pointer;
     display: inline-block;
     margin-top: 1em;
     margin-bottom: 1em;
