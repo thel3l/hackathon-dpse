@@ -3,13 +3,14 @@
     <information>
         <i>We made the website. It's https://dpse.cf</i>
         <i>We contacted some sponsors</i>
+            <sponsors>
+                <sp>HackerEarth</sp>
+                <sp></sp>
+                <sp>Acehacker</sp>
+            </sponsors>
         <!-- <i>We created Facebook page</i> -->
     </information>
-    <sponsors>
-        <sp>HackerEarth</sp>
-        <sp></sp>    
-        <sp>Acehacker</sp>
-    </sponsors>
+
     <questions>
         <q>Are we doing T-shirts?</q>
         <q>Where is the event going to be?</q>
