@@ -5,7 +5,6 @@ $(function() {
         window.location.assign("1337/index.html");
     })
 
-
     //Map button Toggle
     $("#maptoggle").click(function() {
         if ($("iframe.map").length > 0) {
@@ -19,7 +18,6 @@ $(function() {
             $("html, body").animate( {scrollTop: ( $("iframe.map").offset().top )}, '500', 'swing');
         }
     })
-
 
     //Countdown
     $('.countdown.styled').countdown({
@@ -37,7 +35,6 @@ $(function() {
         }
     });
 
-
     //Smooth scroll
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -52,10 +49,8 @@ $(function() {
         }
     });
 
-
     //CSS Fix on load
     $('.nav').css({ 'position': 'fixed', 'top': 0, 'left': 0, 'text-align': 'center'});
-
 
     //Signup bar Toggle with close button
     $(".signup").hide();
@@ -65,6 +60,5 @@ $(function() {
     $("#xButton").click(function(){
         $(".signup").hide();
     });
-
 
 });
