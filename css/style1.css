@@ -358,6 +358,9 @@ strong, .strongcountdown {
     opacity: 0.85;
     resize: both;
     overflow: auto;
+
+    visibility: hidden;
+    display: none;
 }
 
 
