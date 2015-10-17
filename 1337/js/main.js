@@ -160,12 +160,12 @@ user_ip = '';
 jQuery(document).ready(function($) {
     $('body').terminal(App, {
         greetings: "[[b;#ffffff;]﻿████████▄     ▄███████▄    ▄████████         ▄████████    ▄████████    ▄████████     ███\n" +
-            "███   ▀███   ███    ███   ███    ███        ███    ███   ███    ███   ███    ███ ▀█████████▄\n" +
-            "███    ███   ███    ███   ███    █▀         ███    █▀    ███    ███   ███    █▀     ▀███▀▀██\n" +
-            "███    ███ ▀█████████▀  ▀███████████      ▀▀███▀▀▀     ▀███████████ ▀███████████     ███\n" +
-            "███    ███   ███                 ███        ███    █▄    ███    ███          ███     ███\n" +
-            "███   ▄███   ███           ▄█    ███        ███    ███   ███    ███    ▄█    ███     ███\n" +
-            "████████▀   ▄████▀       ▄████████▀         ██████████   ███    █▀   ▄████████▀     ▄████▀\n\n" +
+                  " ███   ▀███   ███    ███   ███    ███        ███    ███   ███    ███   ███    ███ ▀█████████▄\n" +
+                  " ███    ███   ███    ███   ███    █▀         ███    █▀    ███    ███   ███    █▀     ▀███▀▀██\n" +
+                  " ███    ███ ▀█████████▀  ▀███████████      ▀▀███▀▀▀     ▀███████████ ▀███████████     ███\n" +
+                  " ███    ███   ███                 ███        ███    █▄    ███    ███          ███     ███\n" +
+                  " ███   ▄███   ███           ▄█    ███        ███    ███   ███    ███    ▄█    ███     ███\n" +
+                  " ████████▀   ▄████▀       ▄████████▀         ██████████   ███    █▀   ▄████████▀     ▄████▀\n\n" +
             "Hello. If you are here, we suppose it means that you have some prior experience with the command line.\n This terminal emulator is linked to our github repo, which allows you to\n    -execute the programs to view the schedule\n    -read the rules, and most importantly \n    -READ THE README.md\n\n",
         prompt: function(p){
             var path = '~'
