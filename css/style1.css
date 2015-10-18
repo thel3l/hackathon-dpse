@@ -304,14 +304,14 @@ strong, .strongcountdown {
     font-weight: 400;
 }
 
-#agendaimg {
+/*#agendaimg {
     display: block;
     max-width: 90%;
     max-height: 90%;
     padding: 10px;
     padding-top: 4%;
     opacity: .6;
-}
+}*/
 
 .copyright {
     position: fixed;
