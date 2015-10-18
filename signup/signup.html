@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <meta charset="UTF-8">
-        <title>Login</title>
-        <link rel="stylesheet" href="css/signupstyle.css">
-        <script src="js/signup.js"></script>
-
-        <!-- <script language="javascript">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="css/signupstyle.css" rel="stylesheet">
+    <script src="js/signup.js">
+    </script><!-- <script language="javascript">
             function check(form) { /*function to check userid & password*/
                 /*the following code checkes whether the entered userid and password match*/
                 if(form.userid.value == "login__username" && form.pswrd.value == "login__password") {
@@ -17,62 +15,46 @@
                     alert("Error Password or Username")/*displays error message*/
                 }
           } -->
-    </head>
-
-    <body class="align">
-
-        <div class="site__container">
-
-            <div class="grid__container">
-              <!-- The fest logo -->
-              <div class="Logo">
-                  <div class="content">
-                      <svg viewBox="0 0 1430 300">
-
-                          <!-- Symbol -->
-                          <symbol id="s-text">
-                              <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-                                  Codefest
-                              </text>
-                          </symbol>
-
-                          <!-- Duplicate symbols. -->
-                          <use xlink:href="#s-text" class="text"></use>
-                          <use xlink:href="#s-text" class="text"></use>
-                          <use xlink:href="#s-text" class="text"></use>
-                          <use xlink:href="#s-text" class="text"></use>
-                          <use xlink:href="#s-text" class="text"></use>
-
-                      </svg>
-                  </div>
-              </div>
-
-
-              <form action="#" method="post" id="subform">
-                    <div class="inputfield">
-
-                                               <div class="inputfield">
-                                                   <label class="fontawesome-user" for="login__username"><span class="hidden">Name</span></label>
-                                                   <input id="login__username" type="text" name="name" class="form__input" placeholder="Name" required>
-                                               </div>
-
-                                               <div class="inputfield">
-                                                   <label class="fontawesome-envelope-square" for="login__password"><span class="hidden">Password</span></label>
-                                                   <input id="login__password" type="text" name="email" class="form__input" placeholder="Email id" required>
-                                               </div>
-
-                                               <input type="submit" class="submitter" value="I'm in" />
-
-                     </div>
-
-              </form>
+</head>
+<body class="align">
+    <div class="site__container">
+        <div class="grid__container">
+            <!-- The fest logo -->
+            <div class="Logo">
+                <div class="content">
+                    <svg viewbox="0 0 1430 300"><!-- Symbol -->
+                    <symbol id="s-text">
+                        <text dy=".35em" text-anchor="middle" x="50%" y="50%">
+                            Codefest
+                        </text>
+                    </symbol><!-- Duplicate symbols. -->
+                    <use class="text" xlink:href="#s-text"></use>
+                    <use class="text" xlink:href="#s-text"></use>
+                    <use class="text" xlink:href="#s-text"></use>
+                    <use class="text" xlink:href="#s-text"></use>
+                    <use class="text" xlink:href="#s-text"></use></svg>
+                </div>
             </div>
-
+            <form action="#" id="subform" method="post" name="subform">
+                <div class="inputfield">
+                    <div class="inputfield">
+                        <label class="fontawesome-user" for=
+                        "login__username"><span class=
+                        "hidden">Name</span></label> <input class="form__input"
+                        id="login__username" name="name" placeholder="Name"
+                        required="" type="text">
+                    </div>
+                    <div class="inputfield">
+                        <label class="fontawesome-envelope-square" for=
+                        "login__password"><span class=
+                        "hidden">Password</span></label> <input class=
+                        "form__input" id="login__password" name="email"
+                        placeholder="Email id" required="" type="text">
+                    </div><input class="submitter" type="submit" value=
+                    "I'm in">
+                </div>
+            </form>
         </div>
-
-    </body>
-
-
-
-
+    </div>
+</body>
 </html>
