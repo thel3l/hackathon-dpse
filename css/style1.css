@@ -471,7 +471,7 @@ label {
 }
 
 #agendaviewer {
-    padding-top: 1em;
+    /*padding-top: 1em;*/
 }
 ul[class="droplist"]>li {
     background-color: #1B1C1E;
