@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password match*/
+                if(form.userid.value == "login__username" && form.pswrd.value == "login__password") {
+                    window.open('../index.htm')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+          } -->
+    </head>
+
+    <body class="align">
+
+        <div class="site__container">
+
+            <div class="grid__container">
+              <!-- The fest logo -->
+              <div class="Logo">
+                  <div class="content">
+                      <svg viewBox="0 0 1430 300">
+
+                          <!-- Symbol -->
+                          <symbol id="s-text">
+                              <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                                  Codefest
+                              </text>
+                          </symbol>
+
+                          <!-- Duplicate symbols. -->
+                          <use xlink:href="#s-text" class="text"></use>
+                          <use xlink:href="#s-text" class="text"></use>
+                          <use xlink:href="#s-text" class="text"></use>
+                          <use xlink:href="#s-text" class="text"></use>
+                          <use xlink:href="#s-text" class="text"></use>
+
+                      </svg>
+                  </div>
+              </div>
+
+
+                <form action="" method="post" class="form form--login">
+
+                    <div class="form__field">
+                        <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+                        <input id="login__username" type="text" class="form__input" placeholder="Username" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+                        <input id="login__password" type="password" class="form__input" placeholder="Password" required>
+                    </div>
+
+                    <div class="form__field">
+                        <input type="submit" value="Sign In">
+                    </div>
+
+                </form>
+
+                <p class="text--center">Not yet signed up for the hackathon? <a href="../index.htm">Sign up now</a> <span class="fontawesome-arrow-right"></span></p>
+
+            </div>
+
+        </div>
+
+    </body>
+
+
+
+
+</html>
