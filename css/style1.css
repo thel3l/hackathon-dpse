@@ -199,10 +199,10 @@ body {
 
 .separator {
     /*FIX AND PUT BACK*/
-    /*background-image: url(../images/graphics/banner_div.png);
+    background-image: url(../images/graphics/banner_div.png);
     background-repeat: repeat-x;
     background-size: contain;
-    height: 256px;*/
+    height: 256px;
 
     /*Temporary separator*/
     background-color: #ABB2BF;
