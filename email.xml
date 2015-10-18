@@ -3,13 +3,24 @@
     <information>
         <i>We made the website. It's https://dpse.cf</i>
         <i>We contacted some sponsors</i>
+            <sponsors>
+                <sp>HackerEarth</sp>
+                <sp></sp>
+                <sp>Acehacker</sp>
+            </sponsors>
+        <i>We researched some T-shirt vendors</i>
+            <teevendors>
+                <tee>vistaprint.in</tee>
+            </teevendors>
+        <!-- <i>We created Facebook page</i> -->
     </information>
-    <sponsors>
-        
-    </sponsors>
+
     <questions>
         <q>Are we doing T-shirts?</q>
         <q>Where is the event going to be?</q>
         <q>What date is plausible?</q>
+        <q>Are we charging for food?</q>
+        <q>Do we create G+/FB pages for promoting the event?</q>
+        <q>Who will host the keynote?</q>
     </questions>
 </xml>
