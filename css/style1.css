@@ -216,7 +216,8 @@ section {
     display: block;
     height: 100%;
     width: 100%;
-    padding: 5%;
+    padding-top: 2em;
+    padding-bottom: 4em;
     box-sizing: border-box;
 }
 
