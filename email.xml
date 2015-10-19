@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xml>
-    <information>
-        <i>We made the website. It's https://dpse.cf</i>
-        <i>We contacted some sponsors</i>
-            <sponsors>
-                <sp>HackerEarth</sp>
-                <sp>Acehacker</sp>
-            </sponsors>
-        <i>HackerEarth replied. They want to sponsor the shirts and are willing to sponsor food cost and prizes.</i>
-        <i>We researched some T-shirt vendors</i>
-            <teevendors>
-                <tee>vistaprint.in</tee>
-            </teevendors>
-        <!-- <i>We created Facebook page</i> -->
-    </information>
 
-    <questions>
-        <q>Are we doing T-shirts?</q>
-        <q>Where is the event going to be?</q>
-        <q>What date is plausible?</q>
-        <q>Are we charging for food?</q>
-        <q>Do we create G+/FB pages for promoting the event?</q>
-        <q>Who will host the keynote?</q>
-        <q>Should we contact big companies like IBM or Wipro?
-    </questions>
-</xml>
+<information>
+    <i>We made the website. It's https://dpse.cf</i>
+    <i>We contacted some sponsors</i>
+        <sponsors>
+            <sp>HackerEarth</sp>
+            <sp>Acehacker</sp>
+        </sponsors>
+    <i>HackerEarth replied. They want to sponsor the shirts and are willing to sponsor food cost and prizes.</i>
+    <i>We researched some T-shirt vendors</i>
+        <teevendors>
+            <tee>vistaprint.in</tee>
+        </teevendors>
+    <!-- <i>We created Facebook page</i> -->
+</information>
+
+<questions>
+    <q>Are we doing T-shirts?</q>
+    <q>Where is the event going to be?</q>
+    <q>What date is plausible?</q>
+    <q>Are we charging for food?</q>
+    <q>Do we create G+/FB pages for promoting the event?</q>
+    <q>Who will host the keynote?</q>
+    <q>Should we contact big companies like IBM or Wipro?
+</questions>
