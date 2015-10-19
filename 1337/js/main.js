@@ -154,6 +154,9 @@ user_ip = '';
         this.error('xinit: unable to connect to X server: Resource temporarily unavailable\nxinit: server error');
 
         // if(ga != undefined) ga('send', 'event', 'startx', GitHub.getCurrentPath());
+    },
+    lel: function() {
+        this.echo("-/..../.-/-/.----./...//-/...././/..././-.-./.-././-//.--/---/.-./-..//--/.-/-/./.-.-.--..-.//--./.-../.-/-..//-.--/---/..-//..-./---/..-/-./-..//../-/.-.-.--..-.////");
     }
 }
 
