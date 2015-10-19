@@ -292,7 +292,10 @@ h2 {
 h3 {
     /**/
 }
-
+#quote {
+    text-align: center;
+    font-style: italic;
+}
 p {
     padding: 0.5em;
     padding-top: 1em;
