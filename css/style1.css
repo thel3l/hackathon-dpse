@@ -504,6 +504,9 @@ ul[class="droplist"]>li>div[class="description"] {
     max-height: 0;
     transition: max-height 1s;
 }
+ul[class="droplist"]>li>div[class="description"]>p {
+    
+}
 ul[class="droplist"]>li>div[class="heading"] {
     display: inline-block;
 }
