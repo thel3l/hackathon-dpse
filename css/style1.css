@@ -446,7 +446,7 @@ button{
     transition: background-color 0.3s, border-color 1s;
 }
 #maptoggle{
-    width: 60%;
+    width: 55%;
 }
 #phoneinfo:hover, #emailinfo:hover, #maptoggle:hover{
     background-color: #005f5f;
