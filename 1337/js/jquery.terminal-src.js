@@ -2564,7 +2564,7 @@
                         if (settings.login) {
                             logout();
                         } else {
-                            var msg = "You can't exit from main interpeter";
+                            window.location.href = '../';
                             if (!silent) {
                                 echo_command(command);
                             }
