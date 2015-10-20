@@ -85,7 +85,7 @@ user_ip = '';
     },
     contact: function() {
         this.echo("Get in touch via:\n")
-        this.echo("Email: i.rithwik@protonmail.com\n");
+        this.echo("Email: info@dpse.cf\n");
         this.echo("GitHub: @thel3l");
         this.echo("GitHub: @rithvikvibhu");
         this.echo("GitHub: @lunaroyster");
