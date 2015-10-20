@@ -362,7 +362,7 @@ strong, .strongcountdown {
     resize: both;
     overflow: auto;
 
-    visibility: hidden;
+    //visibility: hidden;
     display: none;
 }
 
