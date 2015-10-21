@@ -346,6 +346,7 @@ strong, .strongcountdown {
 }
 
 .signup {
+    text-align: center;
     position: fixed;
     left: 1em;
     right: 1em;
@@ -373,6 +374,7 @@ strong, .strongcountdown {
     box-shadow: none;
     border-radius: none;
     padding: 10px;
+    width: 90%;
     border: solid 5px #c9c9c9;
     transition: border 0.3s, background-color 0.3s;
     outline: none;
@@ -383,7 +385,10 @@ strong, .strongcountdown {
     color: #ABB2BF;
 }
 .signup button, .signup input[type="submit"] {
-
+    display: inline-block;
+}
+.g-recaptcha {
+    display: inline-block;
 }
 /*#xButton {
     position: static;
