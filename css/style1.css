@@ -397,6 +397,19 @@ strong, .strongcountdown {
     padding: 10px;
     border: none;
 }
+#xButton {
+    position: static;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    margin: 0;
+}
+#xButton:hover {
+    background-color: #FF4444;
+}
 
 button:hover, .submitter:hover {
     background-color: #005f5f;
@@ -413,19 +426,6 @@ button{
     transition: border 0.3s, background-color 0.3s;
 }
 
-#xButton {
-    position: static;
-    height: 2em;
-    width: 2em;
-    text-align: center;
-    top: 0;
-    left: 0;
-    padding: 1em;
-    margin: 0;
-}
-#xButton:hover {
-    background-color: #FF4444;
-}
 
 
 #infocontainer {
