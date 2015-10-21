@@ -411,12 +411,12 @@ strong, .strongcountdown {
     background-color: #FF4444;
 }
 
-button:hover, .submitter:hover {
+button:hover {
     background-color: #005f5f;
     color: #ABB2BF;
     border: solid 5px #969696;
 }
-button{
+button {
     appearance: none;
     box-shadow: none;
     border-radius: none;
