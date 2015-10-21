@@ -111,13 +111,7 @@ $(function() {
     $.fn.isOnScreen = function(){
         var element = this.get(0);
         var bounds = element.getBoundingClientRect();
-        var extraheight = element.offsetHeight - window.innerHeight;
-        if (extraheight<=0) {
-        	extraheight = 0;
-        } else {
-        	extraheight = extraheight * 2;
-        }
-        return bounds.top < window.innerHeight && bounds.top >= 0 && bounds.bottom <= window.innerHeight + extraheight;
+        return bounds.top < window.innerHeight && bounds.top >= 0 && bounds.bottom <= window.innerHeight + 250;
 	};
 	
     $(window).scroll(function(){
