@@ -365,9 +365,7 @@ strong, .strongcountdown {
     //visibility: hidden;
     display: none;
 }
-
-
-input[type="text"] {
+.signup input[type="text"] {
     display: inline;
     margin: 0;
     font-size: 20px;
@@ -379,44 +377,15 @@ input[type="text"] {
     transition: border 0.3s, background-color 0.3s;
     outline: none;
 }
-input[type="text"]:focus {
+.signup input[type="text"]:focus {
     border: solid 5px #969696;
     background-color: #000000;
     color: #ABB2BF;
 }
+.signup button, .signup input[type="submit"] {
 
-.submitter {
-    display: block;
-    font-size: 24px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 16em;
-    height: 100%;
-    float: right;
-    appearance: none;
-    box-shadow: none;
-    border-radius: none;
-    padding: 10px;
-    border: none;
 }
-
-button:hover, .submitter:hover {
-    background-color: #005f5f;
-    color: #ABB2BF;
-    border: solid 5px #969696;
-}
-button{
-    appearance: none;
-    box-shadow: none;
-    border-radius: none;
-    padding: 10px;
-    border: none;
-    border: solid 5px #c9c9c9;
-    transition: border 0.3s, background-color 0.3s;
-}
-
-#xButton {
+/*#xButton {
     position: static;
     height: 2em;
     width: 2em;
@@ -428,7 +397,23 @@ button{
 }
 #xButton:hover {
     background-color: #FF4444;
+}*/
+
+button:hover, input[type="submit"]:hover {
+    background-color: #005f5f;
+    color: #ABB2BF;
+    border: solid 5px #969696;
 }
+button, input[type="submit"]{
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    padding: 10px;
+    border: none;
+    border: solid 5px #c9c9c9;
+    transition: border 0.3s, background-color 0.3s;
+}
+
 
 
 #infocontainer {
