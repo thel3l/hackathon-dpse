@@ -53,7 +53,7 @@ $(function() {
         request.always(function () {
             // Reenable the inputs
             $inputs.prop("disabled", false);
-            alert("You have been signed up!");
+            alert("Please wait while we sign you up..");
         });
 
         // Prevent default posting of form
