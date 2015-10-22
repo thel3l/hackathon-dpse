@@ -53,6 +53,7 @@ $(function() {
         request.always(function () {
             // Reenable the inputs
             $inputs.prop("disabled", false);
+            alert("lel");
         });
 
         // Prevent default posting of form
