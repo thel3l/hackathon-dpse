@@ -59,7 +59,7 @@ $(function() {
         // Prevent default posting of form
         event.preventDefault();
     });
-    
+
     function onclicksubmit() {
         alert("Please wait while we sign you up..");
     }
