@@ -27,7 +27,7 @@ $(function() {
 
         // Fire off the request to /form.php
         request = $.ajax({
-            url: "https://codefest-hackdpse.c9.io/api/codefest/sub.php",
+            url: "https://codefest-hackdpse.c9.io/api/sub.php",
             type: "post",
             data: serializedData
         });
@@ -53,11 +53,15 @@ $(function() {
         request.always(function () {
             // Reenable the inputs
             $inputs.prop("disabled", false);
-            alert("Please wait while we sign you up..");
+            //alert("Please wait while we sign you up..");
         });
 
         // Prevent default posting of form
         event.preventDefault();
     });
+    
+    function onclicksubmit() {
+        alert("Please wait while we sign you up..");
+    }
 
 });
