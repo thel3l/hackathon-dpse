@@ -726,7 +726,7 @@ input[type="submit"] {
     height: 75px;
 }
 
-.formwait {
+.signup #formwait {
     display: none;
     width: auto;
     height: auto;
