@@ -713,8 +713,29 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     background-color: #BDBDBD
 }
 
-/*animations*/
+.g-recaptcha {
+    float: left;
+    margin-left: 16%;
+    width: 40%;
+}
 
+input[type="submit"] {
+    float: right;
+    margin-right: 4%;
+    width: 40%;
+    height: 75px;
+}
+
+.formwait {
+    display: none;
+    width: auto;
+    height: auto;
+    font-size: 200%;
+    float: left;
+    padding: 25px;
+}
+
+/*animations*/
 
 @-webkit-keyframes stroke {
     100% {

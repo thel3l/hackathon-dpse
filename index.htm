@@ -309,6 +309,7 @@
             <div class="signup">
                 <h2>Sign up to keep updated</h2>
                 <button id="xButton"> Close </button>
+                
                 <form action="#" method="post" id="subform">
                     <div class="inputfield">
                         <input type="text" name="name" placeholder="Name" value="" />
@@ -318,9 +319,14 @@
                     </div>
                     <input type="hidden" name="ip" value = ""/>
                     <div class="g-recaptcha" data-sitekey="6LevoA4TAAAAALxIWDWF3J_lou_Wjoi0vt1_xOEi"></div>
-                    <input type="submit" value="I'm In" onClick="alert('Please wait while we sign you up..')"/>
+                    <input type="submit" value="I'm In" />
                 </form>
+                
+                <div class="formwait">
+                    <span>Plese wait...</span>
+                </div>
             </div>
+            
             <div id="loader">
                     <div id="spinner1" class="spinner"></div>
                     <div id="spinner2" class="spinner"></div>
