@@ -387,6 +387,15 @@ strong, .strongcountdown {
 .signup button, .signup input[type="submit"] {
     display: inline-block;
 }
+.signup #formwait {
+    display: none;
+    width: auto;
+    height: auto;
+    font-size: 200%;
+    padding: 25px;
+    text-align: center;
+}
+
 .g-recaptcha {
     display: inline-block;
 }
@@ -726,14 +735,6 @@ input[type="submit"] {
     height: 75px;
 }
 
-.signup #formwait {
-    display: none;
-    width: auto;
-    height: auto;
-    font-size: 200%;
-    padding: 25px;
-    text-align: center;
-}
 
 /*animations*/
 
