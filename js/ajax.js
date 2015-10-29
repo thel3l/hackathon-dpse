@@ -28,7 +28,7 @@ $(function() {
         // Disabled form elements will not be serialized.
         $inputs.prop("disabled", true);
         $('input[type="submit"]').hide();
-        $('.formwait').show();
+        $('#formwait').show();
 
         // Fire off the request to /form.php
         request = $.ajax({
@@ -59,7 +59,7 @@ $(function() {
             // Reenable the inputs
             $inputs.prop("disabled", false);
             $('input[type="submit"]').show();
-            $('.formwait').hide();
+            $('#formwait').hide();
         });
 
         // Prevent default posting of form
