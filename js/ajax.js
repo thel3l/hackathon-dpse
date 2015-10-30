@@ -41,7 +41,7 @@ $(function() {
         request.done(function (response, textStatus, jqXHR){
             // Log a message to the console
             console.log("Hooray, it worked!");
-            alert(response);
+            swal(response);
         });
 
         // Callback handler that will be called on failure
