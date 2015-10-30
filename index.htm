@@ -314,8 +314,8 @@
             form.pwd1.focus();
             return false;
         }
-        if (form.pwd1.value == form.username.value) {
-            alert("Error: Password must be different from Username!");
+        if (form.pwd1.value == form.name.value) {
+            alert("Error: Password must be different from your name!");
             form.pwd1.focus();
             return false;
         }
@@ -348,7 +348,6 @@
         form.pwd1.focus();
         return false;
     }
-    alert("You entered a valid password: " + form.pwd1.value);
     return true;
 } < /script>
 
@@ -367,10 +366,10 @@
                         <input type="text" name="email" placeholder="Email" value="" />
                     </div>
                     <div class="inputfield">
-                        <input type="pwd1" name="password" placeholder="Password" value=""/>
+                        <input type="password" name="pwd1" placeholder="Password" value=""/>
                     </div>
                     <div class="inputfield">
-                        <input type="pwd2" name="password2" placeholder="Confirm Password" value=""/>
+                        <input type="password" name="pwd2" placeholder="Confirm Password" value=""/>
                     </div>
                     <input type="hidden" name="ip" value = ""/>
                     
