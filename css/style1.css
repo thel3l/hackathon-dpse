@@ -356,7 +356,7 @@ strong, .strongcountdown {
     z-index: 20;
     padding: 25px 50px 50px 50px;
     color: #1B1C1E;
-    background-color: #EEE;
+    background-color: #000000;
     opacity: 0.85;
     resize: both;
     overflow: auto;
