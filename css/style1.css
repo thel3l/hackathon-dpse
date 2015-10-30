@@ -351,10 +351,8 @@ strong, .strongcountdown {
     left: 1em;
     right: 1em;
     top:25%;
-
     margin-right: auto;
     margin-left: auto;
-
     z-index: 20;
     padding: 25px 50px 50px 50px;
     color: #1B1C1E;
@@ -362,11 +360,9 @@ strong, .strongcountdown {
     opacity: 0.85;
     resize: both;
     overflow: auto;
-
-    //visibility: hidden;
     display: none;
 }
-.signup input[type="text"] {
+.signup input[type="text"], input[type="password"] {
     display: inline;
     margin: 0;
     font-size: 20px;
@@ -379,7 +375,7 @@ strong, .strongcountdown {
     transition: border 0.3s, background-color 0.3s;
     outline: none;
 }
-.signup input[type="text"]:focus {
+.signup input[type="text"]:focus, input[type="password"]:focus {
     border: solid 5px #969696;
     background-color: #000000;
     color: #ABB2BF;
@@ -399,19 +395,6 @@ strong, .strongcountdown {
 .g-recaptcha {
     display: inline-block;
 }
-/*#xButton {
-    position: static;
-    height: 2em;
-    width: 2em;
-    text-align: center;
-    top: 0;
-    left: 0;
-    padding: 1em;
-    margin: 0;
-}
-#xButton:hover {
-    background-color: #FF4444;
-}*/
 
 button:hover, input[type="submit"]:hover {
     background-color: #005f5f;
