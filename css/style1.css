@@ -355,7 +355,11 @@ strong, .strongcountdown {
     margin-left: auto;
     z-index: 20;
     padding: 25px 50px 50px 50px;
+<<<<<<< HEAD
     color: #1B1C1E;
+=======
+    color: #ffffff;
+>>>>>>> 3bf5c11c86fe7cd75d496f7905d9db690394fe97
     background-color: #000000;
     opacity: 0.85;
     resize: both;

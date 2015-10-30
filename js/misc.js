@@ -5,6 +5,8 @@ $(function() {
         window.location.assign("1337/index.html");
     })
 
+//Verify that the password is typed twice
+
     //Map button Toggle
     $("#maptoggle").click(function() {
         if ($("iframe.map").length > 0) {
@@ -21,7 +23,7 @@ $(function() {
 
     //Countdown
     $('.countdown.styled').countdown({
-        date: "November 14, 2015 07:00:00",
+        date: "December 19, 2015 08:00:00",
         render: function(data) {
             $(this.el).html("<div class=\"strongcountdown\">" +
                 this.leadingZeros(data.days, 2) +
