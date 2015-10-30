@@ -5,6 +5,8 @@ $(function() {
         window.location.assign("1337/index.html");
     })
 
+//Verify that the password is typed twice
+
     //Map button Toggle
     $("#maptoggle").click(function() {
         if ($("iframe.map").length > 0) {

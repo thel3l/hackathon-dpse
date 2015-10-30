@@ -318,7 +318,10 @@
                         <input type="text" name="email" placeholder="Email" value="" />
                     </div>
                     <div class="inputfield">
-                        <input type="password" name="password" placeholder="Password" value="" />
+                        <input type="password" name="password" placeholder="Password" value="" required pattern="(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1"/>
+                    </div>
+                    <div class="inputfield">
+                        <input type="password" name="password2" placeholder="Confirm Password" value="" required pattern="(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2"/>
                     </div>
                     <input type="hidden" name="ip" value = ""/>
                     
