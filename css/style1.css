@@ -149,6 +149,10 @@ body {
     margin: 0;
     height: 100%;
 }
+::selection {
+    color: #FFFFFF;
+    background-color: #AAB2BF;
+}
 
 //Navigation bar
 .nav ul {
