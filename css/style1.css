@@ -408,6 +408,13 @@ iframe#typeform-full {
     z-index: 100;
 }
 
+#xButton {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    z-index: 100;
+}
+
 .g-recaptcha {
     display: inline-block;
 }

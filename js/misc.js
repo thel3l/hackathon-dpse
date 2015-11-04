@@ -59,13 +59,16 @@ $(function() {
     $("#signuptoggler").click(function(){
         //$(".signup").toggle();
         $("#typeform-full").toggle();
+        $("#xButton").toggle();
     });
     $("#xButton").click(function(){
         //$(".signup").hide();
         $("#typeform-full").hide();
+        $(this).hide();
     });
     
     //Hide Form stuff
     $("#typeform-full").hide();
+    $("#xButton").hide();
 
 });
