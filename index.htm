@@ -5,7 +5,7 @@
         <!-- Meta tags for 'em crawlers-->
         <meta charset="utf-8">
         <meta content="Codefest, 2015, DPS, Delhi Public School, Bangalore, East, hackfest, DPSBE, geek, hackathon, fest, DPSE, Codewars, geekfest, programming" name="keywords">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
         <meta content="Official website of DPS Codefest 2015." name="description">
         <meta content="index, follow" name="robots">
         <meta content="english" name="language">
@@ -21,6 +21,7 @@
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="https://www.l2.io/ip.js?var=myip"></script>
+        <script src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
 
         <script src="js/misc.js"></script>
@@ -35,7 +36,10 @@
     </head>
 
     <body onload="$('body').toggleClass('loaded');">
-
+        
+        <!-- Registration -->
+        <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://hackdpse.typeform.com/to/vbtV02"></iframe>
+        
         <header>
             <!-- Navigation bar -->
             <div id='navbar' class="nav pushy pushy-left">
@@ -400,6 +404,7 @@
                 <strong id="joke">There are 10 types of people in this world: Those who know binary, those who don't, and those who <a style="color:#fff; font-weight:initial;" onClick="alert(&#34;SecretMessage&#34;)">didn't expect</a> this to be in base 3.<br /></strong><a style="color:#ABB2BF; font-weight:initial;" onClick="alert(&#34;Coded from scratch! No CSS Templates were used!&#34;)"> &lt; &gt; with &#10084; from scratch</a> by: <a href= "https://www.github.com/thel3l/" target="_blank">@thel3l</a> <a href="https://www.github.com/lunaroyster/" target= "_blank">@lunaroyster</a> <a href= "https://www.github.com/rithvikvibhu/" target= "_blank">@rithvikvibhu</a>
             </div>
         </footer>
+        
         <!-- Google Analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

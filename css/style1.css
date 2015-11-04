@@ -398,6 +398,16 @@ strong, .strongcountdown {
     text-align: center;
 }
 
+iframe#typeform-full {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border: 0;
+    z-index: 100;
+}
+
 .g-recaptcha {
     display: inline-block;
 }

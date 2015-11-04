@@ -57,10 +57,15 @@ $(function() {
     //Signup bar Toggle with close button
     $(".signup").hide();
     $("#signuptoggler").click(function(){
-        $(".signup").toggle();
+        //$(".signup").toggle();
+        $("#typeform-full").toggle();
     });
     $("#xButton").click(function(){
-        $(".signup").hide();
+        //$(".signup").hide();
+        $("#typeform-full").hide();
     });
+    
+    //Hide Form stuff
+    $("#typeform-full").hide();
 
 });
