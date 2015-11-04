@@ -55,14 +55,18 @@ $(function() {
     $('.nav').css({ 'position': 'fixed', 'top': 0, 'left': 0, 'text-align': 'center'});
 
     //Signup bar Toggle with close button
-    $(".signup").hide();
+    var iframe = $("#typeform-full")[0];
+    function setFocusThickboxIframe() {
+        iframe.contentWindow.focus();
+    }
+    
     $("#signuptoggler").click(function(){
-        //$(".signup").toggle();
         $("#typeform-full").toggle();
         $("#xButton").toggle();
+        setTimeout(setFocusThickboxIframe, 100);
+        iframe.contentWindow.focus();
     });
     $("#xButton").click(function(){
-        //$(".signup").hide();
         $("#typeform-full").hide();
         $(this).hide();
     });
@@ -70,5 +74,5 @@ $(function() {
     //Hide Form stuff
     $("#typeform-full").hide();
     $("#xButton").hide();
-
+    
 });
