@@ -7,7 +7,13 @@ To view this project's files, go to our site, and toggle the 1337 slider. This w
 ```bash
 cd 'Rule bookle in Python'
 ```
+ 
+Or enclose whichever directory that you wish to navigate to in quotes. 
+
 This is the DPS East Hackathon/codefest Rule booklet. To view the rule booklet, please follow the instructions for the respective languages:
+
+*Step 1 ( common to all languages):*
+  Clone the repo. This can be done by entering:```git clone https://www.github.com/thel3l/hackathon-dpse.git```
 
 **1. Python:**
   Navigate to the Python directory, and open the ```requiredModulesPython.sh``` . If you're on Windows, manually install   the Python modules using ```pip```. If you are using Linux or OSX, make the requirements file executable by running:
@@ -37,7 +43,8 @@ This is the DPS East Hackathon/codefest Rule booklet. To view the rule booklet, 
   ```
 
 For any other doubts/queries that you may have, please contact us at:
-
+        email: info@dpse.cf
+        Phone numbers:
 	+91 xxxxx xxxxx
 
 	+91 xxxxx xxxxx
