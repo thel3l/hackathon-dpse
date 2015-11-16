@@ -308,6 +308,14 @@ p {
     text-align: justify;
 }
 
+p > a {
+    color: #00FFC6;
+}
+
+p > a:hover {
+    color: #f50a2c;
+}
+
 strong, .strongcountdown {
     color: #FFF;
     font-weight: 400;
