@@ -4,9 +4,7 @@ $(function() {
     $(".switch").change(function() {
         window.location.assign("1337/index.html");
     })
-
-//Verify that the password is typed twice
-
+    
     //Map button Toggle
     $("#maptoggle").click(function() {
         if ($("iframe.map").length > 0) {
@@ -65,6 +63,7 @@ $(function() {
         $("#xButton").toggle();
         setTimeout(setFocusThickboxIframe, 100);
         iframe.contentWindow.focus();
+        setInterval( function, 300000 );
     });
     $("#xButton").click(function(){
         $("#typeform-full").hide();
