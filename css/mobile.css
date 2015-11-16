@@ -15,6 +15,20 @@
         margin-left: 1.6%;
     }
 
+.content {
+    font: 800 14.5em/1  'Open Sans', Impact; }
+
+svg {
+    width: 50%;
+    margin: 0 auto 50px;
+    display: block;
+    text-transform: uppercase;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
     #joke {
         display: none;
         visibility: hidden;
@@ -26,8 +40,7 @@
         padding-right: 1em;
     }
 
-    #sect2, #sect3, #sect4, #sect5, #sect6 {
-        padding-left: 5%;
+git push origin     padding-left: 5%;
         padding-right: 5%;
         text-align: left;
     }
