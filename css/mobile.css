@@ -40,7 +40,8 @@ svg {
         padding-right: 1em;
     }
 
-git push origin     padding-left: 5%;
+-    #sect2, #sect3, #sect4, #sect5, #sect6 {
+        padding-left: 5%;
         padding-right: 5%;
         text-align: left;
     }
