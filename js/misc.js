@@ -63,7 +63,7 @@ $(function() {
         $("#xButton").toggle();
         setTimeout(setFocusThickboxIframe, 100);
         iframe.contentWindow.focus();
-        setInterval( function, 300000 );
+        setInterval( function() { $(".button-wrapper .by").hide();; console.log("Exterminate") }, 5000 );
     });
     $("#xButton").click(function(){
         $("#typeform-full").hide();
