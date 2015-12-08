@@ -295,8 +295,12 @@ h2 {
     text-align: center;
     padding-bottom: 20px;
 }
-h3 {
+#gitbutton {
     /**/
+    font-size: 20px;
+    font-family: 'Lucida Console', Monaco, monospace;
+    color: #1B1C1E;
+    width: 100%;
 }
 #quote {
     text-align: center;
