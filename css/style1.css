@@ -350,8 +350,9 @@ strong, .strongcountdown {
 
 .sponsor {
     background-color:#FFFFFF;
-    display:inline-block;
+    display: inline-block;
     padding: 1em 2em 1em 2em;
+    text-align: center;
 }
 
 .sponsor .intro {
