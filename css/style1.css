@@ -236,7 +236,7 @@ section {
     text-align: center;
 }
 #sect2,#sect3,#sect4,#sect5,#sect6 {
-
+    z-index: 2;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -347,6 +347,22 @@ strong, .strongcountdown {
     opacity: .666;
     font-size: 75%;
 }
+
+.sponsor {
+    background-color:#FFFFFF;
+    display:inline-block;
+    padding: 1em 2em 1em 2em;
+}
+
+.sponsor .intro {
+    color:#1B1C1E;
+}
+
+.sponsor img {
+    width: 12em;
+    height: 4em;
+}
+
 .copyright a {
     color: #f50a2c;
     font-weight: 700;
