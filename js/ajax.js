@@ -1,8 +1,5 @@
 $(function() {
 
-    // IP Stuff
-    $('input[name=ip]').val(myip);
-
     // Variable to hold request
     var request;
 
