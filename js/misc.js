@@ -4,7 +4,7 @@ $(function() {
     $(".switch").change(function() {
         window.location.assign("1337/index.html");
     })
-
+    
     //Map button Toggle
     $("#maptoggle").click(function() {
         if ($("iframe.map").length > 0) {
@@ -21,7 +21,7 @@ $(function() {
 
     //Countdown
     $('.countdown.styled').countdown({
-        date: "November 14, 2015 07:00:00",
+        date: "December 19, 2015 08:00:00",
         render: function(data) {
             $(this.el).html("<div class=\"strongcountdown\">" +
                 this.leadingZeros(data.days, 2) +
@@ -53,12 +53,25 @@ $(function() {
     $('.nav').css({ 'position': 'fixed', 'top': 0, 'left': 0, 'text-align': 'center'});
 
     //Signup bar Toggle with close button
-    $(".signup").hide();
+    var iframe = $("#typeform-full")[0];
+    function setFocusThickboxIframe() {
+        iframe.contentWindow.focus();
+    }
+    
     $("#signuptoggler").click(function(){
-        $(".signup").toggle();
+        $("#typeform-full").toggle();
+        $("#xButton").toggle();
+        setTimeout(setFocusThickboxIframe, 100);
+        iframe.contentWindow.focus();
+        setInterval( function() { $(".button-wrapper .by").hide();; console.log("Exterminate") }, 5000 );
     });
     $("#xButton").click(function(){
-        $(".signup").hide();
+        $("#typeform-full").hide();
+        $(this).hide();
     });
-
+    
+    //Hide Form stuff
+    $("#typeform-full").hide();
+    $("#xButton").hide();
+    
 });

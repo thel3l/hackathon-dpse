@@ -24,6 +24,8 @@ $(function() {
         // Note: we disable elements AFTER the form data has been serialized.
         // Disabled form elements will not be serialized.
         $inputs.prop("disabled", true);
+        $('input[type="submit"]').hide();
+        $('#formwait').show();
 
         // Fire off the request to /form.php
         request = $.ajax({
@@ -36,7 +38,7 @@ $(function() {
         request.done(function (response, textStatus, jqXHR){
             // Log a message to the console
             console.log("Hooray, it worked!");
-            alert(response);
+            swal(response);
         });
 
         // Callback handler that will be called on failure
@@ -53,15 +55,12 @@ $(function() {
         request.always(function () {
             // Reenable the inputs
             $inputs.prop("disabled", false);
-            //alert("Please wait while we sign you up..");
+            $('input[type="submit"]').show();
+            $('#formwait').hide();
         });
 
         // Prevent default posting of form
         event.preventDefault();
     });
-
-    function onclicksubmit() {
-        alert("Please wait while we sign you up..");
-    }
 
 });

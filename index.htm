@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<!-- By rithvikvibhu and lunaroyster and thel3l    -->
+<!-- By rithvikvibhu and lunaroyster and thel3l     -->
 <html lang="en">
     <head>
         <!-- Meta tags for 'em crawlers-->
         <meta charset="utf-8">
-        <meta content="Codefest, 2015, DPS, Delhi Public School, Bangalore, East, hackfest, DPSBE, geek, hackathon, fest, DPSE, Codewars, geekfest, programming" name="keywords">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Codefest, 2015, DPS, Delhi Public School, Bangalore, East, hackfest, DPSBE, geek, hackathon, fest, DPSE, Codewars, geekfest, programming, dpse, cf, dpse.cf, dpse codefest" name="keywords">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
         <meta content="Official website of DPS Codefest 2015." name="description">
         <meta content="index, follow" name="robots">
         <meta content="english" name="language">
+        <meta http-equiv="Content-Language" content="en">
+        <link rel="alternate" href="https://dpse.cf/" hreflang="en-in" />
+        <link rel="alternate" href="https://dpse.cf/" hreflang="en-us" />
+        <link rel="alternate" href="https://dpse.cf/" hreflang="en-GB" />
+
+
         <meta content="lunaroyster,thel3l,rithvikvibhu" name="author">
         <meta http-equiv="Cache-control" content="max-age=0">
 
@@ -17,8 +23,8 @@
         <link href="css/mobile.css" rel="stylesheet" type="text/css">
 
         <!-- Script(s) -->
-        <script src='https://www.google.com/recaptcha/api.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
 
         <script src="js/misc.js"></script>
@@ -26,12 +32,14 @@
         <script src="js/responsivenav.js"></script>
 
         <link rel="shortcut icon" type="image/x-icon" href="images/graphics/favicon.png" />
-        <title>
-            CodeFest 2015
-        </title>
+        <title>CodeFest 2015</title>
     </head>
 
     <body onload="$('body').toggleClass('loaded');">
+
+        <!-- Registration -->
+        <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://hackdpse.typeform.com/to/vbtV02"></iframe>
+        <button id="xButton"> Close </button>
 
         <header>
             <!-- Navigation bar -->
@@ -50,7 +58,7 @@
                     </li>
 
                     <li>
-                        <a id ="navlink4" href="#sect4">FAQ?</a>
+                        <a id ="navlink4" href="#sect4">Signup</a>
                     </li>
 
                     <li>
@@ -86,7 +94,7 @@
 
                 <!-- The fest logo -->
                 <div class="Logo">
-                    <img src="images/graphics/logo.png" alt="School LOGO">
+                    <img src="images/graphics/logofinal.png" style="filter: blur(5px);!important" alt="School LOGO">
                     <div class="content">
                         <svg viewBox="0 0 1430 300">
 
@@ -112,11 +120,17 @@
 
                 <!-- Line that appears below the logo. -->
                 <div class="Subline">
-                    November 14th 2015. Be ready.
+                    December 19th 2015. Be ready.
                 </div>
 
                 <!-- The countdown -->
                 <div class="countdown styled"></div>
+                
+                <!-- Sponsor stuff -->
+                <div class="sponsor">
+                    <div class="intro">Proudly Sponsored By:</div>
+                    <img src="images/helogo.jpg"></img>
+                </div>
 
             </section>
             <div class="separator">
@@ -133,14 +147,17 @@
                     Great minds talk ideas. Greater ones still execute them.
                 </div>
                 <p>
-                    Welcome, fellow hacker. We at DPS East are thrilled to unveil <strong>DPSE CodeFest 2015</strong>. We hope you will join us on the <strong>14<sup>th</sup> of November</strong> to create something new and innovative. The goal of <strong>CodeFest '15</strong> is to create a discourse of ideas. We want to host a hackathon where ideas and innovations flow free.
+                    Welcome, fellow hacker. We at DPS Bangalore East are thrilled to unveil <strong>DPSE CodeFest 2015</strong>. We hope you will join us on the <strong>19<sup>th</sup> of December</strong> to create something new and innovative. The goal of <strong>CodeFest '15</strong> is to create a discourse of ideas. It's a great opportunity for code enthusiasts to network. We want to host a hackathon where ideas and innovations flow free.
                 </p>
                 <p>
                     Participants will be given <strong>a theme (will be announced a few days before the fest)</strong>. Using <strong>any platform or language</strong> of their preference, they will be expected to develop something new and useful. GUI isn't a big criteria. The best ideas are simple- be creative. Think out of the box.
                 </p>
                 <p>
-                    We recommend that fellow hackers check out and get used to version control systems like <a href="https://try.github.io/levels/1/challenges/1">Git</a>. We plan to host a local git server for participants to collaborate on
+                    We recommend that fellow hackers check out and get used to version control systems like <a href="https://try.github.io/levels/1/challenges/1">Git</a>. We plan to host a local git server for participants to collaborate on. Even after the CodeFest is over, enthusiasts can continue working and collaborate with other participants on their projects. Please bring your own 4G dongles and/or routers as backup.
                 </p>
+                
+                <a target="_blank" href="https://try.github.io/levels/1/challenges/1"><button id="gitbutton">Learn GIT now!</button></a>
+                
             </section>
             <div class="separator">
             </div>
@@ -167,7 +184,7 @@
                             </div>
 
                             <div class="description">
-                                Participants arrive at DPS East and register.
+                                Participants arrive at DPS Bangalore East and register.
                             </div>
 
                         </li>
@@ -263,16 +280,16 @@
             <div class="separator">
             </div>
 
-            <!-- What else? -->
+            <!-- Signup -->
             <section id="sect4">
                 <h1>
-                    What else?
+                    Signup
                 </h1>
                 <p>
                     There's enough to get started. We'll keep you informed through this page. You can sign up to be notified. Or, if you have any questions, contact us. <br>
                 </p>
                 <p>
-                    Once you sign up, we'll send you a link to rules and requirements for the event. We'll remind you about the event.
+                    Once you sign up, we'll send you a link to rules and requirements for the event. We'll remind you about the event. <strong>Please bring your own 4G dongles and/or routers. </strong>
                 </p>
                 <button id="signuptoggler">Sign me up.</button>
             </section>
@@ -288,9 +305,9 @@
                     You can call or email us if you have any further queries. To locate the school on Google Maps, click the address below.
                 </p>
                 <div id="infocontainer">
-                    <a href="tel:" id="phoneinfo" class="contactcol">
+                    <a href="tel:+918971737495" id="phoneinfo" class="contactcol">
                         <h3>Call Us</h3>
-                        [Number]
+                        +91 89717 37495
                     </a>
 
                     <a id="maptoggle" class="contactcol">
@@ -304,21 +321,12 @@
                 </div>
 
             </section>
-
-            <div class="signup">
-                <h2>Sign up to keep updated</h2>
-                <button id="xButton"> Close </button>
-                <form action="#" method="post" id="subform">
-                    <div class="inputfield">
-                        <input type="text" name="name" placeholder="Name" value="" />
-                    </div>
-                    <div class="inputfield">
-                        <input type="text" name="email" placeholder="Email" value="" />
-                    </div>
-                    <div class="g-recaptcha" data-sitekey="6LevoA4TAAAAALxIWDWF3J_lou_Wjoi0vt1_xOEi"></div>
-                    <input type="submit" value="I'm In" onClick="alert('Please wait while we sign you up..')"/>
-                </form>
+            <div class="separator">
             </div>
+            
+            <!-- <pagegutter></pagegutter> -->
+            <div class="pagegutter"></div>
+
             <div id="loader">
                     <div id="spinner1" class="spinner"></div>
                     <div id="spinner2" class="spinner"></div>
@@ -332,9 +340,15 @@
 
         <footer>
             <div class="copyright">
-                <strong id="joke">There are 10 types of people in this world: Those who know binary, those who don't, and those who <a style="color:#fff; font-weight:initial;" onClick="alert(&#34;SecretMessage&#34;)">didn't expect</a> this to be in base 3.<br /></strong> &lt; &gt; with ❤ by: <a href= "https://www.github.com/thel3l/" target="_blank">@thel3l</a> <a href="https://www.github.com/lunaroyster/" target= "_blank">@lunaroyster</a> <a href= "https://www.github.com/rithvikvibhu/" target= "_blank">@rithvikvibhu</a>
+                <strong id="joke">There are 10 types of people in this world: Those who know binary, those who don't, and those who <a style="color:#fff; font-weight:initial;" onClick="alert(&#34;SecretMessage&#34;)">didn't expect</a> this to be in base 3.<br /></strong>
+                <a style="color:#ABB2BF; font-weight:initial;" onClick="alert(&#34;Coded from scratch! No CSS Templates were used!&#34;)"> &lt; &gt; with &#10084; by:
+                <a href= "https://www.github.com/thel3l/" target="_blank">@thel3l</a>
+                <a href= "https://www.github.com/lunaroyster/" target= "_blank">@lunaroyster</a>
+                <a href= "https://www.github.com/rithvikvibhu/" target= "_blank">@rithvikvibhu</a>
+                <a href= "https://www.github.com/wingedwhisper14/" target= "_blank">@wingedwhisper14</a>
             </div>
         </footer>
+
         <!-- Google Analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -345,6 +359,7 @@
             ga('create', 'UA-68437315-1', 'auto');
             ga('send', 'pageview');
         </script>
+
 
     </body>
 </html>

@@ -149,6 +149,10 @@ body {
     margin: 0;
     height: 100%;
 }
+::selection {
+    color: #FFFFFF;
+    background-color: #AAB2BF;
+}
 
 //Navigation bar
 .nav ul {
@@ -220,7 +224,9 @@ section {
     padding-bottom: 4em;
     box-sizing: border-box;
 }
-
+.pagegutter {
+  padding-bottom: 9em;
+}
 #sect1 {
     background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
@@ -230,7 +236,7 @@ section {
     text-align: center;
 }
 #sect2,#sect3,#sect4,#sect5,#sect6 {
-
+    z-index: 2;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -289,8 +295,12 @@ h2 {
     text-align: center;
     padding-bottom: 20px;
 }
-h3 {
+#gitbutton {
     /**/
+    font-size: 20px;
+    font-family: 'Lucida Console', Monaco, monospace;
+    color: #1B1C1E;
+    width: 100%;
 }
 #quote {
     text-align: center;
@@ -300,6 +310,14 @@ p {
     padding: 0.5em;
     padding-top: 1em;
     text-align: justify;
+}
+
+p > a {
+    color: #00FFC6;
+}
+
+p > a:hover {
+    color: #f50a2c;
 }
 
 strong, .strongcountdown {
@@ -329,6 +347,23 @@ strong, .strongcountdown {
     opacity: .666;
     font-size: 75%;
 }
+
+.sponsor {
+    background-color:#FFFFFF;
+    display: inline-block;
+    padding: 1em 2em 1em 2em;
+    text-align: center;
+}
+
+.sponsor .intro {
+    color:#1B1C1E;
+}
+
+.sponsor img {
+    width: 12em;
+    height: 4em;
+}
+
 .copyright a {
     color: #f50a2c;
     font-weight: 700;
@@ -350,23 +385,19 @@ strong, .strongcountdown {
     position: fixed;
     left: 1em;
     right: 1em;
-    top:25%;
-
+    top:15%;
     margin-right: auto;
     margin-left: auto;
-
     z-index: 20;
     padding: 25px 50px 50px 50px;
-    color: #1B1C1E;
-    background-color: #EEE;
+    color: #ffffff;
+    background-color: #000000;
     opacity: 0.85;
     resize: both;
     overflow: auto;
-
-    //visibility: hidden;
     display: none;
 }
-.signup input[type="text"] {
+.signup input[type="text"], input[type="password"] {
     display: inline;
     margin: 0;
     font-size: 20px;
@@ -379,7 +410,7 @@ strong, .strongcountdown {
     transition: border 0.3s, background-color 0.3s;
     outline: none;
 }
-.signup input[type="text"]:focus {
+.signup input[type="text"]:focus, input[type="password"]:focus {
     border: solid 5px #969696;
     background-color: #000000;
     color: #ABB2BF;
@@ -387,22 +418,35 @@ strong, .strongcountdown {
 .signup button, .signup input[type="submit"] {
     display: inline-block;
 }
+.signup #formwait {
+    display: none;
+    width: auto;
+    height: auto;
+    font-size: 200%;
+    padding: 25px;
+    text-align: center;
+}
+
+iframe#typeform-full {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border: 0;
+    z-index: 100;
+}
+
+#xButton {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    z-index: 100;
+}
+
 .g-recaptcha {
     display: inline-block;
 }
-/*#xButton {
-    position: static;
-    height: 2em;
-    width: 2em;
-    text-align: center;
-    top: 0;
-    left: 0;
-    padding: 1em;
-    margin: 0;
-}
-#xButton:hover {
-    background-color: #FF4444;
-}*/
 
 button:hover, input[type="submit"]:hover {
     background-color: #005f5f;
@@ -733,8 +777,21 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     background-color: #BDBDBD
 }
 
-/*animations*/
+.g-recaptcha {
+    float: left;
+    margin-left: 16%;
+    width: 40%;
+}
 
+input[type="submit"] {
+    float: right;
+    margin-right: 4%;
+    width: 40%;
+    height: 75px;
+}
+
+
+/*animations*/
 
 @-webkit-keyframes stroke {
     100% {
