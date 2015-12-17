@@ -558,6 +558,26 @@ ul[class="clicklist"]>li>div[class="heading"] {
     text-align: left;
 }
 
+#overlay .overlay-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #1B1C1E;
+    z-index: 500;
+}
+#overlay .overlay-section.left {
+    left: 0;
+}
+#overlay .overlay-section.right{
+    right: 0;
+}
+#overlay {
+    /*for the entire overlay*/
+}
+
+
+
 #loader .loader-section {
     position: fixed;
     top: 0;
