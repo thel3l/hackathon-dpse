@@ -605,10 +605,11 @@ ul[class="clicklist"]>li>div[class="heading"] {
 #overlay .overlay-section {
     position: fixed;
     top: 0;
-    width: 51%;
+    width: 50%;
     height: 100%;
-    background: #1E1E1E;
+    background: #000000;
     z-index: 500;
+    opacity: 1;
 }
 #overlay .overlay-section.left {
     left: 0;
@@ -618,8 +619,20 @@ ul[class="clicklist"]>li>div[class="heading"] {
 }
 #overlay {
     /*for the entire overlay*/
+    /*position: fixed;*/
+}
+#overlay .content {
+    position: fixed;
+    width:100%;
+    top: 2em;
+    z-index: 525;
+    opacity: 1;
 }
 
+#overly .content #heading {
+    font-family:sans-serif;
+    text-align: center;
+}
 
 
 #loader .loader-section {
