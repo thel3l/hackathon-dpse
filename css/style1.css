@@ -665,6 +665,7 @@ ul[class="clicklist"]>li>div[class="heading"] {
     transition: all 0.7s 0.3s ease-out;
 }
 .hideoverlay #overlay .content {
+    opacity: 0;
     -webkit-transform: translateY(-200%);
     -ms-transform: translateY(-200%);
     transform: translateY(-200%);
