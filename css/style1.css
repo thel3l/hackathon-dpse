@@ -632,17 +632,19 @@ ul[class="clicklist"]>li>div[class="heading"] {
     top: 2em;
     z-index: 550;
     opacity: 1;
-    border: 1px dotted;
     margin: 1em 1em 1em 1em;
 }
 
-#overly .content #heading {
-    font-family:sans-serif;
-    text-align: center;
+#overlay .content #heading {
+    font-family: sans-serif;
+    font-size: large;
+    text-align: left;
+    padding: 1em 0 1em 0;
 }
-#overay .content p {
-    
-    color:#FFFFFF;
+
+#overlay .content p {
+    border: 1px dotted;
+    padding: 1em;
 }
 
 #loader .loader-section {
