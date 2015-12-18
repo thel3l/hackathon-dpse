@@ -623,6 +623,7 @@ ul[class="clicklist"]>li>div[class="heading"] {
     /*for the entire overlay*/
     /*position: fixed;*/
 }
+
 #overlay .content {
     position: fixed;
     display: inline-block;
@@ -634,7 +635,6 @@ ul[class="clicklist"]>li>div[class="heading"] {
     opacity: 1;
     margin: 1em 1em 1em 1em;
 }
-
 #overlay .content #heading {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 2em;
@@ -642,10 +642,33 @@ ul[class="clicklist"]>li>div[class="heading"] {
     padding: 1em 0 1em 0;
     
 }
-
 #overlay .content p {
     border: 1px dashed;
     padding: 1em;
+}
+
+.hideoverlay #overlay{
+    visibility: hidden;
+}
+.hideoverlay #overlay .overlay-section.left {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.7s 0.3s ease-out;
+    transition: all 0.7s 0.3s ease-out;
+}
+.hideoverlay #overlay .overlay-section.right{
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.7s 0.3s ease-out;
+    transition: all 0.7s 0.3s ease-out;
+}
+.hideoverlay #overlay .content {
+    opacity: 0;
+
+    -webkit-transition: all 0.3 ease-out;
+    transition: all 0.3s ease-out;
 }
 
 #loader .loader-section {
