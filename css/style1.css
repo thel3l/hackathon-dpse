@@ -353,6 +353,7 @@ strong, .strongcountdown {
     display: inline-block;
     padding: 1em 2em 1em 2em;
     text-align: center;
+    opacity: 0;
 }
 
 .sponsor .intro {
@@ -362,6 +363,7 @@ strong, .strongcountdown {
 .sponsor img {
     width: 12em;
     height: 4em;
+    opacity: 0;
 }
 
 .copyright a {
