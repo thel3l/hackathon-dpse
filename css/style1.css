@@ -665,10 +665,11 @@ ul[class="clicklist"]>li>div[class="heading"] {
     transition: all 0.7s 0.3s ease-out;
 }
 .hideoverlay #overlay .content {
-    opacity: 0;
-
-    -webkit-transition: all 0.3 ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    transform: translateY(-200%);
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 #loader .loader-section {
