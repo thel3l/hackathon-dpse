@@ -625,10 +625,15 @@ ul[class="clicklist"]>li>div[class="heading"] {
 }
 #overlay .content {
     position: fixed;
-    width: 100%;
+    display: inline-block;
+    text-align: center;
+    left: 0;
+    right: 0;
     top: 2em;
     z-index: 550;
     opacity: 1;
+    border: 1px dotted;
+    margin: 1em 1em 1em 1em;
 }
 
 #overly .content #heading {
