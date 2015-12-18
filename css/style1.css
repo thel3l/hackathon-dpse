@@ -636,10 +636,11 @@ ul[class="clicklist"]>li>div[class="heading"] {
 }
 
 #overlay .content #heading {
-    font-family: sans-serif;
-    font-size: large;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2em;
     text-align: left;
     padding: 1em 0 1em 0;
+    
 }
 
 #overlay .content p {
@@ -878,6 +879,12 @@ input[type="submit"] {
         -ms-transform: rotate(-360deg);  /* IE 9 */
         transform: rotate(-360deg);  /* Firefox 16+, IE 10+, Opera */
     }
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
 }
 /*.overlay {*/
 /*    position: fixed;*/
