@@ -644,7 +644,7 @@ ul[class="clicklist"]>li>div[class="heading"] {
 }
 
 #overlay .content p {
-    border: 1px dotted;
+    border: 1px dashed;
     padding: 1em;
 }
 
@@ -880,12 +880,7 @@ input[type="submit"] {
         transform: rotate(-360deg);  /* Firefox 16+, IE 10+, Opera */
     }
 }
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
-}
+
 /*.overlay {*/
 /*    position: fixed;*/
 /*    top: 0;*/
