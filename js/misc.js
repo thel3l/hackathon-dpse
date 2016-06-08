@@ -21,7 +21,7 @@ $(function() {
 
     //Countdown
     $('.countdown.styled').countdown({
-        date: "July 9, 2016 07:00:00",
+        date: "July 09, 2016 07:00:00",
         render: function(data) {
             $(this.el).html("<div class=\"strongcountdown\">" +
                 this.leadingZeros(data.days, 2) +
