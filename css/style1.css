@@ -241,11 +241,12 @@ section {
     padding-right: 10%;
 }
 #sect6{
+    position: relative;
     z-index: 2;
     padding-left: 10%;
     padding-right: 10%;
-    /*background-color: #FFFFFF*/
-
+    background-color: #FFFFFF;
+    text-align: center;
 }
 
 .gist-data {
@@ -332,6 +333,9 @@ strong, .strongcountdown {
     font-weight: 400;
 }
 
+.lighth1 {
+  border: 0.4em solid #ABB2BF;
+}
 /*#agendaimg {
     display: block;
     max-width: 90%;
@@ -359,7 +363,9 @@ strong, .strongcountdown {
     background-color:#FFFFFF;
     display: inline-block;
     padding: 1em 2em 1em 2em;
-    text-align: center;
+    #text-align: center;
+    margin-right:15px;
+    text-align: left;
     /*opacity: 0;*/
 }
 
@@ -649,7 +655,7 @@ ul[class="clicklist"]>li>div[class="heading"] {
     font-size: 2em;
     text-align: left;
     padding: 1em 0 1em 0;
-    
+
 }
 #overlay .content p {
     border: 1px dashed;
@@ -923,7 +929,7 @@ input[type="submit"] {
 /*    width: 100%;*/
 /*    background-color: rgba(0,0,0,0.5);*/
 /*    z-index: 10;*/
-  
+
 /*}.lel {*/
 /*    width: 300px;*/
 /*    height: 250px;*/
