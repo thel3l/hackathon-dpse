@@ -235,10 +235,17 @@ section {
     padding: 5em;
     text-align: center;
 }
-#sect2,#sect3,#sect4,#sect5,#sect6 {
+#sect2,#sect3,#sect4,#sect5{
     z-index: 2;
     padding-left: 10%;
     padding-right: 10%;
+}
+#sect6{
+    z-index: 2;
+    padding-left: 10%;
+    padding-right: 10%;
+    /*background-color: #FFFFFF*/
+
 }
 
 .gist-data {
@@ -353,7 +360,7 @@ strong, .strongcountdown {
     display: inline-block;
     padding: 1em 2em 1em 2em;
     text-align: center;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .sponsor .intro {
@@ -363,7 +370,7 @@ strong, .strongcountdown {
 .sponsor img {
     width: 12em;
     height: 4em;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .copyright a {
@@ -583,6 +590,8 @@ ul[class="clicklist"]>li>div[class="heading"] {
     margin-bottom: 50px;
     margin-top: 25px;
 }
+
+
 .styled div {
     display: inline-block;
     margin-left: 10px;
