@@ -479,7 +479,9 @@ button, input[type="submit"]{
 }
 
 
-
+#themebutton {
+    
+}
 #infocontainer {
     padding-top: 1em;
 }
@@ -594,7 +596,7 @@ ul[class="clicklist"]>li>div[class="heading"] {
 
 .styled{
     margin-bottom: 50px;
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }
 
 
