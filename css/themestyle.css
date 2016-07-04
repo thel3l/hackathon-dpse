@@ -20,6 +20,12 @@ html,body {
     display: inline-block;
     float: left;
 }
+#themetitle {
+    font-family: 'Lucida Console';
+    color: #fff;
+    text-align: center;
+    font-size: x-large;
+}
 #themeimage {
     width:100%
 }
