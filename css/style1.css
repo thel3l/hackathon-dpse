@@ -486,6 +486,12 @@ button, input[type="submit"]{
     padding: 1em;
     opacity: 0.7;
     border: 1px #fff solid;
+    color: #ABB2BF;
+}
+#themebutton:hover {
+    background-color: #005f5f;
+    color: #fff;
+    cursor:pointer;
 }
 #infocontainer {
     padding-top: 1em;
