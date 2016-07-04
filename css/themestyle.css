@@ -1,24 +1,25 @@
 #sect1 {
-  height: 100%;
-  background: black;
-  text-align: left;
+    height: 100%;
+    background: black;
+    text-align: left;
 }
 html,body {
-  height: 100%;
+    height: 100%;
 }
 
 #sect1content {
 
 }
 #sect1image {
-  width: 33%;
-  display: inline-block;
-  float: left;
+    width: 33%;
+    display: inline-block;
+    float: left;
 }
 #sect1text {
-  display: inline-block;
-  float: left;
+    width: 66%;
+    display: inline-block;
+    float: left;
 }
 #themeimage {
-  width:100%
+    width:100%
 }
