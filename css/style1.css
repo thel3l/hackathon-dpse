@@ -385,7 +385,7 @@ strong, .strongcountdown {
     text-decoration: none;
 }
 
-#signuptoggler {
+#signuptoggler, #broken {
     width:100%;
     margin: 1em;
     margin-left: auto;
